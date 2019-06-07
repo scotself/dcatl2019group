@@ -1,0 +1,430 @@
+uuid: 27d40c5e-36f5-4abd-9f86-d1bc3f7eb450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.org.field_banner
+    - field.field.group.org.field_body
+    - field.field.group.org.field_color_1
+    - field.field.group.org.field_color_2
+    - field.field.group.org.field_color_3
+    - field.field.group.org.field_color_4
+    - field.field.group.org.field_color_5
+    - field.field.group.org.field_color_6
+    - field.field.group.org.field_contact_block
+    - field.field.group.org.field_crm_org_id
+    - field.field.group.org.field_email
+    - field.field.group.org.field_facebook
+    - field.field.group.org.field_favicon
+    - field.field.group.org.field_footer_2_image
+    - field.field.group.org.field_footer_2_text
+    - field.field.group.org.field_footer_copyright
+    - field.field.group.org.field_gtm_id
+    - field.field.group.org.field_header_cta
+    - field.field.group.org.field_how_to_get_started
+    - field.field.group.org.field_instagram
+    - field.field.group.org.field_login_link
+    - field.field.group.org.field_logo
+    - field.field.group.org.field_menu_link
+    - field.field.group.org.field_optimize_gtm_id
+    - field.field.group.org.field_optimize_ua_id
+    - field.field.group.org.field_other_section
+    - field.field.group.org.field_phone
+    - field.field.group.org.field_privacy
+    - field.field.group.org.field_study
+    - field.field.group.org.field_terms_of_use
+    - field.field.group.org.field_twitter
+    - field.field.group.org.field_youtube
+    - field.field.group.org.layout_builder__layout
+    - group.type.org
+  module:
+    - color_field
+    - entity_reference_revisions
+    - file
+    - layout_builder
+    - layout_discovery
+    - link
+    - menu_link
+    - text
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          e62fdfb2-083e-47ee-b8c3-117288b51068:
+            uuid: e62fdfb2-083e-47ee-b8c3-117288b51068
+            region: content
+            configuration:
+              id: 'field_block:group:org:field_banner'
+              label: Banner
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 16
+          7faa3f8a-c76f-438b-974c-e821b3037767:
+            uuid: 7faa3f8a-c76f-438b-974c-e821b3037767
+            region: content
+            configuration:
+              id: 'field_block:group:org:field_how_to_get_started'
+              label: 'How to Get Started'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 19
+          e422bd04-0c4c-4a81-8f9c-4a92267caa31:
+            uuid: e422bd04-0c4c-4a81-8f9c-4a92267caa31
+            region: content
+            configuration:
+              id: 'field_block:group:org:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 18
+          4a316a0f-0ad5-47ad-aadb-c1e32f718d29:
+            uuid: 4a316a0f-0ad5-47ad-aadb-c1e32f718d29
+            region: content
+            configuration:
+              id: 'field_block:group:org:field_other_section'
+              label: 'Other Section'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 21
+          8de4564c-706a-491e-bf87-2b10f9a16f87:
+            uuid: 8de4564c-706a-491e-bf87-2b10f9a16f87
+            region: content
+            configuration:
+              id: 'field_block:group:org:field_contact_block'
+              label: 'Contact block'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 22
+        third_party_settings: {  }
+    allow_custom: true
+    enabled: true
+id: group.org.default
+targetEntityType: group
+bundle: org
+mode: default
+content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 18
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_body:
+    type: entity_reference_revisions_entity_view
+    weight: 31
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_color_1:
+    weight: 34
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_color_2:
+    weight: 23
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_color_3:
+    weight: 24
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_color_4:
+    weight: 35
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_color_5:
+    weight: 36
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_color_6:
+    weight: 37
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_email:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_facebook:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_favicon:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_footer_2_image:
+    type: entity_reference_entity_view
+    weight: 39
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_footer_2_text:
+    weight: 38
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_footer_copyright:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_gtm_id:
+    weight: 22
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_cta:
+    weight: 40
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_how_to_get_started:
+    type: entity_reference_revisions_entity_view
+    weight: 20
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_instagram:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_login_link:
+    weight: 41
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    weight: 9
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_menu_link:
+    weight: 32
+    label: above
+    settings:
+      link_to_target: true
+    third_party_settings: {  }
+    type: menu_link
+    region: content
+  field_optimize_gtm_id:
+    weight: 26
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_optimize_ua_id:
+    weight: 25
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_other_section:
+    type: entity_reference_revisions_entity_view
+    weight: 33
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_privacy:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_study:
+    weight: 16
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_terms_of_use:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_twitter:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_youtube:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_contact_block: true
+  field_crm_org_id: true
+  label: true
+  langcode: true
+  layout_builder__layout: true
+  uid: true

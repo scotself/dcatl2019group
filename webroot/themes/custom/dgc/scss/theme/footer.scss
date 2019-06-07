@@ -1,0 +1,148 @@
+footer {
+  border-top: 1px solid var(--dgc-group-color-5);
+  padding-top: $global-padding;
+  > div {
+    padding: $global-padding;
+  }
+  p {
+    @include p-sm;
+    margin-bottom: 0px;
+  }
+  a {
+    padding-top: .5em;
+  }
+  .grid-container {
+    position: relative;
+  }
+  img {
+    max-height: 77px;
+    min-height: 30px;
+  }
+  .footer-2-logo {
+    margin-top: 1em;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#footer-1 {
+  @include p-strong;
+  background: $white;
+  a {
+    padding-bottom: .5em;
+  }
+  i {
+    color: var(--dgc-group-color-2);
+  }
+  .org-social {
+    >a {
+      margin-right: .5em;
+      &:hover, &:focus {
+        filter: brightness(150%);
+      }
+    }
+    .fab {
+      margin-top: .25em;
+      padding: 0 0.5rem 0 0;
+    } 
+  }
+  .cell {
+    padding-bottom: $global-padding;
+  }
+  .cell > div {
+    padding-bottom: .5em;
+  }
+  @include breakpoint(medium) {
+    .cell {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+  .menu {
+    flex-direction: column;
+    li {
+      display: inline;
+        a {
+        padding: 0.5rem 0rem;
+        text-transform: uppercase;
+        &:hover {
+          background-color: transparent;
+          text-decoration: underline; 
+        }
+      }
+    }
+  }
+  .back-to-top {
+    display: none;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 250px;
+    z-index: 999;
+    cursor: pointer;
+    right: 40px;
+    opacity: .0;
+    transition: .3s all;
+    background-color: var(--dgc-group-color-1);
+    border-radius: 33px;
+    line-height: 1.4em;
+    font-size: 32px;
+    text-align: center;
+    i {
+      color: $white !important;
+    }
+  }
+  
+  .back-to-top.show:hover {
+    opacity: 1;
+  }
+  
+  .back-to-top.show {
+    display: block;
+    opacity: .35;
+  }
+}
+
+#footer-2 {
+  @include p-sm;
+  background: var(--dgc-group-color-3);
+  > div {
+    text-align: center;
+  }
+  @include breakpoint(medium) {
+    > div {
+          text-align: left;
+    }
+    img {
+      float: right;
+    }
+    .footer-2-logo {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}
+
+#footer-3 {
+  background: var(--dgc-group-color-1);
+  .grid-x > div {
+    padding: 0 .5em;
+  }
+  p {
+    @include p-sm;
+    color: $white;
+    line-height: 22px;
+  }
+  a {
+    @include p-sm;
+    color: $white;
+    line-height: 21px;
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+  .contextual-links a {
+    color: inherit;
+  }
+}

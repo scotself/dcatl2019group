@@ -1,0 +1,23 @@
+uuid: 80a80c4d-8bb0-4882-bdf3-62acd52a08c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.what_do_i_need_to_do
+  module:
+    - link
+id: paragraph.what_do_i_need_to_do.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: what_do_i_need_to_do
+label: CTA
+description: 'Limit link text to 15 characters. Example: to link to About Page "What''s Involved" section: <code>/myorg/about#whats-involved</code>.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

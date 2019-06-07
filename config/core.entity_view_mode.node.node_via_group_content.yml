@@ -1,0 +1,10 @@
+uuid: 92e0e719-df53-44c0-8492-3b1da0025e2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.node_via_group_content
+label: 'Node via Group Content'
+targetEntityType: node
+cache: true

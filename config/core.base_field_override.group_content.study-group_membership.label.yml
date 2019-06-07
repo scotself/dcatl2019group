@@ -1,0 +1,18 @@
+uuid: 35a0e7db-03f2-4a88-b7b0-4c3e9bb89986
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.study-group_membership
+id: group_content.study-group_membership.label
+field_name: label
+entity_type: group_content
+bundle: study-group_membership
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

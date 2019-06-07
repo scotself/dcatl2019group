@@ -1,0 +1,153 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/about_locations_team"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/about_locations_team\/field_about_locations": [
+            {
+                "href": ""
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/about_locations_team\/field_about_team": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 102
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8dfc7743-bf01-4cfd-94aa-f044db29d1c7"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 102
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "about_locations_team"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-04-09T16:27:18+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "5"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_about_locations_team"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2019-04-09T16:29:10+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/about_locations_team\/field_about_locations": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/about_locations"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d304b444-d68c-4900-93ab-044279314d38"
+                    }
+                ],
+                "target_revision_id": "98"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/about_locations_team\/field_about_team": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/about_team"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "346750c3-7720-410d-8ed0-8cecd6bfb617"
+                    }
+                ],
+                "target_revision_id": "101"
+            }
+        ]
+    },
+    "field_layout": [
+        {
+            "value": "map_team_w_images"
+        }
+    ]
+}

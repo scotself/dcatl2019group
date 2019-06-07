@@ -1,0 +1,31 @@
+uuid: a5e799e8-1a8e-42a0-b4fd-f28a22675d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.added_membership.field_group
+    - field.field.message.added_membership.field_roles
+    - message.template.added_membership
+id: message.added_membership.default
+targetEntityType: message
+bundle: added_membership
+mode: default
+content:
+  field_group:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_roles:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

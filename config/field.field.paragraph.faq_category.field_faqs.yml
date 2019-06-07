@@ -1,0 +1,133 @@
+uuid: fb81f88e-ad44-4dd2-ab7a-fd6eb41fe898
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faqs
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.faq_category
+  module:
+    - entity_reference_revisions
+id: paragraph.faq_category.field_faqs
+field_name: field_faqs
+entity_type: paragraph
+bundle: faq_category
+label: FAQs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      faq: faq
+    target_bundles_drag_drop:
+      faq_category:
+        weight: 31
+        enabled: false
+      about:
+        weight: 32
+        enabled: false
+      about_are_you_eligible_exclusion:
+        weight: 33
+        enabled: false
+      about_are_you_eligible_inclusion:
+        weight: 34
+        enabled: false
+      about_banner:
+        weight: 35
+        enabled: false
+      about_eligible:
+        weight: 36
+        enabled: false
+      about_expectations:
+        weight: 37
+        enabled: false
+      about_locations:
+        weight: 38
+        enabled: false
+      about_overview:
+        weight: 39
+        enabled: false
+      about_team:
+        weight: 40
+        enabled: false
+      about_team_member:
+        weight: 41
+        enabled: false
+      about_why_join:
+        weight: 42
+        enabled: false
+      about_locations_team:
+        weight: 43
+        enabled: false
+      accordion_tabs_item:
+        weight: 43
+        enabled: false
+      banner_item:
+        weight: 44
+        enabled: false
+      bulleted_list:
+        weight: 45
+        enabled: false
+      eligibility:
+        weight: 46
+        enabled: false
+      faq:
+        enabled: true
+        weight: 47
+      faqs:
+        weight: 48
+        enabled: false
+      getting_started:
+        weight: 49
+        enabled: false
+      getting_started_slideshow:
+        weight: 50
+        enabled: false
+      get_started_item:
+        weight: 51
+        enabled: false
+      list_item_with_icon:
+        weight: 52
+        enabled: false
+      list_with_icons:
+        weight: 53
+        enabled: false
+      list_with_single_icon:
+        weight: 54
+        enabled: false
+      location:
+        weight: 55
+        enabled: false
+      overview:
+        weight: 56
+        enabled: false
+      testimonial:
+        weight: 57
+        enabled: false
+      home_other_message:
+        weight: 58
+        enabled: false
+      testimonials:
+        weight: 58
+        enabled: false
+      home_other_section:
+        weight: 59
+        enabled: false
+      what_do_i_need_to_do:
+        weight: 59
+        enabled: false
+      home_other_testimonial:
+        weight: 60
+        enabled: false
+      why_join:
+        weight: 60
+        enabled: false
+      home_other_video:
+        weight: 61
+        enabled: false
+field_type: entity_reference_revisions

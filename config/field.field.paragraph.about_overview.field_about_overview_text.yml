@@ -1,0 +1,29 @@
+uuid: da02e5bd-a43e-454e-8cf8-540609022a70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_overview_text
+    - paragraphs.paragraphs_type.about_overview
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    full_html: '0'
+    basic_html: '0'
+    plain_text: '0'
+    mail: '0'
+id: paragraph.about_overview.field_about_overview_text
+field_name: field_about_overview_text
+entity_type: paragraph
+bundle: about_overview
+label: 'Overview Text'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

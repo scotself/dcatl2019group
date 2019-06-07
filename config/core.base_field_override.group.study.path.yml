@@ -1,0 +1,20 @@
+uuid: 7a00a898-cb7f-4074-969f-fb26f0d95dbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.study
+  module:
+    - path
+id: group.study.path
+field_name: path
+entity_type: group
+bundle: study
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,23 @@
+uuid: 5cda48ab-bb66-4361-a9f1-2ea9622ed400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_header_cta
+    - group.type.org
+  module:
+    - link
+id: group.org.field_header_cta
+field_name: field_header_cta
+entity_type: group
+bundle: org
+label: 'Header CTA'
+description: 'If filled out, this CTA will appear in the header to the right of the main menu.<br>Limit link text to 15 characters.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

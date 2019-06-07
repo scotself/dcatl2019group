@@ -1,0 +1,15 @@
+uuid: dd40754f-89c2-4f50-92c7-502fb5ef6078
+langcode: en
+status: true
+dependencies: {  }
+name: dgc_large
+label: 'dgc large'
+effects:
+  73acb5c2-98d1-425a-a52c-0a7c36c943f7:
+    uuid: 73acb5c2-98d1-425a-a52c-0a7c36c943f7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      anchor: center-center

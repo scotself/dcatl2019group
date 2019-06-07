@@ -1,0 +1,18 @@
+uuid: deb551db-270e-4bda-9f80-a30712156b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.org-group_membership
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_content.org-group_membership
+target_entity_type_id: group_content
+target_bundle: org-group_membership
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,26 @@
+uuid: cd22fe20-6156-473b-a8aa-9e353093bbf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - message.template.changed_membership
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: message.changed_membership.mail_body
+targetEntityType: message
+bundle: changed_membership
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_group: true
+  field_roles: true
+  partial_0: true

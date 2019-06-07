@@ -1,0 +1,20 @@
+uuid: c51695e7-6756-40f1-abb3-0585f8c924f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.org-group_node-faq
+  module:
+    - path
+id: group_content.org-group_node-faq.path
+field_name: path
+entity_type: group_content
+bundle: org-group_node-faq
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

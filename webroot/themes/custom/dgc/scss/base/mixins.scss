@@ -1,0 +1,18 @@
+@mixin h3-list {
+	font-weight: 700;
+	font-family: $body-font-family;
+	line-height: 30px;
+}
+
+@mixin p-strong {
+	font-weight: 500;
+	font-family: $body-font-family;
+	line-height: $global-lineheight;
+}
+
+@mixin p-sm {
+	font-weight: 400;	
+	font-family: $body-font-family;
+	line-height: 16px;
+	font-size: $small-font-size;
+}

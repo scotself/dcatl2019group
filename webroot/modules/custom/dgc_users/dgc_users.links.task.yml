@@ -1,0 +1,43 @@
+dgc_users.group_my_account:
+  title: 'My Account'
+  route_name: 'entity.user.canonical'
+  base_route: 'entity.group.canonical'
+  weight: 200
+  class: '\Drupal\dgc_users\Plugin\Menu\UserAccount'
+dgc_users.group_content_my_account:
+  title: 'My Account'
+  route_name: 'entity.user.canonical'
+  base_route: 'entity.group_content.canonical'
+  weight: 200
+  class: '\Drupal\dgc_users\Plugin\Menu\UserAccount'
+dgc_users.dashboard_my_account:
+  title: 'My Account'
+  route_name: 'entity.user.canonical'
+  base_route: 'view.manage_tenants.page_1'
+  weight: 200
+  class: '\Drupal\dgc_users\Plugin\Menu\UserAccount'
+dgc_users.group_logout:
+  title: 'Logout'
+  route_name: 'user.logout.http'
+  base_route: 'entity.group_content.canonical'
+  weight: 210
+dgc_users.group_content_logout:
+  title: 'Logout'
+  route_name: 'user.logout.http'
+  base_route: 'entity.group.canonical'
+  weight: 210
+dgc_users.user_logout:
+  title: 'Logout'
+  route_name: 'user.logout.http'
+  base_route: 'entity.user.canonical'
+  weight: 210
+dgc_users.user_dashboard:
+  title: 'Dashboard'
+  route_name: 'view.manage_tenants.page_1'
+  base_route: 'entity.user.canonical'
+  weight: 199
+dgc_users.group_dashboard:
+  title: 'Dashboard'
+  route_name: 'view.manage_tenants.page_1'
+  base_route: 'entity.group.canonical'
+  weight: 199

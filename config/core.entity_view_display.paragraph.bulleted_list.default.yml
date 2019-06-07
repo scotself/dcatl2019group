@@ -1,0 +1,26 @@
+uuid: 5fae9c90-e4e8-4f8b-89d5-e05e011933db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bulleted_list.field_bulleted_list_items
+    - paragraphs.paragraphs_type.bulleted_list
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.bulleted_list.default
+targetEntityType: paragraph
+bundle: bulleted_list
+mode: default
+content:
+  field_bulleted_list_items:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

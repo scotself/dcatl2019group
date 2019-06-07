@@ -1,0 +1,12 @@
+group_content.edit_node:
+  title: 'Edit content'
+  base_route: 'entity.group_content.canonical'
+  route_name: 'entity.node.edit_form'
+  weight: 6
+  class: '\Drupal\dgc_orgs\Plugin\Menu\GroupContentEditEntity'
+group_content.translate_node:
+  title: 'Translate content'
+  base_route: 'entity.group_content.canonical'
+  route_name: 'entity.node.content_translation_overview'
+  weight: 7
+  class: '\Drupal\dgc_orgs\Plugin\Menu\GroupContentEditEntity'

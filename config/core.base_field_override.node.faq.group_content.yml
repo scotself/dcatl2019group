@@ -1,0 +1,20 @@
+uuid: 45c742c9-b326-404f-9a42-0ace90d8cd3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.group_content
+field_name: group_content
+entity_type: node
+bundle: faq
+label: Groups
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,9 @@
+uuid: e65aac43-1d19-4b98-8030-caf2185411c0
+langcode: en
+status: true
+dependencies: {  }
+id: about_team_member
+label: 'About - Meet our Team - Team Member'
+icon_uuid: null
+description: "Used to create the list of individuals under the \"Meet our Team\" section of the About page.\t\r\n"
+behavior_plugins: {  }

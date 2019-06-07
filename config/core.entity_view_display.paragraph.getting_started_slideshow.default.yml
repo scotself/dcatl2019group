@@ -1,0 +1,51 @@
+uuid: f5fd7fba-605d-460b-861f-167ff7d9dc53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.getting_started_slideshow.field_cta
+    - field.field.paragraph.getting_started_slideshow.field_step
+    - field.field.paragraph.getting_started_slideshow.field_title
+    - paragraphs.paragraphs_type.getting_started_slideshow
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.getting_started_slideshow.default
+targetEntityType: paragraph
+bundle: getting_started_slideshow
+mode: default
+content:
+  field_cta:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_step:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

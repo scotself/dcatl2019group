@@ -1,0 +1,17 @@
+uuid: d2fafab4-69f4-4e7f-888a-8cf7a3fbb694
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.study
+  enforced:
+    config:
+      - user.role.developer
+id: study-6ca5962df
+label: Developer
+weight: -3
+internal: true
+audience: outsider
+group_type: study
+permissions_ui: false
+permissions: {  }

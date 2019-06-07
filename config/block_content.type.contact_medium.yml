@@ -1,0 +1,8 @@
+uuid: 5a7aa022-6f42-48b4-b062-9312c4c13886
+langcode: en
+status: true
+dependencies: {  }
+id: contact_medium
+label: 'Contact - Option 2 mail, phone and form'
+revision: 0
+description: 'Contact Section - Medium. Provides some basic fields and a simple form.'

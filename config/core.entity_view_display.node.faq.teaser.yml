@@ -1,0 +1,24 @@
+uuid: 35e4e098-b046-4e7a-b922-3d8bd8207801
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.faq
+  module:
+    - user
+id: node.faq.teaser
+targetEntityType: node
+bundle: faq
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact_section_block: true
+  field_faqs: true
+  group_content: true
+  langcode: true

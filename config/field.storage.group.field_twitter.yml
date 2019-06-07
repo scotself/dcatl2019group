@@ -1,0 +1,21 @@
+uuid: 8705bc53-2ccd-4b07-9d17-a1be20dd4f51
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_twitter
+field_name: field_twitter
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

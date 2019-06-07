@@ -1,0 +1,17 @@
+uuid: b9a8d158-c0ce-4e8b-9275-6c1ad23c8d63
+langcode: en
+status: false
+dependencies: {  }
+name: 'HTML - text with alignment'
+format: html_text_with_alignment
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: false
+      filter_html_nofollow: false

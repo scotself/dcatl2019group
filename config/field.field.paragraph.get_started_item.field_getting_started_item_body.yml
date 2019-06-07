@@ -1,0 +1,19 @@
+uuid: 4be75005-a919-43c0-a51e-c97d78304f38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_getting_started_item_body
+    - paragraphs.paragraphs_type.get_started_item
+id: paragraph.get_started_item.field_getting_started_item_body
+field_name: field_getting_started_item_body
+entity_type: paragraph
+bundle: get_started_item
+label: 'Step Body'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

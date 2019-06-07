@@ -1,0 +1,194 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/en\/block\/4?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/contact_section"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/contact_section\/field_faq_page": [
+            {
+                "href": "http:\/\/default\/en\/node\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "0fcc6d06-f0fa-4a9c-ad88-0e085b57d15c"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "contact_section"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-04-08T19:05:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "Contact Us Info",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-04-08T19:05:36+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_created": [
+        {
+            "value": "2019-04-08T19:05:36+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Nulla dignissim turpis non vulputate condimentum. Nulla vel tortor dui.<\/p>\r\n",
+            "format": "limited_html",
+            "processed": "<p>Nulla dignissim turpis non vulputate condimentum. Nulla vel tortor dui.<\/p>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_email": [
+        {
+            "value": "contactus@orgthree.com",
+            "lang": "en"
+        }
+    ],
+    "field_email_text": [
+        {
+            "value": "Send us an email",
+            "lang": "en"
+        }
+    ],
+    "field_email_title": [
+        {
+            "value": "Email",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/contact_section\/field_faq_page": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/node\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/faq"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "87e8aa07-35dd-489f-967e-2b5b7546f36c"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "field_faq_text": [
+        {
+            "value": "Find Answers to Common Questions",
+            "lang": "en"
+        }
+    ],
+    "field_faq_title": [
+        {
+            "value": "FAQs",
+            "lang": "en"
+        }
+    ],
+    "field_phone": [
+        {
+            "value": "+1 452 555 7800",
+            "lang": "en"
+        }
+    ],
+    "field_phone_text": [
+        {
+            "value": "9:00 AM to 6:00 PM Eastern",
+            "lang": "en"
+        }
+    ],
+    "field_phone_title": [
+        {
+            "value": "Phone",
+            "lang": "en"
+        }
+    ],
+    "field_section_title": [
+        {
+            "value": "Contact Us",
+            "lang": "en"
+        }
+    ],
+    "field_security_message": [
+        {
+            "value": "<p>Suspendisse sit amet ipsum id nulla aliquam iaculis a a velit. Duis malesuada ligula a ipsum consectetur, tempus egestas elit condimentum.<\/p>\r\n",
+            "format": "limited_html",
+            "processed": "<p>Suspendisse sit amet ipsum id nulla aliquam iaculis a a velit. Duis malesuada ligula a ipsum consectetur, tempus egestas elit condimentum.<\/p>\n",
+            "lang": "en"
+        }
+    ]
+}

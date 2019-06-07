@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains dgc_utils.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dgc_utils_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dgc_utils module.
+    case 'help.page.dgc_utils':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('dgc Custom utils') . '</p>';
+      return $output;
+
+    default:
+  }
+}

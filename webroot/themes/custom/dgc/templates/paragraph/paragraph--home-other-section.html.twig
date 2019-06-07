@@ -1,0 +1,14 @@
+{% if has_items %}
+  <div id="other-section" class="grid-container grid-x grid-padding-x other-section">
+    {% set cols = content.field_other["#items"]|length %}
+    {% set cols_class = cols == 1 ? '12 other-full-width' : cols == 2 ? '6' : cols == 3 ? '4' : '12' %}
+    {% set cols_class_medium = cols == 1 ? '12' : '6' %}
+
+    {% for item in content.field_other["#items"] %}
+      <div class="cell small-11 medium-{{ cols_class_medium }} large-{{ cols_class }} align-center">
+        {{ drupal_entity('paragraph', item.entity.id()) }}
+      </div>
+    {% endfor %}
+
+  </div>
+{% endif %}

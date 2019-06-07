@@ -1,0 +1,32 @@
+uuid: 47c4fd1a-8837-4fac-95df-7f5149b7b93d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_medium
+    - block_content.type.contact_section
+    - block_content.type.contact_small
+    - field.storage.group.field_contact_block
+    - group.type.org
+id: group.org.field_contact_block
+field_name: field_contact_block
+entity_type: group
+bundle: org
+label: 'Contact block'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      contact_section: contact_section
+      contact_medium: contact_medium
+      contact_small: contact_small
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: contact_section
+field_type: entity_reference

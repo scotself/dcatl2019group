@@ -1,0 +1,33 @@
+uuid: d320f7ac-5d27-4249-a9cf-f7c44fa34e91
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_thumbnail
+    - field.field.media.image.field_media_image
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - image
+id: media.image.media_thumbnail
+targetEntityType: media
+bundle: image
+mode: media_thumbnail
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_global_asset: true
+  group_content: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

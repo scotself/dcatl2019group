@@ -1,0 +1,27 @@
+uuid: bcfeaeef-ca3a-4e46-b992-b5ec3bf3b81e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_other_text
+    - paragraphs.paragraphs_type.home_other_message
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    mail: '0'
+id: paragraph.home_other_message.field_home_other_text
+field_name: field_home_other_text
+entity_type: paragraph
+bundle: home_other_message
+label: Text
+description: "Recommended text length:<br />\r\n- 1 item (only a message), up to 1600 characters<br />\r\n- 2 items, any combination, up to 800 characters<br />\r\n- 3 items, any combination, up to 500 characters<br />"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 217e00c0-9823-4ad4-bf1d-2830ede62f8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dgc
+id: dgc_content
+theme: dgc
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

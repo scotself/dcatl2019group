@@ -1,0 +1,90 @@
+uuid: f39a440e-eaab-4a05-9eca-ed15ae6fb3d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact_w_crm
+  module:
+    - salesforce_push
+id: simple_contact_us
+label: 'Simple Contact Us'
+weight: 0
+type: salesforce_mapping
+key: ''
+async: false
+push_standalone: false
+pull_trigger_date: LastModifiedDate
+pull_where_clause: ''
+sync_triggers:
+  push_create: true
+  push_update: true
+  push_delete: false
+salesforce_object_type: IntegrationTransactions__c
+drupal_entity_type: webform_submission
+drupal_bundle: contact_w_crm
+field_mappings:
+  -
+    drupal_field_type: properties
+    drupal_field_value: created
+    salesforce_field: ExternalTransactionDateTime__c
+    direction: drupal_sf
+    id: 0
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: email
+    salesforce_field: Email__c
+    direction: drupal_sf
+    id: 1
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: first_name
+    salesforce_field: FirstName__c
+    direction: drupal_sf
+    id: 2
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: last_name
+    salesforce_field: LastName__c
+    direction: drupal_sf
+    id: 3
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: zip_code
+    salesforce_field: PostalCode__c
+    direction: drupal_sf
+    id: 4
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: form_name
+    salesforce_field: ListSource__c
+    direction: drupal_sf
+    id: 5
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: program_id
+    salesforce_field: TransactionCode1__c
+    direction: drupal_sf
+    id: 6
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: organization_id
+    salesforce_field: TransactionCode2__c
+    direction: drupal_sf
+    id: 7
+  -
+    drupal_field_type: Constant
+    drupal_field_value: CMS
+    salesforce_field: ProspectSource__c
+    direction: drupal_sf
+    id: 8
+  -
+    drupal_field_type: Constant
+    drupal_field_value: PROSPECT-CMS1
+    salesforce_field: TransactionType__c
+    direction: drupal_sf
+    id: 9
+push_limit: 0
+push_retries: 3
+push_frequency: 0
+pull_frequency: 0
+always_upsert: false

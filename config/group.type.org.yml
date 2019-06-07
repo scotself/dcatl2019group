@@ -1,0 +1,12 @@
+uuid: f996357c-d0b3-488d-8fe4-6170e2a37acd
+langcode: en
+status: true
+dependencies: {  }
+id: org
+label: Organization
+description: 'Create an Organization to attach to the Program.'
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles:
+  - org-admin

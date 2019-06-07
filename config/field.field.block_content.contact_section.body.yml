@@ -1,0 +1,28 @@
+uuid: c02e1170-4201-4175-91e6-fb7fa4d4b46d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_section
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    mail: '0'
+id: block_content.contact_section.body
+field_name: body
+entity_type: block_content
+bundle: contact_section
+label: 'Description Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

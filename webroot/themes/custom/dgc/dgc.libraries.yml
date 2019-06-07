@@ -1,0 +1,39 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/app.css: {preprocess: false}
+      foundation-icons/foundation-icons.css: {preprocess: false}
+  js:
+    js/foundation.js: {}
+    js/dgc.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+css-vars-ie:
+  version: 1.x
+  js:
+    js/libs/css-vars-ponyfill/dist/css-vars-ponyfill.min.js: {}
+    js/css-vars-ie.js: {}
+  dependencies:
+    - core/drupal
+slick:
+  version: 1.x
+  css:
+    theme:
+      node_modules/slick-carousel/slick/slick.css: {}
+      node_modules/slick-carousel/slick/slick-theme.css: {}
+  js:
+    node_modules/slick-carousel/slick/slick.min.js: {}
+    js/slick/slick.settings.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+scrollbar:
+  version: 1.x
+  css:
+    theme:
+      node_modules/jquery.scrollbar/jquery.scrollbar.css: {}
+  js:
+    node_modules/jquery.scrollbar/jquery.scrollbar.js: {}

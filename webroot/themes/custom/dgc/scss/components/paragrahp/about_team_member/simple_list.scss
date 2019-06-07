@@ -1,0 +1,29 @@
+.paragraph--type--about-team-member.paragraph--view-mode--simple-lists {
+  display: inline-block;
+  width: 100%;
+  .field--name-field-about-team-image {
+    float: left;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .info-wrap {
+    margin-left: 120px;
+    padding-top: 1em;
+  }
+  .field--name-field-about-team-name {
+    display: inline-block;
+  }
+  .field--type-link {
+    font-size: 1.2em;
+    margin-left: 1em;
+    i:hover {
+      filter: brightness(150%);
+    }
+  }
+
+  // Tablet.
+  @include breakpoint(medium) {
+    
+  }
+}

@@ -1,0 +1,70 @@
+uuid: ac61adab-d929-4c61-8328-c5a6a0232cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.banner_item.field_bg_image
+    - field.field.paragraph.banner_item.field_card_position
+    - field.field.paragraph.banner_item.field_cta
+    - field.field.paragraph.banner_item.field_subtitle
+    - field.field.paragraph.banner_item.field_title
+    - paragraphs.paragraphs_type.banner_item
+  module:
+    - layout_builder
+    - link
+    - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.banner_item.preview
+targetEntityType: paragraph
+bundle: banner_item
+mode: preview
+content:
+  field_bg_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_card_position:
+    weight: 6
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_cta:
+    weight: 4
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subtitle:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

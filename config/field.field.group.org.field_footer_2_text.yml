@@ -1,0 +1,27 @@
+uuid: 07d47ba9-2064-45ef-8697-5664c4e3c654
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_footer_2_text
+    - group.type.org
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    mail: '0'
+id: group.org.field_footer_2_text
+field_name: field_footer_2_text
+entity_type: group
+bundle: org
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,78 @@
+uuid: d5351051-a9cc-4b42-9336-031feba81228
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_medium
+    - field.field.block_content.contact_medium.body
+    - field.field.block_content.contact_medium.field_email
+    - field.field.block_content.contact_medium.field_email_text
+    - field.field.block_content.contact_medium.field_form
+    - field.field.block_content.contact_medium.field_phone
+    - field.field.block_content.contact_medium.field_phone_text
+    - field.field.block_content.contact_medium.field_section_title
+  module:
+    - telephone
+    - text
+    - webform
+id: block_content.contact_medium.default
+targetEntityType: block_content
+bundle: contact_medium
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_email_text:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_form:
+    weight: 6
+    label: hidden
+    settings:
+      source_entity: false
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_phone:
+    weight: 2
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_phone_text:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

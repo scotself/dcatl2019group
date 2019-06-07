@@ -1,0 +1,5 @@
+# Schema for the configuration files of the dgc Seven theme.
+
+vseven.settings:
+  type: theme_settings
+  label: 'dgc Admin Theme settings'

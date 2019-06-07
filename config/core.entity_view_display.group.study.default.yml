@@ -1,0 +1,37 @@
+uuid: 2fe98d52-c7d8-47ce-b978-6acb3a618699
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.study.field_crm_program_id
+    - field.field.group.study.field_gtm_id
+    - field.field.group.study.field_optimize_gtm_id
+    - field.field.group.study.field_optimize_ua_id
+    - field.field.group.study.field_org_licenses
+    - field.field.group.study.field_orgs
+    - group.type.study
+id: group.study.default
+targetEntityType: group
+bundle: study
+mode: default
+content:
+  field_orgs:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_crm_program_id: true
+  field_gtm_id: true
+  field_optimize_gtm_id: true
+  field_optimize_ua_id: true
+  field_org_licenses: true
+  label: true
+  langcode: true
+  uid: true

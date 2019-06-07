@@ -1,0 +1,19 @@
+uuid: 117709fc-0b21-42c5-9021-df57396d0d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_email
+    - group.type.org
+id: group.org.field_email
+field_name: field_email
+entity_type: group
+bundle: org
+label: Email
+description: 'Will be shown in both the header and footer.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

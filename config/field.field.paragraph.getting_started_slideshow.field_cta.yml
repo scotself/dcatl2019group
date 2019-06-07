@@ -1,0 +1,23 @@
+uuid: e0e5d21c-bbc4-4b21-9d81-924226d795cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.getting_started_slideshow
+  module:
+    - link
+id: paragraph.getting_started_slideshow.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: getting_started_slideshow
+label: CTA
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,26 @@
+uuid: 345c9d1f-b7e4-4574-a171-f08b54858c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - message.template.added_membership
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: message.added_membership.mail_body
+targetEntityType: message
+bundle: added_membership
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_group: true
+  field_roles: true
+  partial_0: true

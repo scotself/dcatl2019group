@@ -1,0 +1,20 @@
+uuid: f4ee634c-0537-4ffd-83fb-18f8decb64d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.study-group_membership
+  module:
+    - path
+id: group_content.study-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: study-group_membership
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

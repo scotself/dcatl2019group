@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mtwplatform-ingress
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: mtwplatform
+    role: ingress
+  annotations:
+    kubernetes.io/ingress.class: {{ .Values.ingress_controller }}
+    nginx.ingress.kubernetes.io/proxy-buffering: "on"
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "256k"
+    nginx.ingress.kubernetes.io/proxy-buffers: "8 256k"
+    nginx.ingress.kubernetes.io/proxy-busy-buffers-size: "256k"
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+spec:
+  rules:
+  - host: {{ .Release.Namespace }}.qak8s.dgchealth.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: mtwplatform-web
+          servicePort: {{ .Values.containerPorts.web }}

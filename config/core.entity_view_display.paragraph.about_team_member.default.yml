@@ -1,0 +1,57 @@
+uuid: 1e71843e-3af5-4573-8fd2-8aa0fd413586
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_team_member.field_about_team_image
+    - field.field.paragraph.about_team_member.field_about_team_location
+    - field.field.paragraph.about_team_member.field_about_team_name
+    - field.field.paragraph.about_team_member.field_team_member_profile
+    - field.field.paragraph.about_team_member.field_team_member_title
+    - paragraphs.paragraphs_type.about_team_member
+  module:
+    - link
+id: paragraph.about_team_member.default
+targetEntityType: paragraph
+bundle: about_team_member
+mode: default
+content:
+  field_about_team_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_about_team_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_team_member_profile:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_team_member_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_about_team_location: true

@@ -1,0 +1,6 @@
+name: dgc - Misc Snippets
+description: Miscellaneous snippets needed for dgc site.
+type: module
+version: '8.x-1.0'
+core: '8.x'
+package: 'dgc'

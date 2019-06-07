@@ -1,0 +1,9 @@
+uuid: 24e88c50-239e-4de1-8ec6-480e01de09c9
+langcode: en
+status: true
+dependencies: {  }
+id: bulleted_list
+label: 'Bulleted List'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+uuid: 08d527bd-d9b7-468d-9a4b-7f6ddaf2b9b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_favicon
+    - group.type.org
+  module:
+    - file
+id: group.org.field_favicon
+field_name: field_favicon
+entity_type: group
+bundle: org
+label: Favicon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: org_favicons
+  file_extensions: 'ico png jpg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

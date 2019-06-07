@@ -1,0 +1,23 @@
+uuid: 01a3fb97-39e5-4cd2-b45e-cbb66249c8d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_pm_wide_asset
+    - media.type.remote_video
+id: media.remote_video.field_pm_wide_asset
+field_name: field_pm_wide_asset
+entity_type: media
+bundle: remote_video
+label: 'Platform-Wide Asset'
+description: "Only check this box if you are sharing this image on another website (organization) within this program. <br>\r\nDo no check if the image is proprietary in any way."
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

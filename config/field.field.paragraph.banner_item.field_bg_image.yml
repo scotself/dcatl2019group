@@ -1,0 +1,28 @@
+uuid: dba7c18e-8fbd-4a09-a661-9d7611d5c286
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_image
+    - media.type.image
+    - paragraphs.paragraphs_type.banner_item
+id: paragraph.banner_item.field_bg_image
+field_name: field_bg_image
+entity_type: paragraph
+bundle: banner_item
+label: 'Background Image'
+description: 'Minimum resolution should be 1300 x 500. If no image is provided, the background of the hero banner will be filled with Color #1.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

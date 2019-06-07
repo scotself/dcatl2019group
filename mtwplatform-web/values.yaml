@@ -1,0 +1,37 @@
+containerPorts:
+  web: 80
+
+tiers:
+  web: web
+
+replicas:
+  web: 1
+
+images:
+  web:
+    reg: cireg.dgchealth.com
+    name: dgc/mtwplatform-web
+    tag: latest
+    pullPolicy: Always
+
+resources:
+  web:
+    requests:
+      cpu: "0.025"
+      memory: "20Mi"
+    limits:
+      cpu: "0.25"
+      memory: "128Mi"
+
+env:
+  web:
+  - name: S3FS_BUCKETNAME
+    value: docker
+  - name: S3FS_SCHEMA
+    value: http
+  - name: MINIO_SVC_NAME
+    value: minio
+  - name: MINIO_SVC_PORT
+    value: "4567"
+
+ingress_controller: nginx

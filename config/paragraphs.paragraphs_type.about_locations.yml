@@ -1,0 +1,9 @@
+uuid: ddeed68d-6350-4266-a382-d190db6621a3
+langcode: en
+status: true
+dependencies: {  }
+id: about_locations
+label: 'About - Locations'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

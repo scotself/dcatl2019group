@@ -1,0 +1,9 @@
+uuid: 1ca8eeaf-f1eb-4f31-9e95-2a3de658dd28
+langcode: en
+status: true
+dependencies: {  }
+id: about_are_you_eligible_inclusion
+label: 'About - Eligibility - Inclusions'
+icon_uuid: null
+description: 'Used to create the Inclusions box under the "Am I Eligible" section of the About page.'
+behavior_plugins: {  }

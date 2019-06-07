@@ -1,0 +1,44 @@
+uuid: 5a595100-b98a-430b-ab85-e92be74ad78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.org-group_node-about_page.field_menu_link
+    - group.content_type.org-group_node-about_page
+  module:
+    - menu_link
+    - path
+id: group_content.org-group_node-about_page.default
+targetEntityType: group_content
+bundle: org-group_node-about_page
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  field_menu_link:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: menu_link_default
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  uid: true

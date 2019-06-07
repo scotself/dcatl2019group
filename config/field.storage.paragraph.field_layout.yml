@@ -1,0 +1,23 @@
+uuid: 998da122-f9df-4c79-b2c1-4d1073b27c96
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - paragraphs
+    - view_mode_selector
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: paragraph.field_layout
+field_name: field_layout
+entity_type: paragraph
+type: view_mode_selector
+settings: {  }
+module: view_mode_selector
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

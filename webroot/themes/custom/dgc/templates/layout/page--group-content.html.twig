@@ -1,0 +1,29 @@
+<div class="layout-container org-page org-content">
+
+  {{ group_header|raw }}
+  {% if page.header %}
+    {{ page.header }}
+  {% endif %}  
+
+  <main role="main" class="grid-x grid-container full">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    {% set has_sidebar = page.sidebar|render|striptags|trim is not empty %}
+    <div class="layout-content">
+      {{ page.content }}
+    </div>
+
+    {% if has_sidebar %}
+      <div class="layout-sidebar">
+        {{ page.sidebar }}
+      </div>
+    {% endif %}
+
+  </main>
+
+  {{ group_footer|raw }}
+  {% if page.footer %}
+    {{ page.footer }}
+  {% endif %}
+
+</div>

@@ -1,0 +1,35 @@
+uuid: 45a41e2e-db9c-40f6-9a40-9d00ee942174
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_global_asset
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_pm_wide_asset
+    - image.style.medium
+    - media.type.image
+  module:
+    - image
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_global_asset: true
+  field_pm_wide_asset: true
+  group_content: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

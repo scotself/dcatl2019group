@@ -1,0 +1,40 @@
+uuid: 4d360bb5-5293-4cb9-9b06-0eed42dd90b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_overview.field_about_overview_text
+    - field.field.paragraph.about_overview.field_about_overview_title
+    - field.field.paragraph.about_overview.field_about_title_alignment
+    - paragraphs.paragraphs_type.about_overview
+  module:
+    - options
+    - text
+id: paragraph.about_overview.default
+targetEntityType: paragraph
+bundle: about_overview
+mode: default
+content:
+  field_about_overview_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_about_overview_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_about_title_alignment:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

@@ -1,0 +1,35 @@
+uuid: e82fc46a-0546-4bf3-9e4c-65e43bd2a8d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.location.field_geolocation
+    - field.field.paragraph.location.field_location_address
+    - paragraphs.paragraphs_type.location
+  module:
+    - address
+    - geolocation
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.location.default
+targetEntityType: paragraph
+bundle: location
+mode: default
+content:
+  field_geolocation:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_location_address:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+hidden: {  }

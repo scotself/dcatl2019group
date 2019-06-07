@@ -1,0 +1,59 @@
+name: dgc Seven clone
+type: theme
+base theme: classy
+description: 'A custom copy of the default administration theme for Drupal 8, designed with clean lines, simple blocks, and sans-serif font to emphasize the tools and tasks at hand.'
+alt text: 'Copy of the default administration theme for Drupal 8 with simple blocks and clean lines.'
+package: dgc
+version: VERSION
+core: 8.x
+libraries:
+ - vseven/global-styling
+libraries-override:
+  system/base:
+    css:
+      component:
+        /core/themes/stable/css/system/components/system-status-counter.css: css/components/system-status-counter.css
+        /core/themes/stable/css/system/components/system-status-report-counters.css: css/components/system-status-report-counters.css
+        /core/themes/stable/css/system/components/system-status-report-general-info.css: css/components/system-status-report-general-info.css
+  core/drupal.vertical-tabs:
+    css:
+      component:
+        misc/vertical-tabs.css: false
+  core/jquery.ui:
+    css:
+      theme:
+        assets/vendor/jquery.ui/themes/base/theme.css: false
+  core/jquery.ui.dialog:
+    css:
+      component:
+        assets/vendor/jquery.ui/themes/base/dialog.css: false
+  classy/dialog:
+    vseven/vseven.drupal.dialog
+  classy/base:
+    css:
+      component:
+        css/components/details.css: false
+
+libraries-extend:
+  core/ckeditor:
+    - vseven/ckeditor-dialog
+  core/drupal.vertical-tabs:
+    - vseven/vertical-tabs
+  core/jquery.ui:
+    - vseven/vseven.jquery.ui
+  tour/tour-styling:
+    - vseven/tour-styling
+quickedit_stylesheets:
+  - css/components/quickedit.css
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first

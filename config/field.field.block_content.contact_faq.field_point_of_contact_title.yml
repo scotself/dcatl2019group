@@ -1,0 +1,19 @@
+uuid: 9f73ec35-ecef-4afc-aeae-ae181b5cac93
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_faq
+    - field.storage.block_content.field_point_of_contact_title
+id: block_content.contact_faq.field_point_of_contact_title
+field_name: field_point_of_contact_title
+entity_type: block_content
+bundle: contact_faq
+label: 'Point of Contact Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

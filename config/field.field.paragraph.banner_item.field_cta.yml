@@ -1,0 +1,23 @@
+uuid: e7400e1f-7b90-4f67-8f96-13f2b9b6783b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.banner_item
+  module:
+    - link
+id: paragraph.banner_item.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: banner_item
+label: CTA
+description: 'The link text should only be 15 characters.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

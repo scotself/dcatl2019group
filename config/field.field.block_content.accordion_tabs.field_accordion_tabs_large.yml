@@ -1,0 +1,23 @@
+uuid: 02838758-7f73-499a-963b-3287f98bd064
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_tabs
+    - field.storage.block_content.field_accordion_tabs_large
+  module:
+    - options
+id: block_content.accordion_tabs.field_accordion_tabs_large
+field_name: field_accordion_tabs_large
+entity_type: block_content
+bundle: accordion_tabs
+label: 'Format Desktop'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: accordion
+default_value_callback: ''
+settings: {  }
+field_type: list_string

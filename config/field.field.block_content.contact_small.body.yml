@@ -1,0 +1,29 @@
+uuid: 728482bb-6870-41a2-b502-862e838e3ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_small
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    full_html: '0'
+    plain_text: '0'
+    mail: '0'
+id: block_content.contact_small.body
+field_name: body
+entity_type: block_content
+bundle: contact_small
+label: 'Description Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

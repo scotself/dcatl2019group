@@ -1,0 +1,9 @@
+uuid: 5bb34808-c18a-4c8f-91e4-9526b22dc88d
+langcode: en
+status: true
+dependencies: {  }
+id: about
+label: 'Home - About'
+icon_uuid: null
+description: 'Contains the main sections for an Organization''s home page: Overview, Why Join, Eligibility and What Do I Need To Do?'
+behavior_plugins: {  }

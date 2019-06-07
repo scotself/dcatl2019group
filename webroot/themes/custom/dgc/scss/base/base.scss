@@ -1,0 +1,84 @@
+body {
+  font-size: 15px;
+  color: var(--dgc-group-color-4);
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: var(--dgc-group-color-1);
+}
+h1, h2, h3 {
+  font-weight: 800;
+}
+h4 {
+  font-weight: 700;
+}
+h5 {
+  line-height: 1.4em;
+}
+
+a,
+a:hover,
+a:focus {
+  color: var(--dgc-group-color-2);
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+hr {
+  width: 100%;
+  border-color: var(--dgc-group-color-5);
+}
+
+/* Classy theme in core has this class and it's a float.
+   Since we're using flexbox, this causes problems.
+   /core/themes/stable/css/system/components/align.module.css */
+.align-right,
+.align-left {
+  float: none;
+}
+
+#block-dgc-branding {
+  padding: 1.5rem;
+}
+
+ul.with-icons, ul.with-discs, ul.process-items {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+ul.with-icons li, ul.with-discs li {
+  display: block;
+  margin-bottom: 1em;
+  .each-list-item {
+    display: flex;
+  }
+  i {
+    color: var(--dgc-group-color-2);
+  }
+  span {
+    padding-left: 1em;
+  }
+}
+
+ul.with-discs {
+  li {
+    
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside:avoid;
+    i {
+      color: var(--dgc-group-color-2);
+      font-weight: 900;
+      font-size: 1.5em;
+      margin-top: -2px;
+    }
+  }
+}
+.button.small {
+  padding: 0.65em 2em;
+  margin-bottom: 1em;
+}

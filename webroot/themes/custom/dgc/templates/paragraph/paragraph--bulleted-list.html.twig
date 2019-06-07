@@ -1,0 +1,10 @@
+<ul class="with-discs">
+{% for list_item in content.field_bulleted_list_items['#items'] %}
+  <li>
+    <div class="each-list-item">
+      <i>&bull;</i>
+      <span>{{ list_item.value }}</span>
+    </div>
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,31 @@
+uuid: 44714096-959f-4cdb-b22a-4d1009af2812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_other_message.field_home_other_text
+    - field.field.paragraph.home_other_message.field_home_other_title
+    - paragraphs.paragraphs_type.home_other_message
+  module:
+    - text
+id: paragraph.home_other_message.default
+targetEntityType: paragraph
+bundle: home_other_message
+mode: default
+content:
+  field_home_other_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_home_other_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: cb3bba87-3f53-419c-9cb0-69e1b8c5ad8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_medium
+id: block_content.contact_medium.info
+field_name: info
+entity_type: block_content
+bundle: contact_medium
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

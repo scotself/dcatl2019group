@@ -1,0 +1,17 @@
+uuid: 5e8ba0ad-71a2-4851-8143-e60c61411967
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.org
+  enforced:
+    config:
+      - user.role.content_creator
+id: org-3aef5c516
+label: 'Content Creator'
+weight: -4
+internal: true
+audience: outsider
+group_type: org
+permissions_ui: false
+permissions: {  }

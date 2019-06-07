@@ -1,0 +1,19 @@
+locations-map:
+  version: 1.x
+  js:
+    js/locations-map.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - dgc/scrollbar
+
+team-height:
+  version: 1.x
+  js:
+    js/team-height.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - dgc/scrollbar

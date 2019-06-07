@@ -1,0 +1,44 @@
+uuid: a674b38c-de09-43ec-9edd-3e278f10b2ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.org
+id: org-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: org
+permissions_ui: true
+permissions:
+  - 'create group_media:image entity'
+  - 'create group_media:remote_video entity'
+  - 'create group_node:blog content'
+  - 'create group_node:blog entity'
+  - 'delete own group_media:image entity'
+  - 'delete own group_media:remote_video entity'
+  - 'update own group_media:image entity'
+  - 'update own group_media:remote_video entity'
+  - 'update own group_node:blog content'
+  - 'view group'
+  - 'view group_media:image content'
+  - 'view group_media:image entity'
+  - 'view group_media:remote_video content'
+  - 'view group_media:remote_video entity'
+  - 'view group_menu:menu content'
+  - 'view group_menu:menu entity'
+  - 'view group_node:about_page content'
+  - 'view group_node:about_page entity'
+  - 'view group_node:blog content'
+  - 'view group_node:blog entity'
+  - 'view group_node:event content'
+  - 'view group_node:event entity'
+  - 'view group_node:faq content'
+  - 'view group_node:faq entity'
+  - 'view group_node:location content'
+  - 'view group_node:location entity'
+  - 'view group_node:news content'
+  - 'view group_node:news entity'
+  - 'view group_node:page content'
+  - 'view group_node:page entity'

@@ -1,0 +1,19 @@
+uuid: 4eb233ad-cb0e-4d51-bd3b-6a40b6242057
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_section
+    - field.storage.block_content.field_phone_text
+id: block_content.contact_section.field_phone_text
+field_name: field_phone_text
+entity_type: block_content
+bundle: contact_section
+label: 'Phone Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+name: dgc
+type: theme
+description: 'dgc Theme'
+package: Other
+core: 8.x
+libraries:
+  - dgc/global-styling
+  - dgc/css-vars-ie
+
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+
+logo: 'dgc-logo.png'

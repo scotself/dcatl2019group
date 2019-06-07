@@ -1,0 +1,35 @@
+uuid: 0ad274ab-ba3d-4d41-a823-05a4c811f429
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_banner.field_about_heading
+    - field.field.paragraph.about_banner.field_about_subheading
+    - paragraphs.paragraphs_type.about_banner
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.about_banner.default
+targetEntityType: paragraph
+bundle: about_banner
+mode: default
+content:
+  field_about_heading:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_about_subheading:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

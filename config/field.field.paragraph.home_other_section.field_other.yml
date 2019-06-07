@@ -1,0 +1,137 @@
+uuid: c99ae94e-c13c-4cd7-a43c-0c202279a69a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_other
+    - paragraphs.paragraphs_type.home_other_message
+    - paragraphs.paragraphs_type.home_other_section
+    - paragraphs.paragraphs_type.home_other_testimonial
+    - paragraphs.paragraphs_type.home_other_video
+  module:
+    - entity_reference_revisions
+id: paragraph.home_other_section.field_other
+field_name: field_other
+entity_type: paragraph
+bundle: home_other_section
+label: 'Messages, Testimonials and/or Videos'
+description: 'Add up to 3 items of any combination of Message, Testimonial or Video.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      home_other_message: home_other_message
+      home_other_testimonial: home_other_testimonial
+      home_other_video: home_other_video
+    target_bundles_drag_drop:
+      home_other_section:
+        weight: 36
+        enabled: false
+      about:
+        weight: 37
+        enabled: false
+      about_are_you_eligible_exclusion:
+        weight: 38
+        enabled: false
+      about_are_you_eligible_inclusion:
+        weight: 39
+        enabled: false
+      about_banner:
+        weight: 40
+        enabled: false
+      about_eligible:
+        weight: 41
+        enabled: false
+      about_expectations:
+        weight: 42
+        enabled: false
+      about_locations:
+        weight: 43
+        enabled: false
+      about_locations_team:
+        weight: 44
+        enabled: false
+      about_overview:
+        weight: 45
+        enabled: false
+      about_team:
+        weight: 46
+        enabled: false
+      about_team_member:
+        weight: 47
+        enabled: false
+      about_why_join:
+        weight: 48
+        enabled: false
+      accordion_tabs_item:
+        weight: 49
+        enabled: false
+      banner_item:
+        weight: 50
+        enabled: false
+      bulleted_list:
+        weight: 51
+        enabled: false
+      eligibility:
+        weight: 52
+        enabled: false
+      faq:
+        weight: 53
+        enabled: false
+      faq_category:
+        weight: 54
+        enabled: false
+      faqs:
+        weight: 55
+        enabled: false
+      get_started_item:
+        weight: 56
+        enabled: false
+      getting_started:
+        weight: 57
+        enabled: false
+      getting_started_slideshow:
+        weight: 58
+        enabled: false
+      home_other_message:
+        enabled: true
+        weight: 59
+      home_other_testimonial:
+        enabled: true
+        weight: 60
+      home_other_video:
+        enabled: true
+        weight: 61
+      list_item_with_icon:
+        weight: 62
+        enabled: false
+      list_with_icons:
+        weight: 63
+        enabled: false
+      list_with_single_icon:
+        weight: 64
+        enabled: false
+      location:
+        weight: 65
+        enabled: false
+      overview:
+        weight: 66
+        enabled: false
+      testimonial:
+        weight: 67
+        enabled: false
+      testimonials:
+        weight: 68
+        enabled: false
+      what_do_i_need_to_do:
+        weight: 69
+        enabled: false
+      why_join:
+        weight: 70
+        enabled: false
+field_type: entity_reference_revisions

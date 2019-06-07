@@ -1,0 +1,12 @@
+uuid: da15f61a-a58d-4b77-9e14-c0ea84ade4bf
+langcode: en
+status: true
+dependencies: {  }
+id: study
+label: Program
+description: 'A Program is made up of one or more Organization websites.'
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles:
+  - study-admin

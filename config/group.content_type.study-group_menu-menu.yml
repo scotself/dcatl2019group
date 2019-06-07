@@ -1,0 +1,21 @@
+uuid: e40fcbbb-ca5a-48a7-87f7-160a94930149
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.study
+  module:
+    - groupmenu
+    - system
+id: study-group_menu-menu
+label: 'Study: Group menu'
+description: 'Adds menus to groups'
+group_type: study
+content_plugin: 'group_menu:menu'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
+  auto_create_group_menu: 0
+  add_group_to_menu: 0
+  group_menulink_title: Home

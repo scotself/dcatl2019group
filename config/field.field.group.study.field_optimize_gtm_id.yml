@@ -1,0 +1,19 @@
+uuid: bfe67349-daee-40ec-be44-c69d17441804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_optimize_gtm_id
+    - group.type.study
+id: group.study.field_optimize_gtm_id
+field_name: field_optimize_gtm_id
+entity_type: group
+bundle: study
+label: 'GTM ID'
+description: "This code is strictly used for Google Optimize functionality and is separate from the GTM Code above. A Google UA (Universal Analytics) tracking code will also be required if this field is filled out.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

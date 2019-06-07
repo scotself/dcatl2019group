@@ -1,0 +1,37 @@
+uuid: 0d144066-f8cd-48cc-b319-e0e7abbf9c24
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_groups
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - dgc
+id: views_block__user_groups_block_2
+theme: dgc
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:user_groups-block_2'
+settings:
+  id: 'views_block:user_groups-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

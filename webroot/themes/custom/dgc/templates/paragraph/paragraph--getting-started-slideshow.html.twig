@@ -1,0 +1,23 @@
+{% if has_items %}
+    {{ attach_library('dgc/slick') }}
+    <div id="getting-started-process-slideshow" class="grid-container">
+        <h2>{{ content.field_title }}</h2>
+        <ol class="process-items grid-x grid-margin-x">
+            {% for step in content.field_step['#items'] %}
+            <li class="cell">
+                <div class="card">
+                    <div class="card-section">
+                        <h4>{{ step.entity.field_title.value }}</h4>
+                    	<p>{{ step.entity.field_getting_started_item_body.value }}</p>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+        {% if paragraph.field_cta.0 %}
+        <div class="process-cta">
+          <a href="{{ paragraph.field_cta.0.url }}" class="button">{{ paragraph.field_cta.0.title }}</a>
+        </div>
+        {% endif %}
+    </div>
+{% endif %}

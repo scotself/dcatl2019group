@@ -1,0 +1,21 @@
+uuid: 5ade5f69-048e-475a-bd1f-6b6802e5d2ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.list_with_single_icon
+  module:
+    - options
+id: paragraph.list_with_single_icon.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: list_with_single_icon
+label: Icon
+description: 'This icon will be used for every item in the list.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

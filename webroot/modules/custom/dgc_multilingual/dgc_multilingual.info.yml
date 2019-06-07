@@ -1,0 +1,7 @@
+name: 'Dgc Multilingual'
+type: module
+description: 'Custom functionality related to multilingual setup'
+core: 8.x
+package: 'DGC'
+dependencies:
+  - language

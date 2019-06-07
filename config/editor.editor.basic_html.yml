@@ -1,0 +1,54 @@
+uuid: f91ef16f-34ec-4ba3-9918-29fb8741813d
+langcode: en
+status: false
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Bold
+            - Italic
+            - Underline
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Outdent
+            - Indent
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - media_image
+  plugins:
+    stylescombo:
+      styles: "h2|h2\r\nh3|h3\r\np|Normal Text"
+    language:
+      language_list: un
+    tokenbrowser:
+      token_types: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: 1MB
+  max_dimensions:
+    width: 600
+    height: null

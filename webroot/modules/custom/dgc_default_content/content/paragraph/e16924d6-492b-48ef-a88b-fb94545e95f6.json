@@ -1,0 +1,169 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/getting_started"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/getting_started\/field_steps": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e16924d6-492b-48ef-a88b-fb94545e95f6"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 37
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "getting_started"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-03-25T21:00:24+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "1"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "group"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_how_to_get_started"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2019-03-25T21:03:44+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/getting_started\/field_steps": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/get_started_item"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "e1ad6b26-5e0c-411a-a030-defbad0e857c"
+                    }
+                ],
+                "target_revision_id": "31"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/get_started_item"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "628f3dca-d3cb-4405-8c59-d27c15c3e707"
+                    }
+                ],
+                "target_revision_id": "33"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/get_started_item"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3aec768a-05d2-4e89-a2cc-bfc397c5908c"
+                    }
+                ],
+                "target_revision_id": "34"
+            }
+        ]
+    },
+    "field_title": [
+        {
+            "value": "Get Started",
+            "lang": "en"
+        }
+    ]
+}

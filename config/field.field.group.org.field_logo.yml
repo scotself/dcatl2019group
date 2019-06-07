@@ -1,0 +1,28 @@
+uuid: 16c2a695-6607-46c8-aba4-20d02b06ca04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_logo
+    - group.type.org
+    - media.type.image
+id: group.org.field_logo
+field_name: field_logo
+entity_type: group
+bundle: org
+label: Logo
+description: 'The organization''s logo will be displayed in both the header and footer.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

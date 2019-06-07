@@ -1,0 +1,53 @@
+uuid: 25fa047c-20eb-4079-b8af-3d8bb1023235
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.field_menu_link
+    - group.content_type.org-group_node-about_page
+  module:
+    - content_translation
+    - menu_link
+third_party_settings:
+  content_translation:
+    translation_sync:
+      title: title
+      description: description
+      menu_name: menu_name
+      parent: parent
+id: group_content.org-group_node-about_page.field_menu_link
+field_name: field_menu_link
+entity_type: group_content
+bundle: org-group_node-about_page
+label: 'Menu link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_menus:
+    admin: '0'
+    devel: '0'
+    footer: '0'
+    main: '0'
+    tools: '0'
+    account: '0'
+    group-1-menu: group-1-menu
+    group-5-menu: group-5-menu
+    group-3-menu: group-3-menu
+    group-6-menu: group-6-menu
+    group-7-menu: group-7-menu
+    group-8-menu: group-8-menu
+    group-9-menu: group-9-menu
+    group-12-menu: group-12-menu
+    group-13-menu: group-13-menu
+    group-14-menu: group-14-menu
+    group-15-menu: group-15-menu
+    group-16-menu: group-16-menu
+    group-17-menu: group-17-menu
+    group-18-menu: group-18-menu
+    group-19-menu: group-19-menu
+    group-20-menu: group-20-menu
+  default_menu_parent: 'main:'
+field_type: menu_link

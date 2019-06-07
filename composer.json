@@ -1,0 +1,278 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "ckeditor-plugin/uploadimage",
+            "version": "4.8.0",
+            "type": "drupal-library",
+            "extra": {
+              "installer-name": "uploadimage"
+            },
+            "dist": {
+              "url": "https://download.ckeditor.com/uploadimage/releases/uploadimage_4.8.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "ckeditor-plugin/uploadwidget",
+            "version": "4.8.0",
+            "type": "drupal-library",
+            "extra": {
+              "installer-name": "uploadwidget"
+            },
+            "dist": {
+              "url": "https://download.ckeditor.com/uploadwidget/releases/uploadwidget_4.8.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "ckeditor-plugin/filetools",
+            "version": "4.8.0",
+            "type": "drupal-library",
+            "extra": {
+              "installer-name": "filetools"
+            },
+            "dist": {
+              "url": "https://download.ckeditor.com/filetools/releases/filetools_4.8.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "ckeditor-plugin/notification",
+            "version": "4.8.0",
+            "type": "drupal-library",
+            "extra": {
+              "installer-name": "notification"
+            },
+            "dist": {
+              "url": "https://download.ckeditor.com/notification/releases/notification_4.8.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "ckeditor-plugin/notificationaggregator",
+            "version": "4.8.0",
+            "type": "drupal-library",
+            "extra": {
+              "installer-name": "notificationaggregator"
+            },
+            "dist": {
+              "url": "https://download.ckeditor.com/notificationaggregator/releases/notificationaggregator_4.8.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bgrins/spectrum",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/bgrins/spectrum/archive/1.8.0.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "drupal-composer/drupal-scaffold": "^2.4",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/core": "8.7.1",
+        "drush/drush": "^9.0",
+        "drupal/console": "~1.0",
+        "drupal/admin_toolbar": "^1.0",
+        "drupal/group": "1.x-dev",
+        "drupal/pathauto": "^1.3",
+        "drupal/paragraphs": "1.x-dev",
+        "drupal/menu_link": "1.x-dev",
+        "drupal/field_group": "3.0-beta1",
+        "drupal/color_field": "^2.0",
+        "drupal/groupmenu": "1.x-dev",
+        "drupal/allowed_formats": "^1.1",
+        "drupal/block_visibility_groups": "^1.3",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/rules": "^3.0@alpha",
+        "drupal/twig_tweak": "^2.1",
+        "drupal/xy_grid_layouts": "1.x-dev",
+        "bgrins/spectrum": "1.8.0",
+        "drupal/embed": "^1.0",
+        "drupal/entity_embed": "^1.0@beta",
+        "drupal/entity_browser": "^2.0",
+        "drupal/mail_login": "^1.0",
+        "drupal/address": "~1.0",
+        "drupal/message": "1.x-dev",
+        "drupal/message_notify": "1.x-dev",
+        "drupal/mailsystem": "^4.1",
+        "drupal/mimemail": "^1.0@alpha",
+        "drupal/pathologic": "^1.0@alpha",
+        "drupal/devel": "^2.0",
+        "drupal/cer": "^4.0@alpha",
+        "drupal/webform": "^5.1",
+        "drupal/field_permissions": "^1.0@RC",
+        "drupal/lang_dropdown": "^2.0@beta",
+        "drupal/entity": "1.x",
+        "drupal/salesforce": "4.x-dev",
+        "drupal/honeypot": "^1.29",
+        "drupal/captcha": "^1.0@beta",
+        "drupal/tfa": "^1.0",
+        "drupal/ga_login": "1.x-dev",
+        "drupal/real_aes": "^2.1",
+        "christian-riesen/otp": "^2.6",
+        "drupal/default_content": "1.x-dev",
+        "drupal/password_policy": "3.x-dev",
+        "drupal/maxlength": "^1.0@beta",
+        "drupal/redirect": "^1.3",
+        "drupal/redirect_after_logout": "^1.0@beta",
+        "drupal/fast_404": "^1.0@alpha",
+        "drupal/s3fs": "^3.0@alpha",
+        "drupal/administerusersbyrole": "^3.0",
+        "drupal/config_split": "^1.4",
+	    "drupal/smtp": "^1.0@beta",
+        "drupal/autologout": "^1.0",
+        "consolidation/robo": "^1.0.0",
+        "drupal/geolocation": "^3.0",
+        "drupal/geocoder": "^2.1",
+        "drupal/view_mode_selector": "1.x-dev",
+        "drupal/views_field_formatter": "^1.9",
+        "drupal/focal_point": "1.x-dev",
+        "drupal/html_formatter": "^1.3",
+        "drupal/module_filter": "^3.1",
+        "drupal/metatag": "^1.8",
+        "drupal/telephone_validation": "^2.2"
+    },
+    "require-dev": {
+        "drupal/coder": "^8.2",
+        "webflo/drupal-core-require-dev": "8.7.1",
+        "jakub-onderka/php-parallel-lint": "^0.9.2",
+        "jakub-onderka/php-console-highlighter": "^0.3.2",
+        "drupal/conditional_fields": "^1.0@alpha"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "webroot/core": ["type:drupal-core"],
+            "webroot/libraries/ckeditor/plugins/{$name}": ["vendor:ckeditor-plugin"],
+            "webroot/libraries/{$name}": ["type:drupal-library"],
+            "webroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "webroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "webroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "webroot/sites/all/drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/core": {
+                "LanguageNegotiator::updateConfiguration() is passed a NULL": "https://www.drupal.org/files/issues/language-2718657-3.patch",
+                "EntityViewBuilder::viewField() does not respect entity current language when used with an entity reference field": "https://www.drupal.org/files/issues/2019-02-21/entity-view-builder-entity-reference-language-2955392-34.patch",
+                "Site install from config throws Call to a member function set Weight() on null": "https://www.drupal.org/files/issues/2019-03-06/core-language-set-weight-3038085-2.patch",
+                "Views executeDIsplay() returns NULL and no validation occurs https://www.drupal.org/project/drupal/issues/2909132 - Views EntityReference display": "https://www.drupal.org/files/issues/2909132-2.patch",
+                "Media library widget + Paragraphs broken: validation error on required field in paragraphs subform" : "https://www.drupal.org/files/issues/2018-12-05/drupal-media-library-paragraphs-3003150-19-8.x.patch",
+                "Allow users to translate content they can edit": "https://www.drupal.org/files/issues/2018-10-16/allow-users-to-translate-editable-content-2972308-17.patch",
+                "Add a View link into the Node revisions table operations dropdown": "https://www.drupal.org/files/issues/2019-05-23/core-node_revisions_view_op_link-3055600-5.patch"
+            },
+            "drupal/group": {
+                "Combined support config entities and revisions": "https://www.drupal.org/files/issues/2019-02-15/group-combined-2797793-and-2829966-3030127-5.patch",
+                "Group and Node tokens from group content": "https://www.drupal.org/files/issues/group-content-entity-tokens-2916907-7.patch",
+                "Add a field to view and edit content's groups": "https://www.drupal.org/files/issues/2019-05-29/group-field_to_view_and_edit_content_groups-2813405-142.patch",
+                "Allow group admins to create users": "https://www.drupal.org/files/issues/2018-12-19/group-manage-users-2949408-15.patch",
+                "Permissions to choose which roles a member can assign": "https://www.drupal.org/files/issues/2019-04-10/group-user-manage-by-role-permissions-3027685-8.patch",
+                "Views argument referencing current user groups": "https://www.drupal.org/files/issues/2018-09-14/group_ids_from_current_user-views-argument.patch",
+                "Media enabler": "https://www.drupal.org/files/issues/2019-01-04/media-enabler-2984315-18.patch"
+            },
+            "drupal/groupmenu": {
+                "Use new entity_id_str field": "https://www.drupal.org/files/issues/2019-04-04/groupmenu-change_references_to_entity_id-3010909-9.patch"
+            },
+            "drupal/paragraphs": {
+                "#2901390 Langcode error": "https://www.drupal.org/files/issues/paragraphs-missing-langcode-2901390-9.patch",
+                "TypeError: Argument 2 passed": "https://www.drupal.org/files/issues/2018-11-01/paragraphs-remove_update_hook-3007596-8.patch"
+            },
+            "drupal/menu_link": {
+                "Respect Group Permissions": "https://www.drupal.org/files/issues/2018-12-10/menu_link-respect_group_permissions-3019500-2.patch"
+            },
+            "drupal/conditional_fields": {
+              "Support non-nodes": "https://www.drupal.org/files/issues/2019-02-19/conditional_fields-2995827-12-support-all-entities.patch"
+            },
+            "drupal/tfa": {
+              "Default encryption method (mcrypt) is deprecated in php7.1": "https://www.drupal.org/files/issues/2019-03-05/2978265-15.patch",
+              "Bad UX when user exceeded login attempts without setting tfa": "https://www.drupal.org/files/issues/2019-03-01/2937336-17.patch",
+              "Allow user with non required TFA role to bypass TFA": "patches/tfa_mtw-542_allow_bypass_tfa_if_user_role_not_required.patch"
+            },
+            "drupal/password_policy": {
+              "Config Import fails with field_last_password_reset is unknown": "https://www.drupal.org/files/issues/2019-05-20/password_policy-config_import_field_error-2771129-81.patch",
+              "Can't edit user profile because password": "https://www.drupal.org/files/issues/2018-09-11/password_policy-empty-password-skip-validation-2971079-8.patch"
+            },
+            "drupal/default_content": {
+              "Account switcher service": "https://www.drupal.org/files/issues/account_switcher-2861591-6.patch",
+              "Account switcher service export": "https://www.drupal.org/files/issues/2018-09-21/account_switcher-2861591-10.patch",
+              "Do not reimport existing entities": "https://www.drupal.org/files/issues/2019-04-29/2698425--accept-content-updates--115.patch"
+            },
+            "drupal/s3fs": {
+                "Allow path-type S3 endpoints": "https://www.drupal.org/files/issues/2018-12-23/3022288-3.patch",
+                "Avoid public-read ACLs": "patches/s3fs-avoid-public-acl.patch"
+            },
+            "drupal/maxlength": {
+              "Add Maxlength to Link title": "https://www.drupal.org/files/issues/2794421-6.patch"
+            },
+            "drupal/salesforce": {
+              "Support for Gov Cloud": "https://www.drupal.org/files/issues/2019-05-24/salesforce_support-gov-cloud-3057022-2.patch"
+            }
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.2",
+            "ext-gd": "1"
+        }
+    }
+}

@@ -1,0 +1,92 @@
+uuid: a1305be0-5d7e-4dbb-9069-535a724e5917
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_page.field_about_banner
+    - field.field.node.about_page.field_about_eligibility
+    - field.field.node.about_page.field_about_expectations
+    - field.field.node.about_page.field_about_locations_team
+    - field.field.node.about_page.field_about_overview
+    - field.field.node.about_page.field_about_why_join
+    - field.field.node.about_page.field_contact_section_block
+    - node.type.about_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.about_page.default
+targetEntityType: node
+bundle: about_page
+mode: default
+content:
+  field_about_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_eligibility:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_expectations:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_locations_team:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: view_mode_selector
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_overview:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_why_join:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_contact_section_block:
+    type: entity_reference_entity_view
+    weight: 7
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  group_content: true
+  langcode: true

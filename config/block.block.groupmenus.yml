@@ -1,0 +1,36 @@
+uuid: b89a54f6-1b4f-4c0a-b61b-e89dbe294b8a
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - ctools
+    - groupmenu_block
+  theme:
+    - dgc
+id: groupmenus
+theme: dgc
+region: header
+weight: -3
+provider: null
+plugin: groupmenus
+settings:
+  id: groupmenus
+  label: 'Group menu'
+  provider: groupmenu_block
+  label_display: '0'
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      org: org
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

@@ -1,0 +1,31 @@
+uuid: d20196a0-813c-4e4b-ad0a-40b189c2154f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.platform_level
+  module:
+    - block_visibility_groups
+    - dgc_blocks
+  theme:
+    - dgc
+id: copyrightblock
+theme: dgc
+region: footer
+weight: 0
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  provider: dgc_blocks
+  label_display: '0'
+  copyright_message:
+    value: "\r\n\r\n<p>© 2019 All rights reserved.</p>\r\n"
+    format: limited_html
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: platform_level
+    context_mapping: {  }

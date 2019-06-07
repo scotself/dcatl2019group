@@ -1,0 +1,23 @@
+uuid: 9461aeb6-d601-4f75-bbe7-2f5ee046dea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_tabs
+    - field.storage.block_content.field_accordion_tabs_small
+  module:
+    - options
+id: block_content.accordion_tabs.field_accordion_tabs_small
+field_name: field_accordion_tabs_small
+entity_type: block_content
+bundle: accordion_tabs
+label: 'Format Mobile'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: accordion
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,35 @@
+{% set text_align = content.field_card_alignment.0['#markup'] %}
+{% set text_align_class = 'text-' ~ (text_align == 'center' ? 'center' : 'left') %}
+{% set card_position = content.field_card_position.0['#markup'] %}
+{% set card_size = 'medium-' ~ (card_position == 'center' and text_align == 'center' ? '6 banner-box-center' : '6 banner-box-side') %}
+
+<div class="banner-wrap">
+  {% if bg_img %}
+    <img class="banner-image" src="{{ bg_img }}">
+  {% else %}
+    <div class="banner-solid-bg"></div>
+  {% endif %}
+  <div class="banner-inner">
+    <div class="grid-container">
+      <div class="banner-box-grid grid-x grid-padding-x align-{{ card_position }}">
+        <div class="banner-box-content cell {{ text_align_class }} {{ card_size }} small-12">
+            {% if content.field_title.0 %}
+              <h1 class="banner-title">{{ content.field_title.0 }}</h1>
+            {% endif %}
+            {% if content.field_subtitle.0 %}
+              <p class="banner-subtitle">{{ content.field_subtitle.0 }}</p>
+            {% endif %}
+            {% if content.field_description.0 %}
+              <p class="banner-description">
+                {{ content.field_description }}
+              </p>
+            {% endif %}
+            {% if content.field_cta.0 %}
+              <div class="banner-cta">
+                <a href="{{ paragraph.field_cta.0.url }}" class="button">{{ paragraph.field_cta.0.title }}</a>
+              </div>
+            {% endif %}
+        </div>
+      </div>
+  </div>
+</div>

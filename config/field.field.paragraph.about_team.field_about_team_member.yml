@@ -1,0 +1,133 @@
+uuid: 8936cbf0-8e15-481b-84fc-cf98b2933536
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_team_member
+    - paragraphs.paragraphs_type.about_team
+    - paragraphs.paragraphs_type.about_team_member
+  module:
+    - entity_reference_revisions
+id: paragraph.about_team.field_about_team_member
+field_name: field_about_team_member
+entity_type: paragraph
+bundle: about_team
+label: 'Team Members'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_team_member: about_team_member
+    target_bundles_drag_drop:
+      about_team_member:
+        enabled: true
+        weight: 23
+      about:
+        weight: 24
+        enabled: false
+      about_are_you_eligible_exclusion:
+        weight: 25
+        enabled: false
+      about_are_you_eligible_inclusion:
+        weight: 26
+        enabled: false
+      about_banner:
+        weight: 27
+        enabled: false
+      about_eligible:
+        weight: 28
+        enabled: false
+      about_expectations:
+        weight: 29
+        enabled: false
+      about_overview:
+        weight: 30
+        enabled: false
+      about_team:
+        weight: 31
+        enabled: false
+      about_why_join:
+        weight: 32
+        enabled: false
+      accordion_tabs_item:
+        weight: 33
+        enabled: false
+      banner_item:
+        weight: 34
+        enabled: false
+      eligibility:
+        weight: 35
+        enabled: false
+      get_started_item:
+        weight: 36
+        enabled: false
+      getting_started:
+        weight: 37
+        enabled: false
+      list_item_with_icon:
+        weight: 38
+        enabled: false
+      about_locations:
+        weight: 38
+        enabled: false
+      about_locations_team:
+        weight: 39
+        enabled: false
+      list_with_icons:
+        weight: 39
+        enabled: false
+      overview:
+        weight: 40
+        enabled: false
+      testimonial:
+        weight: 41
+        enabled: false
+      testimonials:
+        weight: 42
+        enabled: false
+      what_do_i_need_to_do:
+        weight: 43
+        enabled: false
+      why_join:
+        weight: 44
+        enabled: false
+      bulleted_list:
+        weight: 46
+        enabled: false
+      faq:
+        weight: 48
+        enabled: false
+      faqs:
+        weight: 49
+        enabled: false
+      faq_category:
+        weight: 50
+        enabled: false
+      getting_started_slideshow:
+        weight: 52
+        enabled: false
+      list_with_single_icon:
+        weight: 56
+        enabled: false
+      location:
+        weight: 57
+        enabled: false
+      home_other_message:
+        weight: 58
+        enabled: false
+      home_other_section:
+        weight: 59
+        enabled: false
+      home_other_testimonial:
+        weight: 60
+        enabled: false
+      home_other_video:
+        weight: 61
+        enabled: false
+field_type: entity_reference_revisions

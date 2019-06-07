@@ -1,0 +1,151 @@
+<?php
+
+/**
+ * @file
+ * Contains dgc_theme_group.module.
+ */
+
+use Drupal\image\Entity\ImageStyle;
+use Drupal\file\Entity\File;
+use Drupal\group\Entity\Group;
+use Drupal\group\Entity\GroupContent;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dgc_theme_group_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dgc_theme_group module.
+    case 'help.page.dgc_theme_group':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Preprocess and helper functions to theme pages depending on group info settings.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Get Favicon from Org node.
+ *
+ * @return array
+ *   The favicon array.
+ */
+function _get_icon_from_org() {
+  $entity = \Drupal::routeMatch()->getParameter('group_revision') ?? \Drupal::routeMatch()->getParameter('group');
+  if (is_numeric($entity)) {
+    $entity = \Drupal::entityTypeManager()->getStorage('group')->load($entity);
+  }
+
+  // If favicon image field.
+  if (!empty($entity) && $entity->hasField('field_favicon') && !$entity->get('field_favicon')->isEmpty()) {
+    $image_item = $entity->get('field_favicon')->first();
+    // Get file id.
+    $image_file_id = $image_item->get('target_id')->getValue();
+    // Load File entity.
+    $image_file = File::load($image_file_id);
+    // Build image url from uri.
+    $favicon_url = file_create_url($image_file->getFileUri());
+    // Get image MIME.
+    $favicon_mime = $image_file->getMimeType();
+    $favicon = [
+      'rel' => "shortcut icon",
+      'href' => UrlHelper::stripDangerousProtocols($favicon_url),
+      'type' => $favicon_mime,
+    ];
+  }
+  // Fallback.
+  else {
+    // Get the default favicon set for theme as fallback.
+    $theme_favicon = theme_get_setting('favicon');
+    $favicon = [
+      'rel' => "shortcut icon",
+      'href' => UrlHelper::stripDangerousProtocols($theme_favicon['url']),
+      'type' => $theme_favicon['mimetype'],
+    ];
+  }
+  return $favicon;
+}
+
+/**
+ * Build Palette array from field_palette.
+ *
+ * @return string
+ *   The colors css variables ready to insert into page.
+ */
+function _palette_from_colors() {
+  // Init vars.
+  $entity = '';
+  $colors = [];
+  // Entity by route.
+  $entity = \Drupal::routeMatch()->getParameter('group_revision') ?? \Drupal::routeMatch()->getParameter('group');
+  if (is_numeric($entity)) {
+    $entity = \Drupal::entityTypeManager()->getStorage('group')->load($entity);
+  }
+  // Get field_palette from the Org node for this entity.
+  $colors = [':root {'];
+  $color_fields = _palette_color_fields();
+  foreach ($color_fields as $color_field => $default) {
+    if (!empty($entity) && $entity->hasField($color_field) && !empty($entity->get($color_field)->color)) {
+      $color_value = $entity->get($color_field)->color;
+    }
+    else {
+      $color_value = $default;
+    }
+    $css_key = "--dgc-group-" . str_replace('field_color_', 'color-', $color_field);
+    $colors[] = "$css_key: $color_value;";
+  }
+  $colors[] = '}';
+  return implode("\n", $colors);
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function dgc_theme_group_page_attachments_alter(array &$attachments) {
+  // Favicon.
+  $icon = _get_icon_from_org();
+  if (!empty($icon)) {
+    $links = $attachments['#attached']['html_head_link'];
+    foreach ($links as $key => $link) {
+      if (is_array($link)) {
+        foreach ($link as $link_array) {
+          if (is_array($link_array) && array_key_exists('rel', $link_array) && $link_array['rel'] === 'shortcut icon') {
+            // Unset the default.
+            unset($attachments['#attached']['html_head_link'][$key]);
+            // Set Group Icon.
+            $attachments['#attached']['html_head_link'][$key] = [$icon];
+          }
+        }
+      }
+    }
+  }
+
+  // Set CSS variables and attach to head.
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#type' => 'html_tag',
+      '#tag' => 'style',
+      '#value' => _palette_from_colors(),
+      '#attributes' => [
+        'data-css-var' => TRUE,
+      ],
+    ],
+    'dgc_theme_group',
+  ];
+}
+
+function _palette_color_fields() {
+  return [
+    'field_color_1' => '#262262',
+    'field_color_2' => '#216fb4',
+    'field_color_3' => '#ecf7ff',
+    'field_color_4' => '#4a4a4a',
+    'field_color_5' => '#a9a9a9',
+    'field_color_6' => '#f6f6f6',
+  ];
+}

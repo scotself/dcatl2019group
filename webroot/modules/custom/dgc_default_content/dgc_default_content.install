@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the dgc_default_content module.
+ */
+
+use Drupal\system\Entity\Menu;
+
+
+/**
+* Implements hook_install().
+*/
+function dgc_default_content_install() {
+  // Check ig these menus already exists and delete them to avoid errors.
+  $menus = ['group-1-menu', 'group-3-menu', 'group-5-menu'];
+  foreach ($menus as $menu) {
+   /** @var \Drupal\Core\Menu $menu_item */
+    $menu_item = Menu::load($menu);
+    if ($menu_item) {
+      $menu_item->delete();
+    }
+  }
+  // Copy images to Drupal file directory.
+  $dir = 'modules/custom/dgc_default_content/images';
+  $directories = file_scan_directory($dir, '/.*/', array('recurse' => FALSE));
+  foreach ($directories as $directory) {
+    if (!file_exists('public://' . $directory->name . '/')) {
+      mkdir('public://' . $directory->name . '/', 0775, true);
+    }
+    $files = file_scan_directory($dir . '/' . $directory->name, '/.*/');
+    foreach ($files as $uri => $file) {
+      $destination = 'public://' . $directory->name . '/' . $file->filename;
+      copy($uri, $destination);
+    }
+  }
+}

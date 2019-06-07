@@ -1,0 +1,9 @@
+uuid: b453780c-2cf2-4cb4-8adb-7e877a4e6298
+langcode: en
+status: true
+dependencies: {  }
+id: list_with_single_icon
+label: 'List with Single Icon'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

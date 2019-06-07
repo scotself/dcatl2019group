@@ -1,0 +1,19 @@
+uuid: 30b0d3e1-ba1a-42cc-a201-4247afe014f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bulleted_list_items
+    - paragraphs.paragraphs_type.bulleted_list
+id: paragraph.bulleted_list.field_bulleted_list_items
+field_name: field_bulleted_list_items
+entity_type: paragraph
+bundle: bulleted_list
+label: 'List Items'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: d87d1cbe-4910-439f-97b1-97fcb7af2629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.getting_started
+  module:
+    - link
+id: paragraph.getting_started.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: getting_started
+label: CTA
+description: 'Limit link text to 15 characters.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

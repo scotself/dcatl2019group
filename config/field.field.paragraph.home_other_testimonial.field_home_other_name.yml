@@ -1,0 +1,19 @@
+uuid: 46b21fe3-d802-4099-95ae-902973e6d74a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_other_name
+    - paragraphs.paragraphs_type.home_other_testimonial
+id: paragraph.home_other_testimonial.field_home_other_name
+field_name: field_home_other_name
+entity_type: paragraph
+bundle: home_other_testimonial
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

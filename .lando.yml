@@ -1,0 +1,64 @@
+name: dgc-demo
+recipe: drupal8
+config:
+  config:
+    vhosts: .lando/default.conf
+  webroot: webroot
+  php: '7.2'
+  via: nginx
+  drush: 9.6.0-rc3
+  xdebug: true
+services:
+  database:
+    type: mariadb:10.1
+  appserver:
+    run_as_root:
+      - apt-get update
+      - curl -sL https://deb.nodesource.com/setup_10.x | bash -
+      - apt-get install -y nodejs
+      - npm install gulp-cli gulp -g
+  chrome:
+    type: compose
+    services:
+      image: drupalci/webdriver-chromedriver:production
+      command:
+        chromedriver
+        - "--no-sandbox"
+        - "--log-path=/tmp/chromedriver.log"
+        - "--verbose"
+        - "--whitelisted-ips="
+      ulimits:
+        core:
+          soft: -1
+          hard: -1
+      cap_add:
+        - SYS_ADMIN
+      volumes:
+        - /dev/shm:/dev/shm
+      ports:
+        - "9515"
+      expose:
+        - "9515"
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+proxy:
+  mailhog:
+    - mail.dgcdemo.lndo.site
+tooling:
+  robo:
+    service: appserver
+    description: Runs <robo> commands
+    cmd: robo
+  phpunit:
+    service: appserver
+    cmd: vendor/bin/phpunit
+  npm:
+    service: appserver
+  node:
+    service: appserver
+  gulp:
+    service: appserver
+env_file:
+  - .env

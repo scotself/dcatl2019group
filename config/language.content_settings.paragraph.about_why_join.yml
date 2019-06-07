@@ -1,0 +1,18 @@
+uuid: 58c0093c-f572-4b3a-8e1d-0aba9c6ff410
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.about_why_join
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.about_why_join
+target_entity_type_id: paragraph
+target_bundle: about_why_join
+default_langcode: site_default
+language_alterable: true

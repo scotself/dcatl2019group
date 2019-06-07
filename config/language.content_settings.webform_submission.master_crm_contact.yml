@@ -1,0 +1,11 @@
+uuid: 3ed4f5c4-71df-4aeb-82f8-8d2a93deda0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.master_crm_contact
+id: webform_submission.master_crm_contact
+target_entity_type_id: webform_submission
+target_bundle: master_crm_contact
+default_langcode: site_default
+language_alterable: false

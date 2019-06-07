@@ -1,0 +1,67 @@
+uuid: fbab5643-2b1c-4814-a394-f82a0c05a053
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonials
+    - paragraphs.paragraphs_type.testimonial
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - entity_reference_revisions
+id: paragraph.testimonials.field_testimonials
+field_name: field_testimonials
+entity_type: paragraph
+bundle: testimonials
+label: Testimonials
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      testimonial: testimonial
+    target_bundles_drag_drop:
+      testimonial:
+        enabled: true
+        weight: 11
+      about:
+        weight: 12
+        enabled: false
+      accordion_tabs_item:
+        weight: 13
+        enabled: false
+      banner_item:
+        weight: 14
+        enabled: false
+      eligibility:
+        weight: 15
+        enabled: false
+      list_with_icons:
+        weight: 16
+        enabled: false
+      overview:
+        weight: 17
+        enabled: false
+      get_started_item:
+        weight: 18
+        enabled: false
+      testimonials:
+        weight: 18
+        enabled: false
+      getting_started:
+        weight: 19
+        enabled: false
+      what_do_i_need_to_do:
+        weight: 19
+        enabled: false
+      list_item_with_icon:
+        weight: 20
+        enabled: false
+      why_join:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,16 @@
+uuid: ea6535ee-0039-42ea-b00e-b01bd18b0248
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.study
+id: study-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: study
+permissions_ui: true
+permissions:
+  - 'view group_media:image entity'
+  - 'view group_media:remote_video entity'

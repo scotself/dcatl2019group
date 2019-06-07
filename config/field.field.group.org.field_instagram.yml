@@ -1,0 +1,19 @@
+uuid: 3ea1b5bf-9e90-4a49-b8b6-32e1237b9709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_instagram
+    - group.type.org
+id: group.org.field_instagram
+field_name: field_instagram
+entity_type: group
+bundle: org
+label: Instagram
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

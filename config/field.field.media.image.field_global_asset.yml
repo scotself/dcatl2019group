@@ -1,0 +1,25 @@
+uuid: 2cb9e1e6-efa0-4fb8-b12a-705ead67bddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_global_asset
+    - media.type.image
+_core:
+  default_config_hash: UuuEQvrq_jXrULmbvHUFgK-d9FUuzhJjUmAgqqBJbA4
+id: media.image.field_global_asset
+field_name: field_global_asset
+entity_type: media
+bundle: image
+label: 'Global Asset'
+description: "Only check this box if you are sharing this image on another website (organization) within this platform. <br>\r\nDo not check if the image is proprietary in any way."
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

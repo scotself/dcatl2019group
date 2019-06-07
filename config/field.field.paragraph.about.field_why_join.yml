@@ -1,0 +1,67 @@
+uuid: e2beb02c-2153-4b7a-a01e-34e00b2154ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_why_join
+    - paragraphs.paragraphs_type.about
+    - paragraphs.paragraphs_type.why_join
+  module:
+    - entity_reference_revisions
+id: paragraph.about.field_why_join
+field_name: field_why_join
+entity_type: paragraph
+bundle: about
+label: 'Why Join?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      why_join: why_join
+    target_bundles_drag_drop:
+      what_do_i_need_to_do:
+        weight: 9
+        enabled: false
+      about:
+        weight: 10
+        enabled: false
+      accordion_tabs_item:
+        weight: 11
+        enabled: false
+      banner_item:
+        weight: 12
+        enabled: false
+      eligibility:
+        weight: 13
+        enabled: false
+      list_with_icons:
+        weight: 14
+        enabled: false
+      overview:
+        weight: 15
+        enabled: false
+      why_join:
+        enabled: true
+        weight: 16
+      get_started_item:
+        weight: 18
+        enabled: false
+      getting_started:
+        weight: 19
+        enabled: false
+      list_item_with_icon:
+        weight: 20
+        enabled: false
+      testimonial:
+        weight: 23
+        enabled: false
+      testimonials:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

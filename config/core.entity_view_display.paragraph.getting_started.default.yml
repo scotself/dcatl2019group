@@ -1,0 +1,51 @@
+uuid: 0a05fe56-945a-4e0c-b639-8e59878c0bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.getting_started.field_cta
+    - field.field.paragraph.getting_started.field_steps
+    - field.field.paragraph.getting_started.field_title
+    - paragraphs.paragraphs_type.getting_started
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.getting_started.default
+targetEntityType: paragraph
+bundle: getting_started
+mode: default
+content:
+  field_cta:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_steps:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

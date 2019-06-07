@@ -1,0 +1,30 @@
+uuid: 64c534d9-74a1-4187-9d46-3e4613f39445
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_group
+    - group.type.org
+    - group.type.study
+    - message.template.changed_membership
+id: message.changed_membership.field_group
+field_name: field_group
+entity_type: message
+bundle: changed_membership
+label: Group
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      org: org
+      study: study
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: org
+field_type: entity_reference

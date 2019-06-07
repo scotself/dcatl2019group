@@ -1,0 +1,18 @@
+uuid: 0ca0fb41-5524-4040-b8d1-153ceea0622c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.org-group_node-faq
+id: group_content.org-group_node-faq.label
+field_name: label
+entity_type: group_content
+bundle: org-group_node-faq
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

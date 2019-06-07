@@ -1,0 +1,47 @@
+uuid: 40a9430c-814f-4f06-b191-90a291df5039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.get_started_item.field_getting_started_item_body
+    - field.field.paragraph.get_started_item.field_title
+    - paragraphs.paragraphs_type.get_started_item
+  module:
+    - maxlength
+id: paragraph.get_started_item.default
+targetEntityType: paragraph
+bundle: get_started_item
+mode: default
+content:
+  field_getting_started_item_body:
+    weight: 1
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 280
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
+        maxlength_js_truncate_html: true
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 50
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

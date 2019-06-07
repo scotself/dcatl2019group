@@ -1,0 +1,53 @@
+uuid: ed622ebd-9334-4194-9106-65abe1c82e96
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.what_do_i_need_to_do.field_cta
+    - field.field.paragraph.what_do_i_need_to_do.field_title
+    - field.field.paragraph.what_do_i_need_to_do.field_what_do_i_need_to_do_list
+    - paragraphs.paragraphs_type.what_do_i_need_to_do
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.what_do_i_need_to_do.preview
+targetEntityType: paragraph
+bundle: what_do_i_need_to_do
+mode: preview
+content:
+  field_cta:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_what_do_i_need_to_do_list:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

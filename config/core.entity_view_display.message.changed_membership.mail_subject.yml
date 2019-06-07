@@ -1,0 +1,26 @@
+uuid: e1a98a42-b764-4483-bee3-d94a99cf0daa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - message.template.changed_membership
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: message.changed_membership.mail_subject
+targetEntityType: message
+bundle: changed_membership
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+hidden:
+  field_group: true
+  field_roles: true
+  partial_1: true

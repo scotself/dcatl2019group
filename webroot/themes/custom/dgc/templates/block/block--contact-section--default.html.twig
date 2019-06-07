@@ -1,0 +1,49 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'grid-x',
+    'grid-padding-x'
+  ]
+%}
+<div class="grid-background-contact">
+  <div class="grid-container contact-large">
+    <div {{ attributes.addClass(classes).setAttribute('id', 'contact-section') }}>
+      <div class="cell small-11 medium-12 align-center">
+        <h2>{{ content.0.field_section_title }}</h2>
+        {{ content.0.body }}
+      </div>
+      {% if content.0.field_faq_page.0 %}
+      <div class="text-center cell small-11 medium-4 align-center">
+        <i class="fi-lightbulb"></i>
+        <h3>{{ content.0.field_faq_title }}</h3>
+        {{ content.0.field_faq_page }} 
+        {{ content.0.field_faq_text }}
+      </div>
+      {% endif %}
+      {% if content.0.field_phone.0 %}
+      <div class="text-center cell small-11 medium-4 align-center">
+        <i class="fi-telephone"></i>
+        <h3>{{ content.0.field_phone_title }}</h3>
+        {{ content.0.field_phone }} 
+        {{ content.0.field_phone_text }}
+      </div>
+      {% endif %}
+      {% if content.0.field_email.0 %}
+      <div class="text-center cell small-11 medium-4 align-center">
+        <i class="fi-mail"></i>
+        <h3>{{ content.0.field_email_title }}</h3>
+        {{ content.0.field_email }}
+        {{ content.0.field_email_text }}
+      </div>
+      {% endif %}
+      {% if content.0.field_security_message.0 %}
+      <div class="text-center cell small-11 medium-12 align-center">
+        <hr>
+        {{ content.0.field_security_message }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+

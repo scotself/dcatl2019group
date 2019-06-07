@@ -1,0 +1,25 @@
+uuid: 285cf560-2b2c-4404-a0ae-4c68bc7c95f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_color_5
+    - group.type.org
+  module:
+    - color_field
+id: group.org.field_color_5
+field_name: field_color_5
+entity_type: group
+bundle: org
+label: 'Color 5'
+description: 'This color will be applied to some icons used for bulleted lists as well as horizontal rules.'
+required: true
+translatable: true
+default_value:
+  -
+    color: '#a9a9a9'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

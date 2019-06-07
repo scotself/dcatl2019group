@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ * Contains dgc_multilingual.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Language\LanguageInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dgc_multilingual_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dgc_multilingual module.
+    case 'help.page.dgc_multilingual':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom functionality related to multilingual setup') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_language_switch_links_alter().
+ */
+function dgc_multilingual_language_switch_links_alter(array &$links, $type, $path) {
+  // Hides lang switcher for untranslated entities.
+  if ($entity = dgc_multilingual_get_page_entity()) {
+    $trans_links = [];
+    foreach ($links as $lang_code => $link) {
+      try {
+        // Check if current user has access to the translation.
+        if ($entity->getTranslation($lang_code)->access('view')) {
+          // Add translation lang to language switcher.
+          $trans_links[$lang_code] = $link;
+        }
+      }
+      catch (\InvalidArgumentException $e) {
+        // There isn't a translation for $lang_code. Don't add link to switcher.
+      }
+    }
+    $links = $trans_links;
+    // If we do not have more than 2 links, then there's nothing to switch.
+    // Hide the language switcher.
+    if (count($links) < 2) {
+      $links = [];
+    }
+  }
+  // Hides current lang from switcher.
+  $current_lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  unset($links[$current_lang]);
+
+}
+
+/**
+ * Gets current page entity.
+ *
+ * @return Drupal\Core\Entity\ContentEntityInterface
+ *   The entity, or FALSE.
+ */
+function dgc_multilingual_get_page_entity() {
+  $params = \Drupal::routeMatch()->getParameters()->all();
+  // If we are in a Group Content, we need the last param.
+  $entity = end($params);
+  if ($entity instanceof ContentEntityInterface) {
+    return $entity;
+  }
+  return FALSE;
+}

@@ -1,0 +1,21 @@
+uuid: a541f83b-7bc2-4f83-bc01-6f31069b71b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_section
+    - field.storage.block_content.field_phone_title
+id: block_content.contact_section.field_phone_title
+field_name: field_phone_title
+entity_type: block_content
+bundle: contact_section
+label: 'Phone Title'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: Phone
+default_value_callback: ''
+settings: {  }
+field_type: string

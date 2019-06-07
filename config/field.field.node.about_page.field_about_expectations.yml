@@ -1,0 +1,100 @@
+uuid: 576426d1-69ef-4383-b701-2393e951ea3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_expectations
+    - node.type.about_page
+    - paragraphs.paragraphs_type.about_expectations
+  module:
+    - entity_reference_revisions
+id: node.about_page.field_about_expectations
+field_name: field_about_expectations
+entity_type: node
+bundle: about_page
+label: Expectations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_expectations: about_expectations
+    target_bundles_drag_drop:
+      about:
+        weight: 25
+        enabled: false
+      about_are_you_eligible_exclusion:
+        weight: 26
+        enabled: false
+      about_are_you_eligible_inclusion:
+        weight: 27
+        enabled: false
+      about_banner:
+        weight: 28
+        enabled: false
+      about_eligible:
+        weight: 29
+        enabled: false
+      about_expectations:
+        enabled: true
+        weight: 30
+      about_locations:
+        weight: 31
+        enabled: false
+      about_locations_location:
+        weight: 32
+        enabled: false
+      about_overview:
+        weight: 33
+        enabled: false
+      about_team:
+        weight: 34
+        enabled: false
+      about_team_member:
+        weight: 35
+        enabled: false
+      about_why_join:
+        weight: 36
+        enabled: false
+      accordion_tabs_item:
+        weight: 37
+        enabled: false
+      banner_item:
+        weight: 38
+        enabled: false
+      eligibility:
+        weight: 39
+        enabled: false
+      get_started_item:
+        weight: 40
+        enabled: false
+      getting_started:
+        weight: 41
+        enabled: false
+      list_item_with_icon:
+        weight: 42
+        enabled: false
+      list_with_icons:
+        weight: 43
+        enabled: false
+      overview:
+        weight: 44
+        enabled: false
+      testimonial:
+        weight: 45
+        enabled: false
+      testimonials:
+        weight: 46
+        enabled: false
+      what_do_i_need_to_do:
+        weight: 47
+        enabled: false
+      why_join:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

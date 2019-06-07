@@ -1,0 +1,29 @@
+uuid: 555de76c-649b-42f4-be14-d8ce86328ecc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_footer_copyright
+    - group.type.org
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    full_html: '0'
+    basic_html: '0'
+    plain_text: '0'
+    mail: '0'
+id: group.org.field_footer_copyright
+field_name: field_footer_copyright
+entity_type: group
+bundle: org
+label: Copyright
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

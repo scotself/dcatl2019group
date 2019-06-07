@@ -1,0 +1,4 @@
+description: "Only check this box if you are sharing this image on another website (organization) within this platform. <br>\r\nDo not check if the image is proprietary in any way."
+settings:
+  on_label: 'On'
+  off_label: 'Off'

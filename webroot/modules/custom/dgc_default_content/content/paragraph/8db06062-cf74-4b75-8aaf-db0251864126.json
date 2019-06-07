@@ -1,0 +1,118 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/bulleted_list"
+        }
+    },
+    "id": [
+        {
+            "value": 35
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8db06062-cf74-4b75-8aaf-db0251864126"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 39
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "bulleted_list"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-03-26T13:17:57+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "36"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_why_join_list"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2019-04-08T18:53:08+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_bulleted_list_items": [
+        {
+            "value": "Nunc feugiat, mi at dapibus sollicitudin, enim erat volutpat ex, non ornare erat ante vitae tortor.",
+            "lang": "en"
+        },
+        {
+            "value": "Integer luctus sit amet dui sit amet rhoncus. Ut convallis neque mauris.",
+            "lang": "en"
+        },
+        {
+            "value": "Nam pharetra diam vel erat porttitor egestas. Maecenas eget sapien odio. Nullam semper euismod tortor, sed ultrices metus posuere quis.",
+            "lang": "en"
+        },
+        {
+            "value": "Morbi id tellus eu nibh suscipit ultrices eu in diam. Pellentesque ornare condimentum velit vitae dapibus. Suspendisse potenti.",
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+uuid: ddd9c92b-0be7-4607-bfe9-db23ff16eed2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.simple_lists
+label: 'Simple Lists'
+targetEntityType: paragraph
+cache: true

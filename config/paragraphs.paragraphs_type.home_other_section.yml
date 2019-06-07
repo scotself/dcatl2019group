@@ -1,0 +1,9 @@
+uuid: 884cf31f-7b04-45fd-a389-56edde48aec4
+langcode: en
+status: true
+dependencies: {  }
+id: home_other_section
+label: 'Home - Other Section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 8c140880-11f5-4c02-b290-97cb598b91de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_gtm_id
+    - group.type.study
+id: group.study.field_gtm_id
+field_name: field_gtm_id
+entity_type: group
+bundle: study
+label: 'Google Tag Manager ID'
+description: 'This GTM ID will be used for all Organizations within the Program. The Organization can override the GTM tag used on their content.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

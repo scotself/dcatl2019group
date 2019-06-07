@@ -1,0 +1,40 @@
+uuid: 724ef9c7-0915-45b6-aa5c-dbe4f498855e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.new_account.field_login_url
+    - field.field.message.new_account.field_memberships
+    - field.field.message.new_account.field_user
+    - message.template.new_account
+id: message.new_account.default
+targetEntityType: message
+bundle: new_account
+mode: default
+content:
+  field_login_url:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_memberships:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

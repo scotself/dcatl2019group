@@ -1,0 +1,84 @@
+uuid: 826b502a-a63f-4442-a931-8c93d06e9bf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_faq
+    - field.field.block_content.contact_faq.field_email
+    - field.field.block_content.contact_faq.field_phone
+    - field.field.block_content.contact_faq.field_phone_text
+    - field.field.block_content.contact_faq.field_point_of_contact_name
+    - field.field.block_content.contact_faq.field_point_of_contact_title
+    - field.field.block_content.contact_faq.field_section_title
+  module:
+    - telephone
+id: block_content.contact_faq.default
+targetEntityType: block_content
+bundle: contact_faq
+mode: default
+content:
+  field_email:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_phone_text:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_point_of_contact_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_point_of_contact_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_section_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 20
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

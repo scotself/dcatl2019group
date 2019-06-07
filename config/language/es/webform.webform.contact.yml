@@ -1,0 +1,4 @@
+title: Contact
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name'\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name'\nphone:\n  '#type': tel\n  '#title': Phone\nemail:\n  '#type': email\n  '#title': Email\n  '#pattern': '^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$'\n  '#pattern_error': 'Must be a properly formatted email address.'\n  '#states':\n    required:\n      ':input[name=\"mobile_phone\"]':\n        empty: true"
+settings:
+  confirmation_message: 'Your message has been sent.'

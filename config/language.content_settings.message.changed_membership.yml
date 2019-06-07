@@ -1,0 +1,11 @@
+uuid: 63bdabf2-2400-417c-9e99-00c13c5bcfe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.changed_membership
+id: message.changed_membership
+target_entity_type_id: message
+target_bundle: changed_membership
+default_langcode: site_default
+language_alterable: false

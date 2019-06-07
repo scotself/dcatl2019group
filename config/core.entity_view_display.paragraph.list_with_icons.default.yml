@@ -1,0 +1,28 @@
+uuid: 87c41ae5-618f-4053-b921-7ef5d3ddb5c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_with_icons.field_list_items
+    - paragraphs.paragraphs_type.list_with_icons
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.list_with_icons.default
+targetEntityType: paragraph
+bundle: list_with_icons
+mode: default
+content:
+  field_list_items:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

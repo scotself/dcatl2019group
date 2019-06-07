@@ -1,0 +1,34 @@
+uuid: e0880b38-0b9d-446b-97ee-fa43ca366f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.get_started_item.field_getting_started_item_body
+    - field.field.paragraph.get_started_item.field_title
+    - paragraphs.paragraphs_type.get_started_item
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.get_started_item.default
+targetEntityType: paragraph
+bundle: get_started_item
+mode: default
+content:
+  field_getting_started_item_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

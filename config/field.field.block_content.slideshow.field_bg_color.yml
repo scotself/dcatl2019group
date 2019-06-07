@@ -1,0 +1,22 @@
+uuid: 042172ae-7173-48d4-98bf-a7b8436884cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slideshow
+    - field.storage.block_content.field_bg_color
+  module:
+    - color_field
+id: block_content.slideshow.field_bg_color
+field_name: field_bg_color
+entity_type: block_content
+bundle: slideshow
+label: 'BG Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

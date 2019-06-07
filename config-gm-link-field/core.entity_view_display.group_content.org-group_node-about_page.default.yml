@@ -1,0 +1,30 @@
+uuid: 8abd9aa4-5d6c-4ffa-964d-e4c5449f2502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.org-group_node-about_page.field_menu_link
+    - group.content_type.org-group_node-about_page
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: group_content.org-group_node-about_page.default
+targetEntityType: group_content
+bundle: org-group_node-about_page
+mode: default
+content:
+  entity_id:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+hidden:
+  field_menu_link: true
+  langcode: true
+  uid: true

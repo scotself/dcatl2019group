@@ -1,0 +1,33 @@
+diff --git a/src/TfaContext.php b/src/TfaContext.php
+index 2636bb3..d7c1fdb 100644
+--- a/src/TfaContext.php
++++ b/src/TfaContext.php
+@@ -137,10 +137,25 @@ class TfaContext implements TfaContextInterface {
+       return TRUE;
+     }
+ 
+-    // If the user has a role that is required to use TFA, then return TRUE.
++    // Commenting out this logic per MTW-542
++    // // If the user has a role that is required to use TFA, then return TRUE.
++    // $required_roles = array_filter($this->tfaSettings->get('required_roles'));
++    // $user_roles = $this->getUser()->getRoles();
++    // return (bool) array_intersect($required_roles, $user_roles);
++
++    // Roles set to require TFA.
+     $required_roles = array_filter($this->tfaSettings->get('required_roles'));
+-    $user_roles = $this->getUser()->getRoles();
+-    return (bool) array_intersect($required_roles, $user_roles);
++    // User roles (excluding default anon / authenticated).
++    // @todo: check that this bool set doesn't conflict with other scenarios?
++    $user_roles = $this->getUser()->getRoles(TRUE);
++    // If user has (at least one) role not required, bypass TFA for user (MTW-542).
++    if (array_diff($user_roles, $required_roles)) {
++      return FALSE;
++    }
++    // All User's roles require TFA, so its required.
++    else {
++      return TRUE;
++    }
+   }
+ 
+   /**

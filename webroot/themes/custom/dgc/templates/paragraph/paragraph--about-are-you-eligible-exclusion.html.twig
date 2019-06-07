@@ -1,0 +1,11 @@
+<div class="about-elig-subhead">{{ content.field_about_eligible_excl_title }}</div>
+<ul class="with-icons">
+  {% for list_item in content.field_about_exclusions_list['#items'] %}
+    <li>
+    	<div class="each-list-item">
+        <i class="far fa-times-circle"></i>
+        <span>{{ list_item.value }}</span>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

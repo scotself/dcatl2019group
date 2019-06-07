@@ -1,0 +1,23 @@
+uuid: 65910e56-44db-4438-b405-1712f63cc6e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_about_layout
+    - paragraphs.paragraphs_type.about
+  module:
+    - options
+id: paragraph.about.field_home_about_layout
+field_name: field_home_about_layout
+entity_type: paragraph
+bundle: about
+label: Layout
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

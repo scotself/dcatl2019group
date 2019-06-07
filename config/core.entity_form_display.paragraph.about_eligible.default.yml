@@ -1,0 +1,67 @@
+uuid: 6b8b8284-edcd-4c6a-bc88-a95932f188e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_eligible.field_about_eligible_exclusions
+    - field.field.paragraph.about_eligible.field_about_eligible_inclusions
+    - field.field.paragraph.about_eligible.field_about_eligible_title
+    - field.field.paragraph.about_eligible.field_about_title_alignment
+    - paragraphs.paragraphs_type.about_eligible
+  module:
+    - maxlength
+    - paragraphs
+id: paragraph.about_eligible.default
+targetEntityType: paragraph
+bundle: about_eligible
+mode: default
+content:
+  field_about_eligible_exclusions:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Exclusion
+      title_plural: Exclusions
+      edit_mode: closed
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: about_are_you_eligible_exclusion
+    third_party_settings: {  }
+    region: content
+  field_about_eligible_inclusions:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Inclusion
+      title_plural: Inclusions
+      edit_mode: closed
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: about_are_you_eligible_inclusion
+    third_party_settings: {  }
+    region: content
+  field_about_eligible_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_about_title_alignment:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

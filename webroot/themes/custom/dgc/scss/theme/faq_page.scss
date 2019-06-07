@@ -1,0 +1,62 @@
+.faq-wrapper {
+  h2 {
+    margin-bottom: 1.25em;
+    margin-top: 1.25em;
+  }
+  h3, h4 {
+    padding-bottom: 1em;
+  }
+  h4::before {
+    display: block;
+    content: "";
+    height: 99px;
+    margin: -99px 0 0;
+    z-index: -1;
+    position: relative;
+  }
+  hr {
+    margin-bottom: 2.5em;
+  }
+}
+.faq-accordion {
+  li {
+    list-style-type: none;
+    border: 0px;
+  }
+  :last-child > .accordion-content:last-child, :last-child:not(.is-active) > .accordion-title {
+    border-bottom: 0;
+  }
+  .accordion-content {
+    margin-left: 1em;
+  }
+  .accordion-title {
+    @include p-strong;
+    margin-bottom: .5em;
+  }
+  .accordion-title::before {
+    left: 0em;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    margin-top: 0;
+    }
+  .is-active > .accordion-title::before {
+    margin-top: 0;
+  }
+}
+
+.faq {
+  margin-left: 2em;
+  padding-bottom: 1em;
+}
+
+
+.faq-simple {
+  .faq-question {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    a {
+      position: relative;
+    }
+  }
+}

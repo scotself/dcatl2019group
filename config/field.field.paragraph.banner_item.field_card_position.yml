@@ -1,0 +1,23 @@
+uuid: ffc53ff9-f0ec-4504-aceb-47d172127103
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_position
+    - paragraphs.paragraphs_type.banner_item
+  module:
+    - options
+id: paragraph.banner_item.field_card_position
+field_name: field_card_position
+entity_type: paragraph
+bundle: banner_item
+label: 'Card Position'
+description: 'The position of the card within the banner area.'
+required: true
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

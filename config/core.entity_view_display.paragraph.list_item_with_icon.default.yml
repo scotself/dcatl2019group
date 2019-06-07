@@ -1,0 +1,31 @@
+uuid: c0d528d4-4673-4488-bbfb-d67381eab467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_item_with_icon.field_icon
+    - field.field.paragraph.list_item_with_icon.field_item_text
+    - paragraphs.paragraphs_type.list_item_with_icon
+  module:
+    - options
+id: paragraph.list_item_with_icon.default
+targetEntityType: paragraph
+bundle: list_item_with_icon
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_item_text:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

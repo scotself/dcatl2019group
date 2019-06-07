@@ -1,0 +1,13 @@
+.form-required {
+  &::after {
+    content: "";
+    background-image: url(../images/required.svg);
+    background-repeat: no-repeat;
+    vertical-align: super;
+    background-size: 7px 7px;
+    width: 7px;
+    height: 7px;
+    margin: 0 0.3em;
+    display: inline-block;
+  }
+}

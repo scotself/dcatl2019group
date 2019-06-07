@@ -1,0 +1,23 @@
+uuid: 39ef0b6f-9345-4095-8946-cf5f8833251c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_title_alignment
+    - paragraphs.paragraphs_type.about_eligible
+  module:
+    - options
+id: paragraph.about_eligible.field_about_title_alignment
+field_name: field_about_title_alignment
+entity_type: paragraph
+bundle: about_eligible
+label: 'Title Alignment'
+description: 'The section titles are left-aligned by default.  You may select "Centered" to center the section title.'
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

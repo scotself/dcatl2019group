@@ -1,0 +1,28 @@
+uuid: 3a9c4a96-e8f7-429e-bf55-0f607ac10ef3
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - groupmenu_block
+  theme:
+    - vseven
+id: vseven_groupmenus
+theme: vseven
+region: header
+weight: -2
+provider: null
+plugin: groupmenus
+settings:
+  id: groupmenus
+  label: 'Group menu'
+  provider: groupmenu_block
+  label_display: '0'
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,28 @@
+uuid: 5669a680-6f23-46c7-8cb5-377bbba4bcc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_slideshow
+    - field.field.block_content.image_slideshow.field_images
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: block_content.image_slideshow.default
+targetEntityType: block_content
+bundle: image_slideshow
+mode: default
+content:
+  field_images:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,36 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dgc-group-color-1, $primary-color);
+}
+
+h1.dark-bg,
+h2.dark-bg,
+h3.dark-bg,
+h4.dark-bg,
+h5.dark-bg,
+h6.dark-bg {
+  color: $white;
+}
+
+.region-sidebar {
+  .block h2,
+  nav h2 {
+    font-size: 1rem;
+  }
+}
+
+h2 > a {
+  color: var(--dgc-group-color-1, $primary-color);
+}
+
+h2 > a:hover,
+h2 > a:focus {
+  color: var(--dgc-group-color-1, $primary-color);
+  filter: brightness(150%);
+}

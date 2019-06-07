@@ -1,0 +1,63 @@
+uuid: 867c4a0d-5e0b-4d4d-a895-a51ca4fb70ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_why_join.field_about_title_alignment
+    - field.field.paragraph.about_why_join.field_about_whyjoin_image
+    - field.field.paragraph.about_why_join.field_about_whyjoin_list
+    - field.field.paragraph.about_why_join.field_about_whyjoin_title
+    - paragraphs.paragraphs_type.about_why_join
+  module:
+    - maxlength
+    - media_library
+    - paragraphs
+id: paragraph.about_why_join.default
+targetEntityType: paragraph
+bundle: about_why_join
+mode: default
+content:
+  field_about_title_alignment:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_about_whyjoin_image:
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_about_whyjoin_list:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: 'Why Join List Item'
+      title_plural: 'Why Join List Items'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_about_whyjoin_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

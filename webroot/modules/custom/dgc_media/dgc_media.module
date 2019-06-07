@@ -1,0 +1,301 @@
+<?php
+
+/**
+ * @file
+ * Contains dgc_media.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\group\Entity\GroupContent;
+use Drupal\group\Entity\Group;
+use Drupal\Media\MediaInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dgc_media_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dgc_media module.
+    case 'help.page.dgc_media':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage media for DGC and groups') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ *
+ * Hook to use our group_insert after groupmenu (which implements same hook).
+ */
+function dgc_media_module_implements_alter(&$implementations, $hook) {
+  switch ($hook) {
+    // Move our hook_entity_type_insert() implementation to the end of the list.
+    case 'entity_type_insert':
+      $group = $implementations['dgc_media'];
+      unset($implementations['dgc_media']);
+      $implementations['dgc_media'] = $group;
+      break;
+
+    case 'inline_entity_form_entity_form_alter':
+      $group = $implementations['dgc_media'];
+      unset($implementations['dgc_media']);
+      $implementations['dgc_media'] = $group;
+      break;
+  }
+}
+
+/**
+ * Get current logged in user Group Ids.
+ *
+ * @return array
+ *   The current user gids.
+ */
+function _dgc_media_get_user_gids() {
+  /** @var \Drupal\Core\Session\AccountInterface $account */
+  $account = \Drupal::currentUser();
+  /** @var \Drupal\group\GroupMembershipLoaderInterface $membership_loader */
+  $membership_loader = \Drupal::service('group.membership_loader');
+  $group_ids = [];
+  foreach ($membership_loader->loadByUser($account) as $group_membership) {
+    $group = $group_membership->getGroup();
+
+    // Array with the groups the user is a member of.
+    $group_ids[] = $group->id();
+  }
+
+  return $group_ids;
+}
+
+/**
+ * Get Media Entity in user Group Ids.
+ *
+ * @return array
+ *   The Media Entity gids.
+ */
+function _dgc_media_get_media_gids($entity) {
+  $group_ids = [];
+  $group_contents = GroupContent::loadByEntity($entity);
+  /** @var \Drupal\group\Entity\GroupContent $group_content */
+  foreach ($group_contents as $group_content) {
+    $group_ids[] = $group_content->getGroup()->id();
+  }
+  return $group_ids;
+}
+
+/**
+ * Implements hook_inline_entity_form_entity_form_alter().
+ *
+ * Gets Orgs gid saved into tempStorage when using IEF in Study.
+ */
+function dgc_media_inline_entity_form_entity_form_alter(&$entity_form, FormStateInterface $form_state) {
+  // Org group can be edited inside a Study. Get gid from the referenced Entity.
+  if (in_array('field_orgs', $entity_form['#parents']) && !empty($entity_form['#entity'])) {
+    $org = $entity_form['#entity'];
+    $group_id = is_numeric($org) ? $org : $org->id();
+    // Save gid into dgc_media_filter.
+    try {
+      \Drupal::service('tempstore.private')
+        ->get('dgc_media_filter')
+        ->set('gid', $group_id);
+
+      // Program id from URL.
+      $program = \Drupal::routeMatch()->getParameter('group');
+      if ($program) {
+        \Drupal::service('tempstore.private')
+          ->get('dgc_media_filter')
+          ->set('pid', $program->id());
+      }
+    }
+    catch (\Exception $e) {
+      // Log error.
+      \Drupal::logger('dgc_media')->error($e->getMessage());
+      // Display Error.
+      \Drupal::messenger()->addError($e->getMessage());
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dgc_media_form_media_library_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Adding validate for visibility options.
+  $form['#validate'][] = '_dgc_media_visibility_validate';
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ *
+ * Insert hook to add images as group content on-the-fly.
+ */
+function dgc_media_media_insert(MediaInterface $entity) {
+  if ($entity->bundle() == 'image' || $entity->bundle() == 'remote_video') {
+    $params = \Drupal::request()->query->all();
+    // @todo: add some extra checks to limit this to the media_library view?
+    if (isset($params['media_library_opener_id'])) {
+      // Group content Plugin for media.
+      $plugin_id = 'group_media:' . $entity->bundle();
+      // Get tempStorage.
+      $temp_storage = \Drupal::service('tempstore.private');
+      // Get gid from tempStorage.
+      if (!empty($temp_storage)) {
+        $gid = $temp_storage->get('dgc_media_filter')->get('gid');
+        if ($entity->field_pm_wide_asset->value) {
+          // When study comes from url for new groups or edited from study.
+          if ($temp_storage->get('dgc_media_filter')->get('pid')) {
+            $pid = $temp_storage->get('dgc_media_filter')->get('pid');
+            $temp_storage->get('dgc_media_filter')->delete('pid');
+          }
+          // When study can be extracted from field_study.
+          elseif ($org = Group::load($gid)) {
+            if (!$org->field_study->isEmpty()) {
+              $pid = $org->field_study->first()->getValue()['target_id'];
+            }
+          }
+        }
+      }
+      // Load group.
+      // Only add group content if we have a group to add it to.
+      // If image is added to a New group we do this in group insert.
+      if (!empty($gid) && $group = Group::load($gid)) {
+        // Check if media is already related to organization.
+        $related = $group->getContentByEntityId($plugin_id, $entity->id());
+        if (empty($related)) {
+          // Add entity as group content.
+          $group->addContent($entity, $plugin_id);
+        }
+      }
+      // Add program wide asset.
+      if (!empty($pid) && $study = Group::load($pid)) {
+        // Check if media is already related to study.
+        $related = $study->getContentByEntityId($plugin_id, $entity->id());
+        if (empty($related)) {
+          // Add entity as group content.
+          $study->addContent($entity, $plugin_id);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function dgc_media_group_insert(EntityInterface $entity) {
+  if ($entity->bundle() === 'org') {
+    // Media entity in field_logo as Group Content on Group creation.
+    // @todo: Check if we need the same for Videos?
+    // @todo: Check if we need the same for other fields?
+    if ($logo_entity = $entity->get('field_logo')->entity) {
+      $media_id = $logo_entity->id();
+      $plugin_id = 'group_media:' . $logo_entity->bundle();
+      // Check if media is already related to group.
+      $related = $entity->getContentByEntityId($plugin_id, $media_id);
+      // If media entity is not already group content.
+      if (empty($related)) {
+        // Add media entity as group content.
+        $entity->addContent($logo_entity, $plugin_id);
+      }
+    }
+  }
+  // When study is new.
+  if ($entity->bundle() === 'study') {
+    // This for was needed because for some reason on this moment
+    // list or getIterator didn't work.
+    for ($i = 0; $i < $entity->field_orgs->count(); $i++) {
+      $org = $entity->field_orgs->get(0)->entity;
+      if ($logo_entity = $org->get('field_logo')->entity) {
+        $media_id = $logo_entity->id();
+        $plugin_id = 'group_media:' . $logo_entity->bundle();
+        if ($logo_entity->field_pm_wide_asset->value) {
+          // Check if media is already related to study.
+          $related = $entity->getContentByEntityId($plugin_id, $media_id);
+          // If media entity is not already study content.
+          if (empty($related)) {
+            // Add media entity as group content.
+            $entity->addContent($logo_entity, $plugin_id);
+          }
+        }
+      }
+    }
+  }
+}
+
+// /**
+//  * Implements hook_ENTITY_TYPE_update().
+//  *
+//  * Update hook to modify group content on Media entity update.
+//  */
+// function dgc_media_media_update(MediaInterface $entity) {
+//   // @todo: Update group content when media entity is updated.
+//   if ($entity->bundle() == 'image' || $entity->bundle() == 'remote_video') {
+//     // Get the field_pm_wide_asset field value.
+//     if ($entity->hasField('field_pm_wide_asset')) {
+//       $pwasset = $entity->get('field_pm_wide_asset')->getString();
+//       $pwasset_or = $entity->original->get('field_pm_wide_asset')->getString();
+//       // If the field_pm_wide_asset bool has been set to null.
+//       // The Media Asset should not longer be a Group Content for the Orgs.
+//       if ($pwasset_or == 1 && $pwasset == 0) {
+//         // Get group content for org group.
+//         $group_contents = \Drupal::entityTypeManager()
+//           ->getStorage('group_content')
+//           ->loadByProperties([
+//             'entity_id' => $entity->id(),
+//             'type' => ['org-group_media-image', 'org-group_media-remote_video'],
+//           ]);
+//         // If we have group content entities.
+//         if (!empty($group_contents)) {
+//           // Remove the group content entity for the Org group.
+//           // The group content will only exist on the Study now.
+//           foreach ($group_contents as $key => $gmedia) {
+//             $gmedia->delete();
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function dgc_media_views_data_alter(&$data) {
+  $data['media_field_data']['field_global_asset_value'] = [
+    'title' => t('Media Group Combined Filter'),
+    'filter' => [
+      'title' => t('Media Group Combined Filter'),
+      'help' => 'Filters media entities by current page Group and Global Asset field.',
+      'id' => 'media_group_combined_filter',
+      'field' => 'field_global_asset_value',
+    ],
+  ];
+}
+
+/**
+ * DGC media visibility validate.
+ */
+function _dgc_media_visibility_validate(&$form, FormStateInterface $form_state) {
+  $global_asset = $form_state->getValue([
+    'media',
+    0,
+    'fields',
+    'field_global_asset',
+    'value',
+  ]);
+  $pm_wide_asset = $form_state->getValue([
+    'media',
+    0,
+    'fields',
+    'field_pm_wide_asset',
+    'value',
+  ]);
+  if ($pm_wide_asset && $global_asset) {
+    $form_state->setErrorByName($form['media'][0]['field_pm_wide_asset'], t('An asset cannot be Global and Platform-Wide at the same time. Please uncheck one of those options.'));
+  }
+}

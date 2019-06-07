@@ -1,0 +1,9 @@
+uuid: 195ec24b-ef3c-4e2c-8f4c-a8e0e9fae531
+langcode: en
+status: true
+dependencies: {  }
+id: list_item_with_icon
+label: 'List Item (with icon)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

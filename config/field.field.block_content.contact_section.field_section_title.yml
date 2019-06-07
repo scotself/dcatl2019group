@@ -1,0 +1,21 @@
+uuid: 47d37360-74b3-49c7-80ef-d7e50cd37cd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_section
+    - field.storage.block_content.field_section_title
+id: block_content.contact_section.field_section_title
+field_name: field_section_title
+entity_type: block_content
+bundle: contact_section
+label: 'Section Title'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Contact Us'
+default_value_callback: ''
+settings: {  }
+field_type: string

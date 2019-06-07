@@ -1,0 +1,40 @@
+uuid: 4d438aaa-baa9-4544-adf7-5317f2924500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_with_single_icon.field_bulleted_list_items
+    - field.field.paragraph.list_with_single_icon.field_icon
+    - paragraphs.paragraphs_type.list_with_single_icon
+  module:
+    - maxlength
+id: paragraph.list_with_single_icon.default
+targetEntityType: paragraph
+bundle: list_with_single_icon
+mode: default
+content:
+  field_bulleted_list_items:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 185
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,18 @@
+uuid: 6ff57eb7-e1bf-4406-8f3a-772da26a537d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.org-group_node-faq
+id: group_content.org-group_node-faq.metatag
+field_name: metatag
+entity_type: group_content
+bundle: org-group_node-faq
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,114 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/faq"
+        }
+    },
+    "id": [
+        {
+            "value": 39
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d126e6c6-33ae-4404-a50c-32cfb4ceb73c"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 39
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "faq"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-03-26T14:09:43+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "40"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_faqs"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2019-03-26T14:11:30+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_answer": [
+        {
+            "value": "<p>Aliquam blandit, augue vitae euismod aliquet, nisi lectus eleifend lorem, ac feugiat dui felis non leo. Vivamus eleifend dolor vitae imperdiet volutpat. Integer ullamcorper magna et posuere laoreet. Nullam sit amet purus rutrum elit facilisis imperdiet. Sed purus lorem, euismod vitae rhoncus non, blandit ac felis. Proin rutrum vel nibh sed sodales. Proin nibh diam, mollis eu purus eget, mollis laoreet nisi.<\/p>\r\n",
+            "format": "limited_html",
+            "processed": "<p>Aliquam blandit, augue vitae euismod aliquet, nisi lectus eleifend lorem, ac feugiat dui felis non leo. Vivamus eleifend dolor vitae imperdiet volutpat. Integer ullamcorper magna et posuere laoreet. Nullam sit amet purus rutrum elit facilisis imperdiet. Sed purus lorem, euismod vitae rhoncus non, blandit ac felis. Proin rutrum vel nibh sed sodales. Proin nibh diam, mollis eu purus eget, mollis laoreet nisi.<\/p>\n",
+            "lang": "en"
+        }
+    ],
+    "field_question": [
+        {
+            "value": "Nam non massa et purus bibendum euismod?",
+            "lang": "en"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+.tabs {
+  margin-bottom: $global-margin;
+}
+.tabs.primary, .tabs.secondary {
+  background-color: var(--dgc-group-color-1, $primary-color);
+}
+.tabs.primary > li > a:hover,
+.tabs.primary > li > a:focus,
+.tabs.secondary > li > a:hover,
+.tabs.secondary > li > a:focus{
+  background: var(--dgc-group-color-1, $primary-color);
+  filter: brightness(150%);
+}

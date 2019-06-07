@@ -1,0 +1,668 @@
+uuid: ad11181a-6a24-4972-97c3-398b5589a46c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.org.field_banner
+    - field.field.group.org.field_body
+    - field.field.group.org.field_color_1
+    - field.field.group.org.field_color_2
+    - field.field.group.org.field_color_3
+    - field.field.group.org.field_color_4
+    - field.field.group.org.field_color_5
+    - field.field.group.org.field_color_6
+    - field.field.group.org.field_contact_block
+    - field.field.group.org.field_crm_org_id
+    - field.field.group.org.field_email
+    - field.field.group.org.field_facebook
+    - field.field.group.org.field_favicon
+    - field.field.group.org.field_footer_2_image
+    - field.field.group.org.field_footer_2_text
+    - field.field.group.org.field_footer_copyright
+    - field.field.group.org.field_gtm_id
+    - field.field.group.org.field_header_cta
+    - field.field.group.org.field_how_to_get_started
+    - field.field.group.org.field_instagram
+    - field.field.group.org.field_login_link
+    - field.field.group.org.field_logo
+    - field.field.group.org.field_menu_link
+    - field.field.group.org.field_optimize_gtm_id
+    - field.field.group.org.field_optimize_ua_id
+    - field.field.group.org.field_other_section
+    - field.field.group.org.field_phone
+    - field.field.group.org.field_privacy
+    - field.field.group.org.field_study
+    - field.field.group.org.field_terms_of_use
+    - field.field.group.org.field_twitter
+    - field.field.group.org.field_youtube
+    - field.field.group.org.layout_builder__layout
+    - group.type.org
+  module:
+    - color_field
+    - field_group
+    - file
+    - inline_entity_form
+    - link
+    - maxlength
+    - media_library
+    - paragraphs
+    - path
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_branding
+        - group_contact
+        - group_banner
+        - group_about
+        - group_how_to_get_started
+        - group_other
+        - group_contact_section
+        - group_footer
+        - group_integrations
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: Tabs
+      region: content
+    group_branding:
+      children:
+        - field_logo
+        - field_favicon
+        - group_colors
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        label: Branding
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Branding
+      region: content
+    group_contact:
+      children:
+        - field_email
+        - field_phone
+        - field_header_cta
+        - field_login_link
+      parent_name: group_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        label: Header
+        formatter: closed
+        description: ''
+        id: ''
+        classes: ''
+        required_fields: false
+      label: Header
+      region: content
+    group_footer:
+      children:
+        - group_footer_sections
+      parent_name: group_tabs
+      weight: 29
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Footer
+      region: content
+    group_banner:
+      children:
+        - field_banner
+      parent_name: group_tabs
+      weight: 24
+      format_type: tab
+      format_settings:
+        label: Hero
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Hero
+      region: content
+    group_about:
+      children:
+        - field_body
+      parent_name: group_tabs
+      weight: 25
+      format_type: tab
+      format_settings:
+        label: About
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: About
+      region: content
+    group_how_to_get_started:
+      children:
+        - field_how_to_get_started
+      parent_name: group_tabs
+      weight: 26
+      format_type: tab
+      format_settings:
+        label: Process
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Process
+      region: content
+    group_colors:
+      children:
+        - field_color_1
+        - field_color_2
+        - field_color_3
+        - field_color_4
+        - field_color_5
+        - field_color_6
+      parent_name: group_branding
+      weight: 41
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Colors
+      region: content
+    group_integrations:
+      children:
+        - field_gtm_id
+        - group_google_optimize
+        - field_crm_org_id
+      parent_name: group_tabs
+      weight: 30
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+        formatter: closed
+        description: ''
+      label: Integrations
+      region: content
+    group_footer_sections:
+      children:
+        - group_footer_main
+        - group_footer_2
+        - group_footer_last
+      parent_name: group_footer
+      weight: 27
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Footer Sections'
+      region: content
+    group_google_optimize:
+      children:
+        - field_optimize_gtm_id
+        - field_optimize_ua_id
+      parent_name: group_integrations
+      weight: 6
+      format_type: details
+      format_settings:
+        label: 'Google Optimize'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Google Optimize'
+      region: content
+    group_other:
+      children:
+        - field_other_section
+      parent_name: group_tabs
+      weight: 27
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Other
+      region: content
+    group_contact_section:
+      children:
+        - field_contact_block
+      parent_name: group_tabs
+      weight: 28
+      format_type: tab
+      format_settings:
+        label: Contact
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Contact
+      region: content
+    group_footer_main:
+      children:
+        - field_facebook
+        - field_twitter
+        - field_youtube
+        - field_instagram
+      parent_name: group_footer_sections
+      weight: 20
+      format_type: tab
+      format_settings:
+        label: 'Footer 1'
+        formatter: closed
+        description: "The organization logo, menu links, email and phone (if present) are included by default.<br />\r\nYou may optionally include social media icons by filling out the URLs below."
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Footer 1'
+      region: content
+    group_footer_2:
+      children:
+        - field_footer_2_text
+        - field_footer_2_image
+      parent_name: group_footer_sections
+      weight: 21
+      format_type: tab
+      format_settings:
+        label: 'Footer 2'
+        formatter: closed
+        description: 'Optionally include additional footer text, often used for a disclaimer and accompanied by the logo of a sponsoring or partner organization.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Footer 2'
+      region: content
+    group_footer_last:
+      children:
+        - field_footer_copyright
+        - field_privacy
+        - field_terms_of_use
+      parent_name: group_footer_sections
+      weight: 22
+      format_type: tab
+      format_settings:
+        label: 'Footer 3'
+        formatter: closed
+        description: 'Includes the copyright info and links to privacy policy and terms & conditions pages.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Footer 3'
+      region: content
+id: group.org.default
+targetEntityType: group
+bundle: org
+mode: default
+content:
+  field_banner:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Banner
+      title_plural: Banners
+      edit_mode: preview
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: banner_item
+    third_party_settings: {  }
+    region: content
+  field_body:
+    type: entity_reference_paragraphs
+    weight: 34
+    settings:
+      title: About
+      title_plural: About
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: about
+    third_party_settings: {  }
+    region: content
+  field_color_1:
+    weight: 45
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_color_2:
+    weight: 46
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_color_3:
+    weight: 47
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_color_4:
+    weight: 48
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_color_5:
+    weight: 49
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_color_6:
+    weight: 50
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_contact_block:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Contact Section'
+      label_plural: 'Contact Sections'
+      allow_new: true
+      match_operator: STARTS_WITH
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+  field_content:
+    weight: 8
+    settings:
+      title: Widget
+      title_plural: Widgets
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 1
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_crm_org_id:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: sample@organization.com
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_facebook:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: ''
+    type: string_textfield
+    region: content
+  field_favicon:
+    weight: 40
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_footer_2_image:
+    type: media_library_widget
+    weight: 52
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_footer_2_text:
+    weight: 51
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+      maxlength:
+        maxlength_js: 300
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
+        maxlength_js_truncate_html: true
+    type: text_textarea
+    region: content
+  field_footer_copyright:
+    weight: 23
+    settings:
+      rows: 3
+      placeholder: '©2019 Our Organization'
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+      maxlength:
+        maxlength_js: 40
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
+        maxlength_js_truncate_html: true
+    type: text_textarea
+    region: content
+  field_gtm_id:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_header_cta:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 15
+        maxlength_js_label: '   '
+    type: link_default
+    region: content
+  field_how_to_get_started:
+    type: entity_reference_paragraphs
+    weight: 8
+    settings:
+      title: 'Process Section'
+      title_plural: 'Process Section'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_instagram:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: ''
+    type: string_textfield
+    region: content
+  field_login_link:
+    weight: 13
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 15
+        maxlength_js_label: '    '
+    type: link_default
+    region: content
+  field_logo:
+    weight: 39
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_optimize_gtm_id:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_optimize_ua_id:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_other_section:
+    type: entity_reference_paragraphs
+    weight: 44
+    settings:
+      title: 'Messages, Testimonials and/or Videos'
+      title_plural: 'Messages, Testimonials and/or Videos'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    weight: 11
+    settings:
+      placeholder: '(xxx) xxx-xxxx'
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_privacy:
+    weight: 24
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_terms_of_use:
+    weight: 25
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_twitter:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: ''
+    type: string_textfield
+    region: content
+  field_youtube:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: ''
+    type: string_textfield
+    region: content
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  layout_builder__layout:
+    type: null
+    weight: 35
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_ga_id: true
+  field_menu_link: true
+  field_study: true
+  langcode: true
+  moderation_state: true
+  uid: true

@@ -1,0 +1,30 @@
+uuid: 8c9ef67f-e9d7-4bb6-ab45-90f94df60a45
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.global
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - vseven
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: vseven_messages
+theme: vseven
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: global
+    context_mapping: {  }

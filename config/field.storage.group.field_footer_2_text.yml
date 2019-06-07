@@ -1,0 +1,23 @@
+uuid: 91e882c2-385e-4a73-9e07-27dbadaff3fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - group
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: group.field_footer_2_text
+field_name: field_footer_2_text
+entity_type: group
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

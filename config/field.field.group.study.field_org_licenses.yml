@@ -1,0 +1,25 @@
+uuid: 13983399-2acc-42eb-9723-f47af2bc205d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_org_licenses
+    - group.type.study
+id: group.study.field_org_licenses
+field_name: field_org_licenses
+entity_type: group
+bundle: study
+label: Licenses
+description: 'The number of Organizations this Program is licensed to have.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ' organizations'
+field_type: integer

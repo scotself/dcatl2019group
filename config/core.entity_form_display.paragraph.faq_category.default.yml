@@ -1,0 +1,47 @@
+uuid: 04bf28be-ad13-4fc3-a6aa-a233c7ae102c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq_category.field_faq_category
+    - field.field.paragraph.faq_category.field_faqs
+    - paragraphs.paragraphs_type.faq_category
+  module:
+    - maxlength
+    - paragraphs
+id: paragraph.faq_category.default
+targetEntityType: paragraph
+bundle: faq_category
+mode: default
+content:
+  field_faq_category:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 40
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_faqs:
+    weight: 1
+    settings:
+      title: FAQs
+      title_plural: FAQs
+      edit_mode: preview
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: faq
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

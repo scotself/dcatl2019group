@@ -1,0 +1,19 @@
+uuid: 374bb765-7c65-44da-aaa8-aade108e84cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_inclusions_list
+    - paragraphs.paragraphs_type.about_are_you_eligible_inclusion
+id: paragraph.about_are_you_eligible_inclusion.field_about_inclusions_list
+field_name: field_about_inclusions_list
+entity_type: paragraph
+bundle: about_are_you_eligible_inclusion
+label: 'Inclusions List'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

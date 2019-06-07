@@ -1,0 +1,8 @@
+uuid: afae86fd-d117-480a-b461-893ce50ebbe8
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+revision: 1
+description: 'A single banner item.'

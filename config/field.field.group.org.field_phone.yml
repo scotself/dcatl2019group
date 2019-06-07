@@ -1,0 +1,26 @@
+uuid: 9e7bc8e1-abeb-4dd8-9289-d6a9ebb7ac0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_phone
+    - group.type.org
+  module:
+    - telephone
+    - telephone_validation
+third_party_settings:
+  telephone_validation:
+    format: 0
+    country: {  }
+id: group.org.field_phone
+field_name: field_phone
+entity_type: group
+bundle: org
+label: Phone
+description: 'Will be shown in both the header and footer.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

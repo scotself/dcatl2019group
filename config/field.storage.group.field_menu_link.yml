@@ -1,0 +1,24 @@
+uuid: ffcd0c2c-552f-4c08-8639-ac346d486159
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - group
+    - menu_link
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: group.field_menu_link
+field_name: field_menu_link
+entity_type: group
+type: menu_link
+settings:
+  menu_link_per_translation: true
+module: menu_link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

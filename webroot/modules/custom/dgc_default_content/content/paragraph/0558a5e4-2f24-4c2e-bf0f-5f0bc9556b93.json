@@ -1,0 +1,105 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/list_item_with_icon"
+        }
+    },
+    "id": [
+        {
+            "value": 89
+        }
+    ],
+    "uuid": [
+        {
+            "value": "0558a5e4-2f24-4c2e-bf0f-5f0bc9556b93"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 137
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "list_item_with_icon"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-04-08T18:34:43+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "8"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_list_items"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2019-04-08T18:34:43+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_icon": [
+        {
+            "value": "fas fa-chevron-circle-left"
+        }
+    ],
+    "field_item_text": [
+        {
+            "value": "Curabitur magna ante, vehicula quis ligula ac, facilisis aliquet arcu. Nam hendrerit tincidunt mauris.",
+            "lang": "en"
+        }
+    ]
+}

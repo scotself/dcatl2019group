@@ -1,0 +1,119 @@
+#contact-section {
+  padding: 2rem 0;
+  p, h2 {
+    padding: $global-padding;
+  }
+  i, h3, a {
+    color: var(--dgc-group-color-2);
+  }
+  #edit-actions-submit {
+    margin-top: $global-margin;
+  }
+  hr {
+    width: 100vw;
+    margin: 0 0 0 -10px;
+    @include breakpoint(medium) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+.field--name-field-security-message  {
+  @include p-strong;
+  padding: 20px;
+  p {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.contact-small {
+  h3 {
+    padding: 1em 0;
+  }
+  .field--type-text-with-summary {
+    padding-right: 3em;
+  }
+  .contact-methods {
+    .grid-y {
+      max-width: 80%;
+    }
+    > div {
+      padding-bottom: 2em;
+    }
+    > div > div {
+      padding-right: 1em;
+    }
+  }
+  i {
+    font-size: 2em;
+    margin: 0 .5em 0 0;
+  }
+  @include breakpoint(medium) {
+    .field--name-field-email {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.contact-medium {
+  .grid-y {
+    max-width: 85%;
+  }
+  @include breakpoint(medium) {
+    .field--name-field-email {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .cell {
+    padding-bottom: 2em;
+  }
+  i {
+    font-size: 2em;
+    margin: 0 .5em 0 0;
+  }
+
+  label {
+    font-weight: 500;
+  }
+  #edit-submit {
+    width: 100%;
+    margin-top: 1.25em;
+  }
+}
+.contact-medium-title.cell {
+    padding-bottom: 0px;
+  }
+
+.contact-large {
+  i {
+    font-size: 3em;
+  }
+  i:before {
+    padding-bottom: 0.25em;
+  }
+  .cell {
+    padding-bottom: 2em;
+  }
+  .field--name-field-email {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+
+  }
+
+
+
+}
+
+.grid-background-contact {
+  background-color: var(--dgc-group-color-3);
+}

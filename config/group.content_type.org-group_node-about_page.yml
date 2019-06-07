@@ -1,0 +1,20 @@
+uuid: 06f25b65-f1c9-411f-8ade-a35341e71b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.org
+    - node.type.about_page
+  module:
+    - gnode
+    - node
+id: org-group_node-about_page
+label: 'Organization: Group node (About Page)'
+description: 'Adds <em class="placeholder">About Page</em> content to groups both publicly and privately.'
+group_type: org
+content_plugin: 'group_node:about_page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true
+  node_form_group_menu: 0

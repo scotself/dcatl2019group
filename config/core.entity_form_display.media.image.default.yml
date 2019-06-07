@@ -1,0 +1,58 @@
+uuid: 2b4fe7e4-9703-428e-9bf1-e23650e559af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_global_asset
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_pm_wide_asset
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - focal_point
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_global_asset:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_media_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      offsets: '50,50'
+      progress_indicator: throbber
+      preview_link: false
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_pm_wide_asset:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  group_content: true
+  langcode: true
+  moderation_state: true
+  path: true
+  status: true
+  translation: true
+  uid: true

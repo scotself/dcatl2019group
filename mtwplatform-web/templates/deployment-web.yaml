@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mtwplatform-web
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: mtwplatform
+    role: web
+    tier: {{ .Values.tiers.web }}
+spec:
+  replicas: {{ .Values.replicas.web }}
+  nodeSelector:
+    tier: {{ .Values.tiers.web }}
+  selector:
+    matchLabels:
+      app: mtwplatform
+      role: web
+  template:
+    metadata:
+      labels:
+        app: mtwplatform
+        role: web
+        tier: {{ .Values.tiers.web }}
+    spec:
+      imagePullSecrets:
+        - name: {{ .Values.images.web.reg }}      
+      nodeSelector:
+        tier: {{ .Values.tiers.web }}
+      containers:
+      - name: mtwplatform-web
+        image: {{ .Values.images.web.reg }}/{{ .Values.images.web.name }}:{{ .Values.images.web.tag }}
+        imagePullPolicy: {{ .Values.images.web.pullPolicy }}
+        ports:
+        - containerPort: {{ .Values.containerPorts.web }}
+        command: ["/bin/sh"]
+        args: ["/start_nginx_with_config.sh"]
+        env:
+{{ toYaml .Values.env.web | indent 8 }}
+        resources:
+{{ toYaml .Values.resources.web | indent 10 }}

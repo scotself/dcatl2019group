@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dgc_media",
+  "type": "drupal-module",
+  "description": "Manage media for DGC and groups",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dgc_media",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dgc_media",
+    "source": "http://cgit.drupalcode.org/dgc_media"
+  },
+  "require": { }
+}

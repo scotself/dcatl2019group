@@ -1,0 +1,5 @@
+services:
+  dgc_users.event_subscriber:
+    class: Drupal\dgc_users\EventSubscriber\DgcUsersSubscriber
+    tags:
+      - {name: event_subscriber}

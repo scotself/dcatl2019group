@@ -1,0 +1,28 @@
+uuid: bd611aa2-f9b8-4cc9-bd89-711668923f3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_faq
+    - field.storage.node.field_contact_section_block
+    - node.type.faq
+id: node.faq.field_contact_section_block
+field_name: field_contact_section_block
+entity_type: node
+bundle: faq
+label: Contact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      contact_faq: contact_faq
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

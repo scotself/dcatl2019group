@@ -1,0 +1,7 @@
+text:
+  -
+    value: "<p>[site:name]&nbsp;Update to Account</p>\r\n"
+    format: mail
+  -
+    value: "<p>[message:author:field_fname],</p>\r\n\r\n<p>A site administrator at&nbsp;[site:name]&nbsp;has updated your access to websites. The next time you login to the system, you will see the updates which include:</p>\r\n\r\n<p>Updated in&nbsp;[message:field_group:entity:type-name]&nbsp;[message:field_group:entity:title]&nbsp;as a&nbsp;[message:field_roles].</p>\r\n\r\n<p>Please contact the site administrator with any questions.</p>\r\n\r\n<p>–&nbsp;[site:name]&nbsp;team</p>\r\n"
+    format: mail

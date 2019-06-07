@@ -1,0 +1,18 @@
+uuid: 80879358-4f5f-4f49-afbb-33cc3bce95fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.org-group_node-faq
+id: group_content.org-group_node-faq.created
+field_name: created
+entity_type: group_content
+bundle: org-group_node-faq
+label: 'Created on'
+description: 'The time that the group content was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

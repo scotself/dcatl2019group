@@ -1,0 +1,5 @@
+services:
+  dgc_layout.route_subscriber:
+    class: Drupal\dgc_layout\Routing\RouteSubscriber
+    tags:
+      - {name: event_subscriber}

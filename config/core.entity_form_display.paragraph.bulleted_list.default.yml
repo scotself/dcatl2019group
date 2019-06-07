@@ -1,0 +1,33 @@
+uuid: 748add0e-feaa-4345-9126-36344109e0aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bulleted_list.field_bulleted_list_items
+    - paragraphs.paragraphs_type.bulleted_list
+  module:
+    - maxlength
+id: paragraph.bulleted_list.default
+targetEntityType: paragraph
+bundle: bulleted_list
+mode: default
+content:
+  field_bulleted_list_items:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 185
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

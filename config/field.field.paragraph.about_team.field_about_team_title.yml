@@ -1,0 +1,21 @@
+uuid: acd2171a-db34-4e51-9f6e-717c74dc79df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_team_title
+    - paragraphs.paragraphs_type.about_team
+id: paragraph.about_team.field_about_team_title
+field_name: field_about_team_title
+entity_type: paragraph
+bundle: about_team
+label: Title
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Meet the Team'
+default_value_callback: ''
+settings: {  }
+field_type: string

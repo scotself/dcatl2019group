@@ -1,0 +1,27 @@
+uuid: 9e703de0-ee01-4401-a93a-8e08195841a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_privacy
+    - group.type.org
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    mail: '0'
+id: group.org.field_privacy
+field_name: field_privacy
+entity_type: group
+bundle: org
+label: 'Privacy Policy'
+description: 'The organization''s privacy policy will appear on its own page, linked in the footer of all of their content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,34 @@
+uuid: 62c69fc9-a7e7-44b7-bc21-0aa1b3968dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_with_icons.field_list_items
+    - paragraphs.paragraphs_type.list_with_icons
+  module:
+    - paragraphs
+id: paragraph.list_with_icons.default
+targetEntityType: paragraph
+bundle: list_with_icons
+mode: default
+content:
+  field_list_items:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,7 @@
+name: 'dgc - Organizations'
+type: module
+description: 'dgc Organizations'
+core: 8.x
+package: 'dgc'
+dependencies:
+  - group

@@ -1,0 +1,69 @@
+uuid: 1bc62a33-14cd-40f9-b7bf-49cde6c1045e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.about.field_eligibility
+    - field.field.paragraph.about.field_home_about_layout
+    - field.field.paragraph.about.field_overview
+    - field.field.paragraph.about.field_what_do_i_need_to_do
+    - field.field.paragraph.about.field_why_join
+    - paragraphs.paragraphs_type.about
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.about.preview
+targetEntityType: paragraph
+bundle: about
+mode: preview
+content:
+  field_eligibility:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_home_about_layout:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_overview:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_what_do_i_need_to_do:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_why_join:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

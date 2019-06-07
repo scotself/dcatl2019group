@@ -1,0 +1,40 @@
+uuid: be2b85ce-59c8-435a-ae59-7880be88da9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.simple_lists
+    - field.field.paragraph.about_locations_team.field_about_locations
+    - field.field.paragraph.about_locations_team.field_about_team
+    - paragraphs.paragraphs_type.about_locations_team
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.about_locations_team.simple_lists
+targetEntityType: paragraph
+bundle: about_locations_team
+mode: simple_lists
+content:
+  field_about_locations:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_team:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

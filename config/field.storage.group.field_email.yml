@@ -1,0 +1,22 @@
+uuid: 501eb780-fdef-40d1-8c57-302c4c7896d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - group
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: group.field_email
+field_name: field_email
+entity_type: group
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 035da3b8-9f9d-41bb-afe4-7fdbc9b76089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_color_1
+    - group.type.org
+  module:
+    - color_field
+id: group.org.field_color_1
+field_name: field_color_1
+entity_type: group
+bundle: org
+label: 'Color 1'
+description: 'This color will be applied to headings, dark backgrounds and buttons over light backgrounds.'
+required: true
+translatable: true
+default_value:
+  -
+    color: '#262262'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

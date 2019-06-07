@@ -1,0 +1,17 @@
+uuid: 34101a1c-89e8-44c3-885c-64566580d4d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: org_views
+label: 'Org Views'
+logic: and
+conditions:
+  d4e0bd18-65eb-42c7-8d49-394e67217214:
+    id: request_path
+    pages: '/group/*/events'
+    negate: false
+    context_mapping: {  }
+    uuid: d4e0bd18-65eb-42c7-8d49-394e67217214
+allow_other_conditions: false

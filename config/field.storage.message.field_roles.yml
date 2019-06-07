@@ -1,0 +1,21 @@
+uuid: 42f26fd4-fc88-442e-a0d3-81bbdaa4c294
+langcode: en
+status: true
+dependencies:
+  module:
+    - message
+id: message.field_roles
+field_name: field_roles
+entity_type: message
+type: string
+settings:
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

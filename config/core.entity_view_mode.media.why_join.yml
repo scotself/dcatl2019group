@@ -1,0 +1,10 @@
+uuid: b98e2a34-150f-4cec-a508-fbcf72c0a9ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.why_join
+label: 'Why join'
+targetEntityType: media
+cache: true

@@ -1,0 +1,11 @@
+uuid: faa90db4-8623-4419-abe4-1bce8c8e2a46
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.added_membership
+id: message.added_membership
+target_entity_type_id: message
+target_bundle: added_membership
+default_langcode: site_default
+language_alterable: false

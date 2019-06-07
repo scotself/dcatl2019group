@@ -1,0 +1,9 @@
+uuid: 769391bf-d62d-4e70-b801-6f5845f47818
+langcode: en
+status: true
+dependencies: {  }
+id: getting_started_slideshow
+label: 'Home - Process Slideshow'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

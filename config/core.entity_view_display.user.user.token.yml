@@ -1,0 +1,39 @@
+uuid: e3e09c72-d1d6-4c72-a7e8-4a5c01ad1e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.token
+    - field.field.user.user.field_fname
+    - field.field.user.user.field_lname
+  module:
+    - user
+id: user.user.token
+targetEntityType: user
+bundle: user
+mode: token
+content:
+  field_fname:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lname:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_last_password_reset: true
+  field_org_licenses: true
+  field_password_expiration: true
+  field_study_licenses: true
+  group_content: true
+  langcode: true
+  member_for: true

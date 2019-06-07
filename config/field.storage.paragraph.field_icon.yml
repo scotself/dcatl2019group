@@ -1,0 +1,145 @@
+uuid: 1d7be038-f376-414e-a296-8a63056702a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: paragraph.field_icon
+field_name: field_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'fab fa-accessible-icon'
+      label: Accessible
+    -
+      value: 'fas fa-address-card'
+      label: 'Address Card'
+    -
+      value: 'far fa-arrow-alt-circle-left'
+      label: 'Arrow Left'
+    -
+      value: 'far fa-arrow-alt-circle-right'
+      label: 'Arrow Right'
+    -
+      value: 'far fa-arrow-alt-circle-up'
+      label: 'Arrow Up'
+    -
+      value: 'far fa-arrow-alt-circle-down'
+      label: 'Arrow Down'
+    -
+      value: 'fas fa-asterisk'
+      label: Asterisk
+    -
+      value: 'fas fa-at'
+      label: 'At (@) Symbol'
+    -
+      value: 'fas fa-ban'
+      label: Ban
+    -
+      value: 'fas fa-bookmark'
+      label: Bookmark
+    -
+      value: 'far fa-calendar'
+      label: Calendar
+    -
+      value: 'far fa-calendar-alt'
+      label: 'Calendar Alt'
+    -
+      value: 'far fa-calendar-plus'
+      label: 'Calendar w/Plus'
+    -
+      value: 'fas fa-check'
+      label: Checkmark
+    -
+      value: 'far fa-check-circle'
+      label: 'Checkmark in a circle'
+    -
+      value: 'far fa-check-square'
+      label: 'Checkmark in a square'
+    -
+      value: 'fas fa-chevron-circle-down'
+      label: 'Chevron Down'
+    -
+      value: 'fas fa-chevron-circle-left'
+      label: 'Chevron Left'
+    -
+      value: 'fas fa-chevron-circle-right'
+      label: 'Chevron Right'
+    -
+      value: 'fas fa-chevron-circle-up'
+      label: 'Chevron Up'
+    -
+      value: 'fas fa-clinic-medical'
+      label: 'Clinic - Medical'
+    -
+      value: 'fas fa-clipboard-check'
+      label: 'Clipboard w/checkmark'
+    -
+      value: 'fas fa-clipboard-list'
+      label: 'Clipboard w/list'
+    -
+      value: 'far fa-comments'
+      label: Comments
+    -
+      value: 'fas fa-exclamation-circle'
+      label: 'Exclamation (in circle)'
+    -
+      value: 'fas fa-exclamation-triangle'
+      label: 'Exclamation (in triangle)'
+    -
+      value: 'fas fa-file-medical'
+      label: 'File (medical)'
+    -
+      value: 'far fa-file-pdf'
+      label: 'File (pdf)'
+    -
+      value: 'fas fa-flask'
+      label: Flask
+    -
+      value: 'fas fa-heartbeat'
+      label: Heartbeat
+    -
+      value: 'fas fa-laptop-medical'
+      label: 'Laptop (medical)'
+    -
+      value: 'fas fa-link'
+      label: Link
+    -
+      value: 'fas fa-medkit'
+      label: Medkit
+    -
+      value: 'fas fa-microscope'
+      label: Microscope
+    -
+      value: 'fas fa-notes-medical'
+      label: 'Notes (medical)'
+    -
+      value: 'fas fa-share'
+      label: Share
+    -
+      value: 'fas fa-stethoscope'
+      label: Stethoscope
+    -
+      value: 'fas fa-user'
+      label: 'User (single silhouette)'
+    -
+      value: 'fas fa-user-friends'
+      label: 'Users (2 silhouettes)'
+    -
+      value: 'fas fa-user-md'
+      label: 'User (medical doctor)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

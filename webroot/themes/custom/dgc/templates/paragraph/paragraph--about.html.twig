@@ -1,0 +1,34 @@
+{% if layout == 1 %}
+<div class="grid-container">
+  <div class="home-about home-about-1 grid-x grid-padding-x layout-1">
+    <div class="home-about-overview cell small-11 align-center medium-6">{{ content.field_overview }}</div>
+    <div class="home-about-whyjoin cell small-11 align-center medium-6">{{ content.field_why_join }}</div>
+    <div class="home-about-eligibility cell small-11 align-center medium-6">{{ content.field_eligibility }}</div>
+    <hr>
+    <div class="home-about-whatdo cell small-11 align-center medium-6">{{ content.field_what_do_i_need_to_do }}</div>
+  </div>
+</div>
+
+{% elseif layout == 2 %}
+<div class="grid-container">
+  <div class="home-about home-about-2 grid-x grid-padding-x layout-2">
+    <div class="home-about-overview cell small-11 medium-12 align-center">{{ content.field_overview }}</div>
+    <div class="home-about-whyjoin cell small-11 medium-6 align-center">{{ content.field_why_join }}</div>
+    <div class="home-about-eligibility cell small-11 medium-6 align-center">{{ content.field_eligibility }}</div>
+    <hr>
+    <div class="home-about-whatdo cell small-11 medium-12 align-center">{{ content.field_what_do_i_need_to_do }}</div>
+  </div>
+</div>
+
+{% elseif layout == 3 %}
+<div class="grid-container">
+  <div class="home-about home-about-3 grid-x grid-padding-x layout-3">
+    <div class="home-about-overview cell small-11 medium-12 align-center">{{ content.field_overview }}</div>
+    <div class="home-about-whyjoin cell small-11 medium-12 align-center">{{ content.field_why_join }}</div>
+    <div class="home-about-eligibility cell small-11 medium-12 align-center">{{ content.field_eligibility }}</div>
+    <hr>
+    <div class="home-about-whatdo cell small-11 medium-12 align-center">{{ content.field_what_do_i_need_to_do }}</div>
+  </div>
+</div>
+
+{% endif %}

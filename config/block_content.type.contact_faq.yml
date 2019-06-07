@@ -1,0 +1,8 @@
+uuid: f44a622c-9079-4113-bab2-b8bfc462a401
+langcode: en
+status: true
+dependencies: {  }
+id: contact_faq
+label: 'Contact - FAQ'
+revision: 0
+description: 'Contact Section for FAQ section. Provides basic contact fields (email + phone + point of contact).'

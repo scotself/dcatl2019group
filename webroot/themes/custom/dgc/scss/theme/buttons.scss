@@ -1,0 +1,15 @@
+.button {
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: var(--dgc-group-color-1, $primary-color);
+  text-transform: uppercase;
+  &:hover {
+    filter: brightness(150%);
+  }
+}
+
+.view-header nav li,
+.block nav li {
+  list-style: none;
+  display: inline;
+}

@@ -1,0 +1,3 @@
+bypass assets filter:
+  title: 'Bypass assets filter'
+  description: 'User will see all assets, including Global and Platform wide.'

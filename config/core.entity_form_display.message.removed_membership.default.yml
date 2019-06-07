@@ -1,0 +1,22 @@
+uuid: aec6a403-4869-4abc-986e-46415ae83ba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.removed_membership.field_group
+    - message.template.removed_membership
+id: message.removed_membership.default
+targetEntityType: message
+bundle: removed_membership
+mode: default
+content:
+  field_group:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

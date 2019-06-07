@@ -1,0 +1,25 @@
+uuid: 5fb58bab-7b09-4d5d-bf53-29a7950b0860
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - message.template.removed_membership
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: message.removed_membership.mail_subject
+targetEntityType: message
+bundle: removed_membership
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+hidden:
+  field_group: true
+  partial_1: true

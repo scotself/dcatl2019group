@@ -1,0 +1,18 @@
+dgc.small:
+  label: small
+  mediaQuery: ''
+  weight: '0'
+  multipliers:
+    - '1x'
+dgc.medium:
+  label: medium
+  mediaQuery: 'screen and (min-width: 640px)'
+  weight: '1'
+  multipliers:
+    - '1x'
+dgc.large:
+  label: large
+  mediaQuery: 'screen and (min-width: 1024px)'
+  weight: '2'
+  multipliers:
+    - '1x'

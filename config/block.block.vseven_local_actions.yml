@@ -1,0 +1,20 @@
+uuid: fd58b88a-39a5-40db-b299-7524a7beb169
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vseven
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: vseven_local_actions
+theme: vseven
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

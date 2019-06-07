@@ -1,0 +1,9 @@
+uuid: 1f15ae2c-0fc6-4008-930a-fed8ae5044c0
+langcode: en
+status: true
+dependencies: {  }
+id: get_started_item
+label: 'Process Step'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

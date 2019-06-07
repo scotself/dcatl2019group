@@ -1,0 +1,14 @@
+settings:
+  default_submit_button_label: Submit
+  default_reset_button_label: Reset
+  default_preview_next_button_label: Preview
+  default_preview_label: Preview
+  dialog_options:
+    narrow:
+      title: Narrow
+    wide:
+      title: Wide
+element:
+  default_more_title: More
+mail:
+  default_from_name: '[site:name]'

@@ -1,0 +1,168 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/en\/organization-three\/about-organization-three?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group_content\/org-group_node-about_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-about_page\/gid": [
+            {
+                "href": "http:\/\/default\/en\/organization-three?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-about_page\/uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-about_page\/entity_id": [
+            {
+                "href": "http:\/\/default\/en\/node\/4?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 15
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4ff4b498-19d2-4ca1-a670-95edce45afc6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "org-group_node-about_page"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-about_page\/gid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/organization-three?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/group\/org"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d40e049e-dc58-4e40-9c34-2c3b5152de87"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-about_page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bd929aa7-6054-421c-a740-9b9775b93dd1"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-about_page\/entity_id": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/node\/4?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/about_page"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "8b689dbb-e3c6-4636-b878-cd7dda458615"
+                    }
+                ]
+            }
+        ]
+    },
+    "label": [
+        {
+            "value": "About organization three",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-03-29T15:17:46+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-03-29T15:17:46+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/organization-three\/about-organization-three",
+            "pid": 47,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_menu_link": [
+        {
+            "menu_name": "group-5-menu",
+            "title": "About Us",
+            "description": "",
+            "parent": "",
+            "weight": 1,
+            "lang": "en"
+        }
+    ],
+    "entity_id": [
+        {
+            "target_id": 4
+        }
+    ]
+}

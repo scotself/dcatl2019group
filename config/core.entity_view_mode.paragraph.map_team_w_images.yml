@@ -1,0 +1,10 @@
+uuid: d3fc8e61-143f-415b-8ef1-89eb9f530e72
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.map_team_w_images
+label: 'Location Map & Team w/ images'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,154 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/en\/organization-one\/faq-organization-one?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group_content\/org-group_node-faq"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-faq\/gid": [
+            {
+                "href": "http:\/\/default\/en\/organization-one?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-faq\/uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-faq\/entity_id": [
+            {
+                "href": "http:\/\/default\/en\/node\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4659c3c8-833b-47a7-88f4-6a0098219cc6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "org-group_node-faq"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-faq\/gid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/organization-one?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/group\/org"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "78c59a96-1164-4fd1-a4b8-396b43b96c3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-faq\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ef45d238-c3da-4354-88dc-f1d62b923417"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group_content\/org-group_node-faq\/entity_id": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/node\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/node\/faq"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9695924b-23f5-4d5a-9fbf-16560cb7466a"
+                    }
+                ]
+            }
+        ]
+    },
+    "label": [
+        {
+            "value": "FAQ Organization one"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-03-26T14:11:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-03-26T14:11:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "en"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "content_translation_status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "field_menu_link": [
+        {
+            "menu_name": "group-1-menu",
+            "title": "FAQ",
+            "description": "",
+            "parent": "",
+            "weight": 2
+        }
+    ],
+    "entity_id": [
+       {
+          "target_id": 1
+       }
+    ]
+}

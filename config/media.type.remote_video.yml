@@ -1,0 +1,18 @@
+uuid: c906fd40-d684-4156-b223-79c78c3c4454
+langcode: en
+status: true
+dependencies: {  }
+id: remote_video
+label: 'Remote Video'
+description: 'Media Type to manage and Display Remote Videos. Available sources: YouTube and Vimeo services.'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video
+field_map:
+  title: name

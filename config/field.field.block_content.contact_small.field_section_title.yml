@@ -1,0 +1,21 @@
+uuid: eebcd9ed-17c8-4557-baf8-facdd98a3615
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_small
+    - field.storage.block_content.field_section_title
+id: block_content.contact_small.field_section_title
+field_name: field_section_title
+entity_type: block_content
+bundle: contact_small
+label: 'Section Title'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Contact Us'
+default_value_callback: ''
+settings: {  }
+field_type: string

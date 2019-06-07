@@ -1,0 +1,26 @@
+uuid: ab045278-ec9b-4836-979c-b24c83f7f12d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_faq
+    - field.storage.block_content.field_phone
+  module:
+    - telephone
+    - telephone_validation
+third_party_settings:
+  telephone_validation:
+    format: 0
+    country: {  }
+id: block_content.contact_faq.field_phone
+field_name: field_phone
+entity_type: block_content
+bundle: contact_faq
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

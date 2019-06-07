@@ -1,0 +1,23 @@
+uuid: 379dab5f-63bf-4053-9f50-adf9e9e0712d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_alignment
+    - paragraphs.paragraphs_type.banner_item
+  module:
+    - options
+id: paragraph.banner_item.field_card_alignment
+field_name: field_card_alignment
+entity_type: paragraph
+bundle: banner_item
+label: 'Text Alignment'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

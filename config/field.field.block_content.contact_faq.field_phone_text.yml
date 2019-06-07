@@ -1,0 +1,19 @@
+uuid: b3f2562b-b1a6-451d-ab47-7c3da6b51b9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_faq
+    - field.storage.block_content.field_phone_text
+id: block_content.contact_faq.field_phone_text
+field_name: field_phone_text
+entity_type: block_content
+bundle: contact_faq
+label: 'Phone Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

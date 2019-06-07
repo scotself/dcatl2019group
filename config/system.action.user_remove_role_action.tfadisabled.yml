@@ -1,0 +1,14 @@
+uuid: beca0061-3e1b-4cdb-8e71-aa311dfea642
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tfadisabled
+  module:
+    - user
+id: user_remove_role_action.tfadisabled
+label: 'Remove the TFAdisabled role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tfadisabled

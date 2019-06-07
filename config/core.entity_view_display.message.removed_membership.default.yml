@@ -1,0 +1,31 @@
+uuid: d6229dd6-3966-4518-bf70-d50ac2b19d89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.removed_membership.field_group
+    - message.template.removed_membership
+id: message.removed_membership.default
+targetEntityType: message
+bundle: removed_membership
+mode: default
+content:
+  field_group:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  partial_0:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  partial_1:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

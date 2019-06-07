@@ -1,0 +1,17 @@
+uuid: 99463986-2b8c-4061-bc56-b4cf1d89f061
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.salesforce_sandbox
+  module:
+    - salesforce_jwt
+id: jwt_govcloud
+label: 'JWT GovCloud'
+provider: jwt_govcloud
+provider_settings:
+  consumer_key: 3MVG9Zdl7Yn6QDKPp8xjPqfGQRrROMfs9rjS0KcpoQ5tMSTkqWV2FLBIMy_w6tnuNUY2uC2bJ2QevrWI9ZcLK
+  login_user: api@dgchealth.com.vhpartial
+  login_url: 'https://test.salesforce.com'
+  encrypt_key: salesforce_sandbox
+  token_url: 'https://dgchealth--vhpartial.cs33.my.salesforce.com'

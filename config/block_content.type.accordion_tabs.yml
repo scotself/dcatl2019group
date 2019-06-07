@@ -1,0 +1,8 @@
+uuid: 5e439b5f-afc4-48b7-9556-2c85d28313bd
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_tabs
+label: 'Accordion Tabs'
+revision: 1
+description: 'A set of tabs/accordion items which can be set to tabs or accordion at any of the breakpoints.'

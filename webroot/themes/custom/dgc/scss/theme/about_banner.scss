@@ -1,0 +1,27 @@
+.about-banner {
+  background-color: var(--dgc-group-color-3);
+  height: 300px;
+  .about-banner-bg {
+    height: 100%;
+    .about-banner-card {
+      h2 {
+        font-size: 1.65rem;
+        margin-bottom: 1em;
+      }
+      h5 {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  .about-banner .about-banner-bg .about-banner-card {
+    h2 {
+      font-size: 2.4rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
+}

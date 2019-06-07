@@ -1,0 +1,82 @@
+uuid: 9fdb3520-00be-4840-bb6d-36dfdad10f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.field_contact_section_block
+    - field.field.node.faq.field_faqs
+    - node.type.faq
+  module:
+    - inline_entity_form
+    - maxlength
+    - paragraphs
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  field_contact_section_block:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Contact
+      label_plural: Contact
+      allow_new: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_faqs:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: 'FAQ Category'
+      title_plural: 'FAQ Categories'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: faqs
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  group_content: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

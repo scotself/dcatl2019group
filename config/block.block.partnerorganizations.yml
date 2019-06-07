@@ -1,0 +1,37 @@
+uuid: a37bb03a-d761-4aa3-a1a9-25278c5d6bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.tenant_home
+  module:
+    - block_visibility_groups
+    - ctools_block
+  theme:
+    - dgc
+id: partnerorganizations
+theme: dgc
+region: content
+weight: -5
+provider: null
+plugin: 'entity_field:group:field_orgs'
+settings:
+  id: 'entity_field:group:field_orgs'
+  label: Organizations
+  provider: ctools_block
+  label_display: visible
+  formatter:
+    label: hidden
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@group.group_route_context:group'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: tenant_home
+    context_mapping: {  }

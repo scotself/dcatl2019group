@@ -1,0 +1,19 @@
+uuid: a1200f33-ff16-4d74-b000-1a7c8b135d0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_subheading
+    - paragraphs.paragraphs_type.about_banner
+id: paragraph.about_banner.field_about_subheading
+field_name: field_about_subheading
+entity_type: paragraph
+bundle: about_banner
+label: Subheading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

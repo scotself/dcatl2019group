@@ -1,0 +1,27 @@
+uuid: 227b3906-a126-4192-8af3-7d8d2845eb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_other_text
+    - paragraphs.paragraphs_type.home_other_testimonial
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    mail: '0'
+id: paragraph.home_other_testimonial.field_home_other_text
+field_name: field_home_other_text
+entity_type: paragraph
+bundle: home_other_testimonial
+label: Quote
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

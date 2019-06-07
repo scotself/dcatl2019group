@@ -1,0 +1,8 @@
+uuid: e96f3be1-a16c-4d1a-aed7-55ed0cd6c702
+langcode: en
+status: true
+dependencies: {  }
+id: contact_section
+label: 'Contact - Option 3 FAQ, phone, email'
+revision: 0
+description: 'Contact Section - Long format. Provides Basic contact fields + FAQs reference + Security message text.'

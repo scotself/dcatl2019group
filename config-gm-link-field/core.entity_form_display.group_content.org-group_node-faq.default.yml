@@ -1,0 +1,50 @@
+uuid: 3ef95185-ba5c-43fe-87b4-e1e8c431de99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.org-group_node-faq.field_menu_link
+    - group.content_type.org-group_node-faq
+  module:
+    - menu_link
+    - path
+id: group_content.org-group_node-faq.default
+targetEntityType: group_content
+bundle: org-group_node-faq
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  field_menu_link:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: menu_link_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  uid: true

@@ -1,0 +1,68 @@
+uuid: 37d54ece-27f5-4670-b4a1-27d5e4ecf169
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_faq
+    - field.field.block_content.contact_faq.field_email
+    - field.field.block_content.contact_faq.field_phone
+    - field.field.block_content.contact_faq.field_phone_text
+    - field.field.block_content.contact_faq.field_point_of_contact_name
+    - field.field.block_content.contact_faq.field_point_of_contact_title
+    - field.field.block_content.contact_faq.field_section_title
+  module:
+    - telephone
+id: block_content.contact_faq.default
+targetEntityType: block_content
+bundle: contact_faq
+mode: default
+content:
+  field_email:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_phone:
+    weight: 1
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_phone_text:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_point_of_contact_name:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_point_of_contact_title:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

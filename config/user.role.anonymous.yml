@@ -1,0 +1,58 @@
+uuid: ce45dac4-a3cc-471f-addd-280fdd9691f1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: Visitor
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view all media revisions'
+  - 'view media'
+  - 'view paragraph content about'
+  - 'view paragraph content about_are_you_eligible_exclusion'
+  - 'view paragraph content about_are_you_eligible_inclusion'
+  - 'view paragraph content about_banner'
+  - 'view paragraph content about_eligible'
+  - 'view paragraph content about_expectations'
+  - 'view paragraph content about_locations'
+  - 'view paragraph content about_locations_team'
+  - 'view paragraph content about_overview'
+  - 'view paragraph content about_team'
+  - 'view paragraph content about_team_member'
+  - 'view paragraph content about_why_join'
+  - 'view paragraph content accordion_tabs'
+  - 'view paragraph content accordion_tabs_item'
+  - 'view paragraph content banner'
+  - 'view paragraph content banner_item'
+  - 'view paragraph content bulleted_list'
+  - 'view paragraph content content'
+  - 'view paragraph content eligibility'
+  - 'view paragraph content faq'
+  - 'view paragraph content faq_category'
+  - 'view paragraph content faqs'
+  - 'view paragraph content get_started_item'
+  - 'view paragraph content getting_started'
+  - 'view paragraph content getting_started_slideshow'
+  - 'view paragraph content grid'
+  - 'view paragraph content home_other_message'
+  - 'view paragraph content home_other_section'
+  - 'view paragraph content home_other_testimonial'
+  - 'view paragraph content home_other_video'
+  - 'view paragraph content image'
+  - 'view paragraph content image_grid'
+  - 'view paragraph content image_slideshow'
+  - 'view paragraph content image_slideshow_item'
+  - 'view paragraph content list_item_with_icon'
+  - 'view paragraph content list_of_links'
+  - 'view paragraph content list_with_icons'
+  - 'view paragraph content list_with_single_icon'
+  - 'view paragraph content location'
+  - 'view paragraph content overview'
+  - 'view paragraph content testimonial'
+  - 'view paragraph content testimonials'
+  - 'view paragraph content what_do_i_need_to_do'
+  - 'view paragraph content why_join'

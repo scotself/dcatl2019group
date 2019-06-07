@@ -1,0 +1,29 @@
+diff --git a/src/StreamWrapper/S3fsStream.php b/src/StreamWrapper/S3fsStream.php
+index 64d4264..90f8280 100644
+--- a/src/StreamWrapper/S3fsStream.php
++++ b/src/StreamWrapper/S3fsStream.php
+@@ -561,7 +561,11 @@ class S3fsStream extends StreamWrapper implements StreamWrapperInterface {
+       // All non-private files uploaded to S3 must be set to public-read, or
+       // users' browsers will get PermissionDenied errors, and torrent URLs
+       // won't work.
+-      $options[$this->protocol]['ACL'] = 'public-read';
++
++      // hacky patch to avoid setting public-read ACL in private buckets
++      if ($this->config['set_public_read_acl']) {
++        $options[$this->protocol]['ACL'] = 'public-read';
++      }
+     }
+     // Set the Cache-Control header, if the user specified one.
+     if (!empty($this->config['cache_control_header'])) {
+@@ -677,7 +681,10 @@ class S3fsStream extends StreamWrapper implements StreamWrapperInterface {
+   public function rename($from_uri, $to_uri) {
+     // Set access for new item in stream context.
+     if (\Drupal::service('file_system')->uriScheme($from_uri) != 'private') {
+-      stream_context_set_option($this->context, 's3', 'ACL', 'public-read');
++      // hacky patch to avoid setting public-read ACL in private buckets
++      if ($this->config['set_public_read_acl']) {
++        stream_context_set_option($this->context, 's3', 'ACL', 'public-read');
++      }
+     }
+ 
+     // If parent succeeds in renaming, updated local metadata and cache.

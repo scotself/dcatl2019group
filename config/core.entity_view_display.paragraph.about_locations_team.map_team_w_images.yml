@@ -1,0 +1,98 @@
+uuid: ed0ddf0e-29ea-4b1e-be0f-f6749690f156
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.map_team_w_images
+    - field.field.paragraph.about_locations_team.field_about_locations
+    - field.field.paragraph.about_locations_team.field_about_team
+    - field.field.paragraph.about_locations_team.field_layout
+    - paragraphs.paragraphs_type.about_locations_team
+  module:
+    - entity_reference_revisions
+    - field_group
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_grid_container:
+      children:
+        - group_grid
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Grid container'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: grid-container
+      label: 'Grid container'
+      region: content
+    group_grid:
+      children:
+        - group_content
+      parent_name: group_grid_container
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: Grid
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'grid-x grid-padding-x'
+      label: Grid
+      region: content
+    group_content:
+      children:
+        - field_about_team
+      parent_name: group_grid
+      weight: 20
+      format_type: html_element
+      format_settings:
+        label: Content
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'cell small-11 medium-12 align-center'
+      label: Content
+      region: content
+id: paragraph.about_locations_team.map_team_w_images
+targetEntityType: paragraph
+bundle: about_locations_team
+mode: map_team_w_images
+content:
+  field_about_locations:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: map_team_w_images
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_about_team:
+    type: entity_reference_revisions_entity_view
+    weight: 22
+    label: hidden
+    settings:
+      view_mode: map_team_w_images
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_layout: true

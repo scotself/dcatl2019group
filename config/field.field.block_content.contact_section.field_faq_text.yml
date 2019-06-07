@@ -1,0 +1,21 @@
+uuid: 23fea293-1079-497d-913a-eda6c70fc53b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_section
+    - field.storage.block_content.field_faq_text
+id: block_content.contact_section.field_faq_text
+field_name: field_faq_text
+entity_type: block_content
+bundle: contact_section
+label: 'FAQ Text'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Find Answers to Common Questions'
+default_value_callback: ''
+settings: {  }
+field_type: string

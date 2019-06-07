@@ -1,0 +1,19 @@
+uuid: aa51ce50-f6ac-4f91-aef4-0610c311ae32
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_section
+    - field.storage.block_content.field_email_text
+id: block_content.contact_section.field_email_text
+field_name: field_email_text
+entity_type: block_content
+bundle: contact_section
+label: 'Email Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

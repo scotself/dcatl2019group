@@ -1,0 +1,9 @@
+uuid: 6ed45ea8-6382-4bd1-91a1-ade7d6ab36b5
+langcode: en
+status: true
+dependencies: {  }
+id: list_with_icons
+label: 'List with Icon per Item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

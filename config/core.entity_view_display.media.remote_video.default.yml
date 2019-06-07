@@ -1,0 +1,34 @@
+uuid: 021333cc-2595-4c96-b53b-09b40c224771
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_global_asset
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_pm_wide_asset
+    - media.type.remote_video
+  module:
+    - media
+id: media.remote_video.default
+targetEntityType: media
+bundle: remote_video
+mode: default
+content:
+  field_media_oembed_video:
+    type: oembed
+    weight: 0
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_global_asset: true
+  field_pm_wide_asset: true
+  group_content: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,67 @@
+uuid: ea02a96d-b57a-4e8f-829c-70db4a784891
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_items
+    - paragraphs.paragraphs_type.list_item_with_icon
+    - paragraphs.paragraphs_type.list_with_icons
+  module:
+    - entity_reference_revisions
+id: paragraph.list_with_icons.field_list_items
+field_name: field_list_items
+entity_type: paragraph
+bundle: list_with_icons
+label: 'List Items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      list_item_with_icon: list_item_with_icon
+    target_bundles_drag_drop:
+      list_item_with_icon:
+        enabled: true
+        weight: 12
+      about:
+        weight: 13
+        enabled: false
+      getting_started:
+        weight: 14
+        enabled: false
+      accordion_tabs_item:
+        weight: 14
+        enabled: false
+      banner_item:
+        weight: 15
+        enabled: false
+      eligibility:
+        weight: 16
+        enabled: false
+      list_with_icons:
+        weight: 17
+        enabled: false
+      overview:
+        weight: 18
+        enabled: false
+      get_started_item:
+        weight: 19
+        enabled: false
+      testimonial:
+        weight: 19
+        enabled: false
+      testimonials:
+        weight: 20
+        enabled: false
+      what_do_i_need_to_do:
+        weight: 21
+        enabled: false
+      why_join:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

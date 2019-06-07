@@ -1,0 +1,27 @@
+uuid: ae81649f-030a-430f-8fde-90e7ed26785e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_expect_text
+    - paragraphs.paragraphs_type.about_expectations
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    mail: '0'
+id: paragraph.about_expectations.field_about_expect_text
+field_name: field_about_expect_text
+entity_type: paragraph
+bundle: about_expectations
+label: Text
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

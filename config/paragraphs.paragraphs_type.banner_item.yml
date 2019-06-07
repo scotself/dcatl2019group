@@ -1,0 +1,9 @@
+uuid: 1692cf5a-5e9d-4b58-90e3-f070db966fa3
+langcode: en
+status: true
+dependencies: {  }
+id: banner_item
+label: 'Home - Hero Banner'
+icon_uuid: null
+description: 'A single banner item used in the <em>banner</em> paragraph type.'
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: 150b7ed7-b01c-4c6b-8bd8-a950b09f6db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_color_4
+    - group.type.org
+  module:
+    - color_field
+id: group.org.field_color_4
+field_name: field_color_4
+entity_type: group
+bundle: org
+label: 'Color 4'
+description: 'This is the main text color for the content. Typically a dark charcoal, or near-black color.'
+required: true
+translatable: true
+default_value:
+  -
+    color: '#4a4a4a'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

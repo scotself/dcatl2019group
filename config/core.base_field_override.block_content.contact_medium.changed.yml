@@ -1,0 +1,18 @@
+uuid: 64bc715a-ccb1-461f-8d80-cc62bc80b6fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_medium
+id: block_content.contact_medium.changed
+field_name: changed
+entity_type: block_content
+bundle: contact_medium
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

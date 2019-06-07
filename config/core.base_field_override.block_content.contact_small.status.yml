@@ -1,0 +1,22 @@
+uuid: 0bd912a2-977f-425d-a20f-f3c16c269c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_small
+id: block_content.contact_small.status
+field_name: status
+entity_type: block_content
+bundle: contact_small
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

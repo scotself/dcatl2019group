@@ -1,0 +1,9 @@
+uuid: 7fdae70f-345f-4506-88f8-6238ed7ea2c9
+langcode: en
+status: true
+dependencies: {  }
+id: home_other_message
+label: 'Home - Other - Message'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

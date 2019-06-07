@@ -1,0 +1,17 @@
+uuid: 3ba6bb39-b185-48c0-a985-cfa9c5533f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.study
+  enforced:
+    config:
+      - user.role.tfadisabled
+id: study-6031d48a4
+label: 'TFA disabled'
+weight: -3
+internal: true
+audience: outsider
+group_type: study
+permissions_ui: false
+permissions: {  }
