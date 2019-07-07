@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.list_item_with_icon.field_icon
     - field.field.paragraph.list_item_with_icon.field_item_text
     - paragraphs.paragraphs_type.list_item_with_icon
-  module:
-    - maxlength
 id: paragraph.list_item_with_icon.default
 targetEntityType: paragraph
 bundle: list_item_with_icon
@@ -24,10 +22,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 185
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   translation:

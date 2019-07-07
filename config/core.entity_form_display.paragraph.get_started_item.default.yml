@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.get_started_item.field_getting_started_item_body
     - field.field.paragraph.get_started_item.field_title
     - paragraphs.paragraphs_type.get_started_item
-  module:
-    - maxlength
 id: paragraph.get_started_item.default
 targetEntityType: paragraph
 bundle: get_started_item
@@ -18,12 +16,7 @@ content:
     settings:
       rows: 3
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 280
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
-        maxlength_js_enforce: true
-        maxlength_js_truncate_html: true
+    third_party_settings: {  }
     type: string_textarea
     region: content
   field_title:
@@ -31,10 +24,7 @@ content:
     settings:
       size: 50
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 50
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   translation:

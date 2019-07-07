@@ -9,7 +9,6 @@ dependencies:
     - field.field.paragraph.about_team.field_about_title_alignment
     - paragraphs.paragraphs_type.about_team
   module:
-    - maxlength
     - paragraphs
     - text
 id: paragraph.about_team.default
@@ -42,10 +41,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 60
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_about_title_alignment:

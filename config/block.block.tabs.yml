@@ -2,8 +2,6 @@ uuid: c05ebbf8-6baa-4b7e-8945-3a3072127313
 langcode: en
 status: true
 dependencies:
-  module:
-    - block_visibility_groups
   theme:
     - vseven
 id: tabs
@@ -19,9 +17,4 @@ settings:
   label_display: '0'
   primary: false
   secondary: true
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

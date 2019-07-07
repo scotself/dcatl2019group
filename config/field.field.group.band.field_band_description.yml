@@ -1,0 +1,22 @@
+uuid: ac8746b2-47ec-4202-baf5-a27bbba77044
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_band_description
+    - group.type.band
+  module:
+    - text
+id: group.band.field_band_description
+field_name: field_band_description
+entity_type: group
+bundle: band
+label: 'Band Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

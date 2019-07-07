@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.about_are_you_eligible_inclusion.field_about_eligible_incl_title
     - field.field.paragraph.about_are_you_eligible_inclusion.field_about_inclusions_list
     - paragraphs.paragraphs_type.about_are_you_eligible_inclusion
-  module:
-    - maxlength
 id: paragraph.about_are_you_eligible_inclusion.default
 targetEntityType: paragraph
 bundle: about_are_you_eligible_inclusion
@@ -18,10 +16,7 @@ content:
     settings:
       size: 40
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 40
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_about_inclusions_list:
@@ -29,10 +24,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 185
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   translation:

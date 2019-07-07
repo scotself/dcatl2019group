@@ -1,0 +1,29 @@
+uuid: 4db277bd-d397-41df-bdb6-cb07e0627a2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.album.body
+    - node.type.album
+  module:
+    - text
+    - user
+id: node.album.default
+targetEntityType: node
+bundle: album
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  group_content: true

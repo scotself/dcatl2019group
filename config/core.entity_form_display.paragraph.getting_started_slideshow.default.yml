@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.getting_started_slideshow
   module:
     - link
-    - maxlength
     - paragraphs
 id: paragraph.getting_started_slideshow.default
 targetEntityType: paragraph
@@ -21,10 +20,7 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: null
-        maxlength_js_label: ''
+    third_party_settings: {  }
     type: link_default
     region: content
   field_step:

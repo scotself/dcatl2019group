@@ -6,15 +6,7 @@ dependencies:
     - field.storage.paragraph.field_tab_accordion_item_content
     - paragraphs.paragraphs_type.accordion_tabs_item
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    basic_html: basic_html
-    full_html: '0'
-    limited_html: '0'
-    plain_text: '0'
-    mail: '0'
 id: paragraph.accordion_tabs_item.field_tab_accordion_item_content
 field_name: field_tab_accordion_item_content
 entity_type: paragraph

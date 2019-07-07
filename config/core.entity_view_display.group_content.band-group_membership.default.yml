@@ -1,0 +1,24 @@
+uuid: d5a7c560-4ed8-4ed3-a901-8d093efb2088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.band-group_membership.group_roles
+    - group.content_type.band-group_membership
+id: group_content.band-group_membership.default
+targetEntityType: group_content
+bundle: band-group_membership
+mode: default
+content:
+  group_roles:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: false
+    weight: -4
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - block_visibility_groups
     - groupmenu_block
   theme:
     - vseven
@@ -20,9 +19,4 @@ settings:
   label_display: '0'
   context_mapping:
     group: '@group.group_route_context:group'
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

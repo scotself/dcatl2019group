@@ -1,8 +1,0 @@
-url:
-  prefixes:
-    en: en
-    es: es
-  source: path_prefix
-  domains:
-    en: ''
-    es: ''

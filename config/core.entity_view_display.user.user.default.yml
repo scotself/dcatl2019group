@@ -2,11 +2,6 @@ uuid: 6b904e2b-d8e1-4dd5-a870-0b4fdd41a79e
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.field_fname
-    - field.field.user.user.field_last_password_reset
-    - field.field.user.user.field_lname
-    - field.field.user.user.field_password_expiration
   module:
     - user
 id: user.user.default
@@ -15,10 +10,5 @@ bundle: user
 mode: default
 content: {  }
 hidden:
-  field_fname: true
-  field_last_password_reset: true
-  field_lname: true
-  field_password_expiration: true
   group_content: true
-  langcode: true
   member_for: true

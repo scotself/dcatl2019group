@@ -1,0 +1,39 @@
+uuid: 44f55e38-e409-43d6-86d2-edc7b9389141
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:simple:6459b57c-c60d-4515-8990-1a433007cb48'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - dgc
+id: logintoadd
+theme: dgc
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:6459b57c-c60d-4515-8990-1a433007cb48'
+settings:
+  id: 'block_content:6459b57c-c60d-4515-8990-1a433007cb48'
+  label: 'Log in to add'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/bands\r\n<front>"
+    negate: false
+    context_mapping: {  }

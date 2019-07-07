@@ -1,0 +1,20 @@
+uuid: 35d197ac-c230-42c7-bdcb-30e109607996
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+    - node.type.album
+  module:
+    - gnode
+    - node
+id: band-group_node-album
+label: 'Band: Group node (Album)'
+description: 'Adds <em class="placeholder">Album</em> content to groups both publicly and privately.'
+group_type: band
+content_plugin: 'group_node:album'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
+  node_form_group_menu: 1

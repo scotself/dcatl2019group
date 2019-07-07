@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.about_banner.field_about_heading
     - field.field.paragraph.about_banner.field_about_subheading
     - paragraphs.paragraphs_type.about_banner
-  module:
-    - maxlength
 id: paragraph.about_banner.default
 targetEntityType: paragraph
 bundle: about_banner
@@ -18,10 +16,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 60
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_about_subheading:
@@ -29,10 +24,7 @@ content:
     settings:
       size: 140
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 140
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   translation:

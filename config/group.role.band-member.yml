@@ -1,0 +1,39 @@
+uuid: d93d3449-84d5-434b-b201-c190471ae463
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+id: band-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: band
+permissions_ui: true
+permissions:
+  - 'create group_node:album content'
+  - 'create group_node:album entity'
+  - 'create group_node:show content'
+  - 'create group_node:show entity'
+  - 'create group_node:song content'
+  - 'create group_node:song entity'
+  - 'delete own group_node:album content'
+  - 'delete own group_node:album entity'
+  - 'delete own group_node:show content'
+  - 'delete own group_node:show entity'
+  - 'delete own group_node:song content'
+  - 'delete own group_node:song entity'
+  - 'update own group_node:album content'
+  - 'update own group_node:album entity'
+  - 'update own group_node:show content'
+  - 'update own group_node:show entity'
+  - 'update own group_node:song content'
+  - 'update own group_node:song entity'
+  - 'view group'
+  - 'view group_node:album content'
+  - 'view group_node:album entity'
+  - 'view group_node:show content'
+  - 'view group_node:show entity'
+  - 'view group_node:song content'
+  - 'view group_node:song entity'

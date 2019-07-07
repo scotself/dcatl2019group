@@ -1,0 +1,27 @@
+uuid: fceef6bb-83c2-455d-9c9a-83755d3d8030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_related_bands
+    - group.type.band
+id: group.band.field_related_bands
+field_name: field_related_bands
+entity_type: group
+bundle: band
+label: 'Related Bands'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      band: band
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

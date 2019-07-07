@@ -6,15 +6,7 @@ dependencies:
     - field.storage.paragraph.field_about_overview_text
     - paragraphs.paragraphs_type.about_overview
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    limited_html: limited_html
-    full_html: '0'
-    basic_html: '0'
-    plain_text: '0'
-    mail: '0'
 id: paragraph.about_overview.field_about_overview_text
 field_name: field_about_overview_text
 entity_type: paragraph

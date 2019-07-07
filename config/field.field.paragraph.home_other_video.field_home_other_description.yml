@@ -6,15 +6,7 @@ dependencies:
     - field.storage.paragraph.field_home_other_description
     - paragraphs.paragraphs_type.home_other_video
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    limited_html: limited_html
-    full_html: '0'
-    basic_html: '0'
-    plain_text: '0'
-    mail: '0'
 id: paragraph.home_other_video.field_home_other_description
 field_name: field_home_other_description
 entity_type: paragraph

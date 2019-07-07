@@ -1,0 +1,39 @@
+uuid: fc638af4-59d7-4efd-a9f7-27c5503637e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:simple:48deb3e3-cf5e-4231-9126-a4f8ffdfcea1'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - dgc
+id: addaband
+theme: dgc
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:48deb3e3-cf5e-4231-9126-a4f8ffdfcea1'
+settings:
+  id: 'block_content:48deb3e3-cf5e-4231-9126-a4f8ffdfcea1'
+  label: 'Add a band'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/bands\r\n<front>"
+    negate: false
+    context_mapping: {  }

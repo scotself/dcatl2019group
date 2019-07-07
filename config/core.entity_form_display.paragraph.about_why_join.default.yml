@@ -9,7 +9,6 @@ dependencies:
     - field.field.paragraph.about_why_join.field_about_whyjoin_title
     - paragraphs.paragraphs_type.about_why_join
   module:
-    - maxlength
     - media_library
     - paragraphs
 id: paragraph.about_why_join.default
@@ -47,10 +46,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 60
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   translation:

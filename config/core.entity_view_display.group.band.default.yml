@@ -1,0 +1,51 @@
+uuid: 5fb87a1a-c89a-4862-a5bb-577f9cb92c9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.band.field_band_description
+    - field.field.group.band.field_band_members
+    - field.field.group.band.field_related_bands
+    - group.type.band
+  module:
+    - text
+id: group.band.default
+targetEntityType: group
+bundle: band
+mode: default
+content:
+  field_band_description:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_band_members:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_related_bands:
+    weight: -2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

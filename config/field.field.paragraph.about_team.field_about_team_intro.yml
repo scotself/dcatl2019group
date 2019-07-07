@@ -6,16 +6,7 @@ dependencies:
     - field.storage.paragraph.field_about_team_intro
     - paragraphs.paragraphs_type.about_team
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    limited_html: limited_html
-    full_html: '0'
-    basic_html: '0'
-    plain_text: '0'
-    html_text_with_alignment: '0'
-    mail: '0'
 id: paragraph.about_team.field_about_team_intro
 field_name: field_about_team_intro
 entity_type: paragraph

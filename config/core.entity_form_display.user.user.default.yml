@@ -2,14 +2,7 @@ uuid: 17351980-d398-41c3-bb10-a766915762bc
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.field_fname
-    - field.field.user.user.field_last_password_reset
-    - field.field.user.user.field_lname
-    - field.field.user.user.field_password_expiration
   module:
-    - datetime
-    - gcontent_field
     - user
 id: user.user.default
 targetEntityType: user
@@ -21,61 +14,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_fname:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_last_password_reset:
-    type: datetime_default
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_lname:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_password_expiration:
-    type: boolean_checkbox
-    weight: 3
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    region: content
-  group_content:
-    type: group_selector_widget
-    weight: 4
-    region: content
-    settings:
-      widget: autocomplete
-      multiple: true
-      required: false
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 5
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-  language:
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   contact: true
+  group_content: true
+  language: true
   path: true
+  timezone: true

@@ -35,7 +35,6 @@
 <html{{ html_attributes }}>
   <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    {{ google_snippets_head|raw }}
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
@@ -43,7 +42,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,800" rel="stylesheet">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    {{ google_snippets_body|raw }}
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.

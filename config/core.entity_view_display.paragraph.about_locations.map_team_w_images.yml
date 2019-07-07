@@ -8,12 +8,10 @@ dependencies:
     - field.field.paragraph.about_locations.field_about_title_alignment
     - field.field.paragraph.about_locations.field_locations
     - paragraphs.paragraphs_type.about_locations
-    - views.view.locations_map
   module:
+    - entity_reference_revisions
     - field_group
-    - html_formatter
     - layout_builder
-    - views_field_formatter
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -77,38 +75,21 @@ bundle: about_locations
 mode: map_team_w_images
 content:
   field_about_locations_title:
-    weight: 0
-    label: hidden
+    weight: 5
+    label: above
     settings:
-      tag: h2
-      class: ''
-      link: 0
+      link_to_entity: false
     third_party_settings: {  }
-    type: html_field_formatter
+    type: string
     region: content
   field_locations:
-    type: views_field_formatter
-    weight: 1
-    label: hidden
+    weight: 6
+    label: above
     settings:
-      view: 'locations_map::map'
-      arguments:
-        field_value:
-          checked: '1'
-          weight: '0'
-        entity_id:
-          weight: '0'
-          checked: 0
-        delta:
-          weight: '0'
-          checked: 0
-        entity_revision_id:
-          weight: '0'
-          checked: 0
-      multiple: '1'
-      implode_character: ','
-      hide_empty: 0
+      view_mode: default
+      link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
 hidden:
   field_about_title_alignment: true

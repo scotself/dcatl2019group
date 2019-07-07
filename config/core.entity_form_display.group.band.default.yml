@@ -1,0 +1,66 @@
+uuid: 42b13a94-d88f-41ca-8feb-a5012d664dc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.band.field_band_description
+    - field.field.group.band.field_band_members
+    - field.field.group.band.field_related_bands
+    - group.type.band
+  module:
+    - path
+    - text
+id: group.band.default
+targetEntityType: group
+bundle: band
+mode: default
+content:
+  field_band_description:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_band_members:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_related_bands:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+hidden:
+  uid: true

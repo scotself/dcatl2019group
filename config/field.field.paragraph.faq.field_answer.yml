@@ -6,15 +6,7 @@ dependencies:
     - field.storage.paragraph.field_answer
     - paragraphs.paragraphs_type.faq
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    limited_html: limited_html
-    full_html: '0'
-    basic_html: '0'
-    plain_text: '0'
-    mail: '0'
 id: paragraph.faq.field_answer
 field_name: field_answer
 entity_type: paragraph

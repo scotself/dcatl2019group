@@ -1,8 +1,0 @@
-uuid: 00a6f3bb-9004-46be-bbbd-0fa1355a49c5
-langcode: en
-status: true
-dependencies: {  }
-id: slideshow
-label: Slideshow
-revision: 1
-description: 'A full-width feature which renders a slideshow with controls.'

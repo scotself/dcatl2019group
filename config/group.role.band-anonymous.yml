@@ -1,0 +1,21 @@
+uuid: 4a20fea5-e236-40c2-af6f-a18fafa67ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+id: band-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: band
+permissions_ui: true
+permissions:
+  - 'view group'
+  - 'view group_node:album content'
+  - 'view group_node:album entity'
+  - 'view group_node:show content'
+  - 'view group_node:show entity'
+  - 'view group_node:song content'
+  - 'view group_node:song entity'

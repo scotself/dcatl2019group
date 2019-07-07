@@ -1,0 +1,39 @@
+uuid: 1a022a62-0340-42ab-8314-c1927946388a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.band_albums
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - dgc
+id: views_block__band_albums_block_1
+theme: dgc
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:band_albums-block_1'
+settings:
+  id: 'views_block:band_albums-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/content/*'
+    negate: true
+    context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      band: band
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

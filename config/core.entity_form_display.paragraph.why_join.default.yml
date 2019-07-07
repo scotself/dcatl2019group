@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.why_join
   module:
     - link
-    - maxlength
     - paragraphs
 id: paragraph.why_join.default
 targetEntityType: paragraph
@@ -21,10 +20,7 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 15
-        maxlength_js_label: '  '
+    third_party_settings: {  }
     type: link_default
     region: content
   field_title:
@@ -32,10 +28,7 @@ content:
     settings:
       size: 40
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 40
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_why_join_list:

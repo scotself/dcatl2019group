@@ -1,0 +1,12 @@
+uuid: 4e234a77-c0ad-4326-8f30-81423e1cb209
+langcode: en
+status: true
+dependencies: {  }
+id: band
+label: Band
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles:
+  - band-admin

@@ -12,7 +12,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - field_group
-    - html_formatter
     - layout_builder
     - text
 third_party_settings:
@@ -97,14 +96,12 @@ content:
     third_party_settings: {  }
     region: content
   field_about_team_title:
-    weight: 0
-    label: hidden
+    weight: 23
+    label: above
     settings:
-      tag: h2
-      class: ''
-      link: 0
+      link_to_entity: false
     third_party_settings: {  }
-    type: html_field_formatter
+    type: string
     region: content
   principle_investigator:
     weight: 1

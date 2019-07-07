@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: administrator
-label: 'Administrator (dgc)'
+label: Administrator
 weight: -5
 is_admin: false
 permissions:

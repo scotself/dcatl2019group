@@ -1,0 +1,23 @@
+uuid: a33f8a50-c092-4cba-bce9-ceeffd9bab5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - group
+id: band_groups
+label: 'Band groups'
+type: 'canonical_entities:group'
+pattern: '/[group:title]'
+selection_criteria:
+  bc161bc8-3aae-4f8b-abfd-36d45004b3de:
+    id: 'entity_bundle:group'
+    bundles:
+      band: band
+    negate: false
+    context_mapping:
+      group: group
+    uuid: bc161bc8-3aae-4f8b-abfd-36d45004b3de
+selection_logic: and
+weight: -5
+relationships: {  }

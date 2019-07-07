@@ -1,0 +1,21 @@
+uuid: 2e41ba50-f986-469e-8f44-5e4e6a41236b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+id: band-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: band
+permissions_ui: true
+permissions:
+  - 'view group'
+  - 'view group_node:album content'
+  - 'view group_node:album entity'
+  - 'view group_node:show content'
+  - 'view group_node:show entity'
+  - 'view group_node:song content'
+  - 'view group_node:song entity'

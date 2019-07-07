@@ -1,8 +1,0 @@
-uuid: 3f1bad05-9ded-47cd-83f3-9b99556fc5e8
-langcode: en
-status: true
-dependencies: {  }
-id: contact_small
-label: 'Contact - Option 1 email & phone'
-revision: 0
-description: 'Contact Section - Small format. Provides basic contact fields (email + phone).'

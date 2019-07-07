@@ -1,0 +1,77 @@
+uuid: b3d930db-4f9f-4e86-8da5-6ba08be567c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+id: band-admin
+label: Admin
+weight: 100
+internal: false
+audience: member
+group_type: band
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'access group_media overview'
+  - 'access group_menu overview'
+  - 'access group_node overview'
+  - 'administer group'
+  - 'administer members'
+  - 'create group_membership entity'
+  - 'create group_node:album content'
+  - 'create group_node:album entity'
+  - 'create group_node:show content'
+  - 'create group_node:show entity'
+  - 'create group_node:song content'
+  - 'create group_node:song entity'
+  - 'delete any group_membership entity'
+  - 'delete any group_node:album content'
+  - 'delete any group_node:album entity'
+  - 'delete any group_node:show content'
+  - 'delete any group_node:show entity'
+  - 'delete any group_node:song content'
+  - 'delete any group_node:song entity'
+  - 'delete group'
+  - 'delete group revisions'
+  - 'delete own group_membership entity'
+  - 'delete own group_node:album content'
+  - 'delete own group_node:album entity'
+  - 'delete own group_node:show content'
+  - 'delete own group_node:show entity'
+  - 'delete own group_node:song content'
+  - 'delete own group_node:song entity'
+  - 'edit group'
+  - 'leave group'
+  - 'revert group revisions'
+  - 'update any group_membership entity'
+  - 'update any group_node:album content'
+  - 'update any group_node:album entity'
+  - 'update any group_node:show content'
+  - 'update any group_node:show entity'
+  - 'update any group_node:song content'
+  - 'update any group_node:song entity'
+  - 'update own group_membership content'
+  - 'update own group_membership entity'
+  - 'update own group_node:album content'
+  - 'update own group_node:album entity'
+  - 'update own group_node:show content'
+  - 'update own group_node:show entity'
+  - 'update own group_node:song content'
+  - 'update own group_node:song entity'
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group latest version'
+  - 'view group revisions'
+  - 'view group_membership content'
+  - 'view group_membership entity'
+  - 'view group_node:album content'
+  - 'view group_node:album entity'
+  - 'view group_node:show content'
+  - 'view group_node:show entity'
+  - 'view group_node:song content'
+  - 'view group_node:song entity'
+  - 'view own unpublished group'
+  - 'view unpublished group_node:album entity'
+  - 'view unpublished group_node:show entity'
+  - 'view unpublished group_node:song entity'

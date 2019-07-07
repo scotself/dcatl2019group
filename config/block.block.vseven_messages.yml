@@ -2,10 +2,7 @@ uuid: 8c9ef67f-e9d7-4bb6-ab45-90f94df60a45
 langcode: en
 status: true
 dependencies:
-  config:
-    - block_visibility_groups.block_visibility_group.global
   module:
-    - block_visibility_groups
     - system
   theme:
     - vseven
@@ -22,9 +19,4 @@ settings:
   label: 'Status messages'
   provider: system
   label_display: '0'
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: global
-    context_mapping: {  }
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: ae43557c-204c-4083-ba64-5690e84e3e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.simple
+    - field.field.block_content.simple.body
+  module:
+    - text
+id: block_content.simple.default
+targetEntityType: block_content
+bundle: simple
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -9,14 +9,11 @@ dependencies:
     - field.field.paragraph.about_team_member.field_about_team_name
     - field.field.paragraph.about_team_member.field_team_member_profile
     - field.field.paragraph.about_team_member.field_team_member_title
-    - image.style.square_small
     - paragraphs.paragraphs_type.about_team_member
   module:
     - field_group
-    - html_formatter
     - layout_builder
     - link
-    - media
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -46,24 +43,13 @@ targetEntityType: paragraph
 bundle: about_team_member
 mode: simple_lists
 content:
-  field_about_team_image:
-    type: media_thumbnail
-    weight: 0
-    label: hidden
-    settings:
-      image_style: square_small
-      image_link: ''
-    third_party_settings: {  }
-    region: content
   field_about_team_name:
-    weight: 2
-    label: hidden
+    weight: 5
+    label: above
     settings:
-      tag: h3
-      class: ''
-      link: 0
+      link_to_entity: false
     third_party_settings: {  }
-    type: html_field_formatter
+    type: string
     region: content
   field_team_member_profile:
     weight: 3
@@ -86,4 +72,5 @@ content:
     type: string
     region: content
 hidden:
+  field_about_team_image: true
   field_about_team_location: true

@@ -4,8 +4,8 @@ features:
   comment_user_verification: true
   favicon: 1
 logo:
-  use_default: 1
-  path: 'public://dgc-logo.png'
+  use_default: 0
+  path: 'public://govcon_0.png'
 favicon:
   use_default: 1
   path: 'public://favicon1.ico'

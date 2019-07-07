@@ -1,9 +1,0 @@
-uuid: d63463dc-203c-4cc2-920f-c36b5d7571ed
-langcode: en
-status: true
-dependencies: {  }
-id: tfadisabled
-label: 'TFA disabled'
-weight: -3
-is_admin: null
-permissions: {  }

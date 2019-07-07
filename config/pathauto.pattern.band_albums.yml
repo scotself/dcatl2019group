@@ -1,0 +1,27 @@
+uuid: 62c4faf9-0e61-4117-8686-171124f2445e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - group
+_core:
+  default_config_hash: rk2G0ozgUlKP7ic1RRjMcXUmeZxXUKPV-q-brekIKMc
+id: band_albums
+label: 'Band albums'
+type: 'canonical_entities:group_content'
+pattern: '[group_content:group:alias]/albums/[group_content:node:title]'
+selection_criteria:
+  af63a75a-3ded-4736-8fb9-310f172bd690:
+    id: 'entity_bundle:group_content'
+    bundles:
+      band-group_node-album: band-group_node-album
+    negate: false
+    context_mapping:
+      group_content: group_content
+    uuid: af63a75a-3ded-4736-8fb9-310f172bd690
+selection_logic: and
+weight: -5
+relationships:
+  'group_content:langcode:language':
+    label: Language

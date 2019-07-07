@@ -1,11 +1,11 @@
 uuid: 73080640-c5bd-4d1c-b7ec-c6683f621b47
-name: 'DGC Platform'
+name: 'DGC 2019 - Group Demo'
 mail: admin@example.com
 slogan: ''
 page:
   403: /user/login
-  404: /node/5
-  front: /node/5
+  404: ''
+  front: /bands
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

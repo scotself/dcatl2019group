@@ -1,0 +1,17 @@
+uuid: 02c99339-d968-4111-a126-41df90bf268f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+  enforced:
+    config:
+      - user.role.administrator
+id: band-a416e6833
+label: Administrator
+weight: -5
+internal: true
+audience: outsider
+group_type: band
+permissions_ui: false
+permissions: {  }

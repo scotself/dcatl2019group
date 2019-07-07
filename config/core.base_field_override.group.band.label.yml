@@ -1,0 +1,18 @@
+uuid: cdaacb9f-8cd5-45b0-8346-07238e3fa1ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.band
+id: group.band.label
+field_name: label
+entity_type: group
+bundle: band
+label: 'Band Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

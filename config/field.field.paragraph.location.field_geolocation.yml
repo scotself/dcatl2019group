@@ -6,24 +6,7 @@ dependencies:
     - field.storage.paragraph.field_geolocation
     - paragraphs.paragraphs_type.location
   module:
-    - geocoder_field
     - geolocation
-third_party_settings:
-  geocoder_field:
-    method: source
-    weight: 0
-    geocode_field: field_location_address
-    reverse_geocode_field: ''
-    hidden: true
-    disabled: true
-    plugins:
-      - googlemaps
-    dumper: geolocation
-    delta_handling: s_to_m
-    failure:
-      handling: empty
-      status_message: true
-      log: true
 id: paragraph.location.field_geolocation
 field_name: field_geolocation
 entity_type: paragraph

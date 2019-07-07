@@ -5,7 +5,7 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: themes/custom/dgc/dgc-logo.png
+  path: 'public://govcon_1.png'
 favicon:
   use_default: false
   path: themes/custom/dgc/favicon.ico

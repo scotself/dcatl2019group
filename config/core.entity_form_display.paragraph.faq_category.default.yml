@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.faq_category.field_faqs
     - paragraphs.paragraphs_type.faq_category
   module:
-    - maxlength
     - paragraphs
 id: paragraph.faq_category.default
 targetEntityType: paragraph
@@ -19,10 +18,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 40
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_faqs:
