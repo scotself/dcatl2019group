@@ -1,0 +1,17 @@
+uuid: 288b23e8-96f4-47ef-9f7a-e9d2cf852979
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.tenant
+id: department-9a0b56ed3
+label: Tenant
+weight: -6
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,9 @@
+uuid: 46d9a084-4633-4d06-987f-fa214281ab8b
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_section
+label: '3 Column Section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

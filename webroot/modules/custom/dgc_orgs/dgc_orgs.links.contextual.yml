@@ -1,4 +1,0 @@
-entity.node.layout:
-  route_name: layout_builder.overrides.node.view
-  group: node
-  title: Layout

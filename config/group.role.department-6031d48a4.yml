@@ -1,0 +1,17 @@
+uuid: 5292764c-45d4-4dab-b059-7853b311f260
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.tfadisabled
+id: department-6031d48a4
+label: 'TFA disabled'
+weight: -3
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

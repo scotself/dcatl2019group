@@ -1,7 +1,0 @@
-<h2>{{ content.field_title }}</h2>
-<h5>{{ content.field_subtitle }}</h5>
-{{ content.field_description }}
-
-{% for cta in content.field_cta['#items'] %}
-  <a href="{{ cta.uri }}" class="button">{{ cta.title }}</a>
-{% endfor %}

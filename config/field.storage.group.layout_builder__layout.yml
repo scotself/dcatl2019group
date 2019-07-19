@@ -1,5 +1,5 @@
-uuid: d39a3173-cdd2-4968-ab1c-255bfa22d1bd
-langcode: es
+uuid: 8f719b2f-7cfc-49cb-9efa-5771e4aab265
+langcode: en
 status: true
 dependencies:
   module:
@@ -13,7 +13,7 @@ settings: {  }
 module: layout_builder
 locked: true
 cardinality: 1
-translatable: true
+translatable: false
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

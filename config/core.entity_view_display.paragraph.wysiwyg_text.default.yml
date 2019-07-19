@@ -1,0 +1,22 @@
+uuid: b15113d7-5876-443a-878d-d3c87b71496b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wysiwyg_text.field_wysiwyg_text
+    - paragraphs.paragraphs_type.wysiwyg_text
+  module:
+    - text
+id: paragraph.wysiwyg_text.default
+targetEntityType: paragraph
+bundle: wysiwyg_text
+mode: default
+content:
+  field_wysiwyg_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

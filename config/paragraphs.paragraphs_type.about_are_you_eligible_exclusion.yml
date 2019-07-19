@@ -1,9 +1,0 @@
-uuid: be1e5702-af78-4c2b-b427-3afb9a8018f0
-langcode: en
-status: true
-dependencies: {  }
-id: about_are_you_eligible_exclusion
-label: 'About - Eligibility - Exclusions'
-icon_uuid: null
-description: 'Used to create the Exclusions box under the "Am I Eligible" section of the About page.'
-behavior_plugins: {  }

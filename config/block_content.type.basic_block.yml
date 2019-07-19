@@ -1,8 +1,0 @@
-uuid: 282f48c4-af8e-4b6b-a456-4f0a52467bcd
-langcode: en
-status: true
-dependencies: {  }
-id: basic_block
-label: 'Basic Block'
-revision: 1
-description: 'Basic Block with Title and WYSIWYG'

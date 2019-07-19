@@ -1,0 +1,17 @@
+uuid: 87143cf6-e911-4970-836c-bcc632b38523
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.content_creator
+id: department-3aef5c516
+label: 'Content Creator'
+weight: -8
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

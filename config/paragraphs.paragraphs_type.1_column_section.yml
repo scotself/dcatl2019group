@@ -1,0 +1,9 @@
+uuid: 9e9d5a8e-d819-4ddc-8d97-c006bbb334ac
+langcode: en
+status: true
+dependencies: {  }
+id: 1_column_section
+label: '1 Column Section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

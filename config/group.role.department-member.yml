@@ -1,0 +1,14 @@
+uuid: 9859bf09-b341-4f30-a4dd-3a84ab523b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+id: department-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: department
+permissions_ui: true
+permissions: {  }

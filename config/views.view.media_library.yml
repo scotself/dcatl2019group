@@ -13,7 +13,6 @@ dependencies:
     - media
     - media_library
     - user
-    - dgc_media
 id: media_library
 label: 'Media library'
 module: views
@@ -387,8 +386,6 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - url
         - url.query_args
         - 'url.query_args:sort_by'
@@ -562,8 +559,6 @@ display:
     cache_metadata:
       max-age: 0
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - url
         - url.query_args
         - 'url.query_args:sort_by'
@@ -885,7 +880,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_interface'
         - url
         - url.query_args
         - 'url.query_args:sort_by'
@@ -1176,8 +1170,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - url
         - url.query_args
         - 'url.query_args:sort_by'

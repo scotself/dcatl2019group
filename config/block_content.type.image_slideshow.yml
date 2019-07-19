@@ -1,8 +1,0 @@
-uuid: 77521b40-1c1e-44c8-9773-e0c74676261c
-langcode: en
-status: true
-dependencies: {  }
-id: image_slideshow
-label: 'Image Slideshow'
-revision: 1
-description: 'A collection of images with caption which renders as a slideshow.'

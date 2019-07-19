@@ -1,9 +1,0 @@
-theme_group:
-  version: 1.x
-  css:
-    theme:
-      css/dgc_theme_group.theme.css: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/drupalSettings

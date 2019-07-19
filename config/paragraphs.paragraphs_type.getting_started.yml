@@ -1,9 +1,0 @@
-uuid: 68fabc14-0753-4872-a9ed-a4c22e9b24ce
-langcode: en
-status: true
-dependencies: {  }
-id: getting_started
-label: 'Home - Process'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 2d657107-d38f-428a-a44e-7b17cc178ea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_sizing_4col
+    - paragraphs.paragraphs_type.4_column_section
+  module:
+    - options
+id: paragraph.4_column_section.field_column_sizing_4col
+field_name: field_column_sizing_4col
+entity_type: paragraph
+bundle: 4_column_section
+label: 'Column Sizing'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 25252525
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

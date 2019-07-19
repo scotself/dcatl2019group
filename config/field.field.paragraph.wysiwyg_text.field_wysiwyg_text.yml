@@ -1,0 +1,29 @@
+uuid: f54b13cd-fd2a-4368-aa44-26dea0c2f54d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wysiwyg_text
+    - paragraphs.paragraphs_type.wysiwyg_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    full_html: '0'
+    plain_text: '0'
+    headings: '0'
+    mail: '0'
+id: paragraph.wysiwyg_text.field_wysiwyg_text
+field_name: field_wysiwyg_text
+entity_type: paragraph
+bundle: wysiwyg_text
+label: 'WYSIWYG Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

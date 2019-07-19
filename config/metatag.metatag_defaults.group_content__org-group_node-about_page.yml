@@ -1,8 +1,0 @@
-uuid: 4e6f2579-3e21-46b4-a8fd-20a66b3eabb3
-langcode: en
-status: true
-dependencies: {  }
-id: group_content__org-group_node-about_page
-label: 'Group content: Organization: Group node (About Page)'
-tags:
-  title: '[group_content:node:title] | [group_content:group:title]'

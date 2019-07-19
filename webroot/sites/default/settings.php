@@ -757,32 +757,3 @@ $settings['file_scan_ignore_directories'] = [
  * larger number of entities to be processed in a single batch run.
  */
 $settings['entity_update_batch_size'] = 50;
-
-/**
- * Load local development override configuration, if available.
- *
- * Use settings.local.php to override variables on secondary (staging,
- * development, etc) installations of this site. Typically used to disable
- * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
- * other things that should not happen on development and testing sites.
- *
- * Keep this code block at the end of this file to take full effect.
- */
-if ((bool)getenv('IS_LOCAL')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
-else {
-  include $app_root . '/' . $site_path . '/settings.prod.php';
-}
-
-/**
- * Load fast404 configuration, if available.
- *
- * Use settings.fast404.php to provide settings for Fast 404 module.
- *
- * Keep this code block at the end of this file to take full effect.
- */
-if ((bool)getenv('REDIRECT_TO_JAU') && file_exists($app_root . '/' . $site_path . '/settings.fast404.php')) {
-  include $app_root . '/' . $site_path . '/settings.fast404.php';
-}
-$settings['hash_salt'] = '2y3tcam7K67GdzW-MSXqix2XX0xmDlL4EZHUJxwqRUDI1MDVtFGexMc0T5CeMfQ2NKlR4OEfUg';

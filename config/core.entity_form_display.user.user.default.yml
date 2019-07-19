@@ -4,11 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_fname
-    - field.field.user.user.field_last_password_reset
     - field.field.user.user.field_lname
-    - field.field.user.user.field_password_expiration
   module:
-    - datetime
     - gcontent_field
     - user
 id: user.user.default
@@ -29,12 +26,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_last_password_reset:
-    type: datetime_default
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_lname:
     weight: 1
     settings:
@@ -42,13 +33,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_password_expiration:
-    type: boolean_checkbox
-    weight: 3
-    settings:
-      display_label: true
-    third_party_settings: {  }
     region: content
   group_content:
     type: group_selector_widget

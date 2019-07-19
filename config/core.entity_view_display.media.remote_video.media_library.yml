@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.remote_video.field_global_asset
     - field.field.media.remote_video.field_media_oembed_video
-    - field.field.media.remote_video.field_pm_wide_asset
     - image.style.medium
     - media.type.remote_video
   module:
@@ -18,26 +16,6 @@ targetEntityType: media
 bundle: remote_video
 mode: media_library
 content:
-  field_global_asset:
-    type: boolean
-    weight: 1
-    region: content
-    label: inline
-    settings:
-      format: yes-no
-      format_custom_true: ''
-      format_custom_false: ''
-    third_party_settings: {  }
-  field_pm_wide_asset:
-    type: boolean
-    weight: 2
-    region: content
-    label: inline
-    settings:
-      format: yes-no
-      format_custom_true: ''
-      format_custom_false: ''
-    third_party_settings: {  }
   thumbnail:
     type: image
     weight: 0
@@ -51,6 +29,5 @@ hidden:
   created: true
   field_media_oembed_video: true
   group_content: true
-  langcode: true
   name: true
   uid: true

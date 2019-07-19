@@ -1,0 +1,20 @@
+uuid: 2677f6f6-0bad-44f5-9e17-01ca1462185a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+    - node.type.page
+  module:
+    - gnode
+    - node
+id: department-group_node-page
+label: 'Department: Group node (Page)'
+description: 'Adds <em class="placeholder">Page</em> content to groups both publicly and privately.'
+group_type: department
+content_plugin: 'group_node:page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
+  node_form_group_menu: 1

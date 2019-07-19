@@ -1,5 +1,0 @@
-services:
-  dgc_media.dgc_media_subscriber:
-    class: Drupal\dgc_media\EventSubscriber\DgcMediaSubscriber
-    tags:
-      - name: event_subscriber

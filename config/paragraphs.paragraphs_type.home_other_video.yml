@@ -1,9 +1,0 @@
-uuid: 17313408-6639-4139-a13c-03f5ae78d439
-langcode: en
-status: true
-dependencies: {  }
-id: home_other_video
-label: 'Home - Other - Video'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

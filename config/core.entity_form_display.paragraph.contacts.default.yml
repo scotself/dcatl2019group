@@ -1,0 +1,36 @@
+uuid: ed581d0c-5520-40c8-bd77-5ecb6d1ba885
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contacts.field_contacts
+    - paragraphs.paragraphs_type.contacts
+  module:
+    - paragraphs
+id: paragraph.contacts.default
+targetEntityType: paragraph
+bundle: contacts
+mode: default
+content:
+  field_contacts:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: Contact
+      title_plural: Contacts
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: contact
+      features:
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+        duplicate: '0'
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

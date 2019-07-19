@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - block_visibility_groups
     - ctools
     - groupmenu_block
   theme:
@@ -22,11 +21,6 @@ settings:
   context_mapping:
     group: '@group.group_route_context:group'
 visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
   'entity_bundle:group':
     id: 'entity_bundle:group'
     bundles:

@@ -1,9 +1,0 @@
-uuid: 868b2f2f-b9a0-441e-a445-288f1876e97b
-langcode: en
-status: true
-dependencies: {  }
-id: about_why_join
-label: 'About - Why Join?'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

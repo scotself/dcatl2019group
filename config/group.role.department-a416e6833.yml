@@ -1,0 +1,17 @@
+uuid: eaa65d87-b4e9-4866-8b3a-2eaf3eda274d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.administrator
+id: department-a416e6833
+label: 'Administrator (dgc)'
+weight: -5
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

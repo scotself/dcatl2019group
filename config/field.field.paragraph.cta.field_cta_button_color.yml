@@ -1,0 +1,22 @@
+uuid: baa1b3ac-ade1-492d-8029-038325570b4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_button_color
+    - paragraphs.paragraphs_type.cta
+  module:
+    - color_field
+id: paragraph.cta.field_cta_button_color
+field_name: field_cta_button_color
+entity_type: paragraph
+bundle: cta
+label: 'Button Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

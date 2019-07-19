@@ -1,8 +1,0 @@
-name: 'dgc_media'
-type: module
-description: 'Manage media for DGC and groups'
-core: 8.x
-package: 'DGC'
-dependencies:
-  - media
-  - group

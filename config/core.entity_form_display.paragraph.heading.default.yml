@@ -1,0 +1,29 @@
+uuid: d9e47cfd-a9f2-441c-a5b4-aa2cfa540b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_heading
+    - paragraphs.paragraphs_type.heading
+  module:
+    - allowed_formats
+    - text
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_heading:
+    weight: 0
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,89 @@
+uuid: 3800ac7f-84f0-48c2-9c79-56d1fa8a938d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.department.field_dept_contacts
+    - field.field.group.department.field_dept_description
+    - field.field.group.department.field_sections
+    - field.field.group.department.layout_builder__layout
+    - group.type.department
+  module:
+    - paragraphs
+    - path
+    - text
+id: group.department.default
+targetEntityType: group
+bundle: department
+mode: default
+content:
+  field_dept_contacts:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: Contacts
+      title_plural: Contacts
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: contacts
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  field_dept_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_sections:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: Section
+      title_plural: Sections
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+        duplicate: '0'
+    third_party_settings: {  }
+    region: content
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true
+  uid: true

@@ -2,8 +2,6 @@ uuid: d7588ae6-3ca8-4b54-92de-c3d2f8aa9524
 langcode: en
 status: true
 dependencies:
-  module:
-    - block_visibility_groups
   theme:
     - dgc
 id: pagetitle
@@ -17,9 +15,4 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

@@ -1,9 +1,0 @@
-uuid: 5c7819cd-7353-4db1-a94c-d7d946ec7141
-langcode: es
-status: true
-dependencies: {  }
-id: about_locations_team
-label: 'About - Locations & Team'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

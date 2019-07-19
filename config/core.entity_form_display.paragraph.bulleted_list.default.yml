@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.bulleted_list.field_bulleted_list_items
     - paragraphs.paragraphs_type.bulleted_list
-  module:
-    - maxlength
 id: paragraph.bulleted_list.default
 targetEntityType: paragraph
 bundle: bulleted_list
@@ -17,10 +15,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 185
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    third_party_settings: {  }
     type: string_textfield
     region: content
   translation:

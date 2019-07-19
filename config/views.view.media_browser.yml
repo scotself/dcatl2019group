@@ -340,8 +340,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - url.query_args
         - user.permissions
       tags: {  }
@@ -355,8 +353,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - url.query_args
         - user.permissions
       tags: {  }

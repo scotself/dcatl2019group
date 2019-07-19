@@ -1,0 +1,94 @@
+uuid: 722f60a0-6239-4516-8041-37201eb68958
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.page
+    - paragraphs.paragraphs_type.1_column_section
+    - paragraphs.paragraphs_type.2_column_section
+    - paragraphs.paragraphs_type.3_column_section
+    - paragraphs.paragraphs_type.4_column_section
+  module:
+    - entity_reference_revisions
+id: node.page.field_sections
+field_name: field_sections
+entity_type: node
+bundle: page
+label: Sections
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      1_column_section: 1_column_section
+      2_column_section: 2_column_section
+      3_column_section: 3_column_section
+      4_column_section: 4_column_section
+    target_bundles_drag_drop:
+      contact:
+        weight: 21
+        enabled: false
+      1_column_section:
+        enabled: true
+        weight: 22
+      2_column_section:
+        enabled: true
+        weight: 23
+      3_column_section:
+        enabled: true
+        weight: 24
+      4_column_section:
+        enabled: true
+        weight: 25
+      banner_item:
+        weight: 26
+        enabled: false
+      bulleted_list:
+        weight: 27
+        enabled: false
+      contacts:
+        weight: 28
+        enabled: false
+      cta:
+        weight: 29
+        enabled: false
+      getting_started:
+        weight: 30
+        enabled: false
+      heading:
+        weight: 31
+        enabled: false
+      image:
+        weight: 32
+        enabled: false
+      list:
+        weight: 33
+        enabled: false
+      list_item_with_icon:
+        weight: 34
+        enabled: false
+      list_with_icons:
+        weight: 35
+        enabled: false
+      list_with_single_icon:
+        weight: 36
+        enabled: false
+      sections:
+        weight: 37
+        enabled: false
+      testimonials:
+        weight: 38
+        enabled: false
+      video:
+        weight: 39
+        enabled: false
+      wysiwyg_text:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

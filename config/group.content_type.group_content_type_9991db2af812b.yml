@@ -1,0 +1,19 @@
+uuid: 9580155c-11fd-459d-815b-4bcbaa180ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+    - media.type.remote_video
+  module:
+    - gmedia
+    - media
+id: group_content_type_9991db2af812b
+label: 'Department: Group media (Remote Video)'
+description: 'Adds <em class="placeholder">Remote Video</em> content to groups both publicly and privately.'
+group_type: department
+content_plugin: 'group_media:remote_video'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

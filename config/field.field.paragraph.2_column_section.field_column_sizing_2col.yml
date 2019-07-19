@@ -1,0 +1,23 @@
+uuid: 382eb4ea-1aeb-484d-8131-0e3e7424df03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_sizing_2col
+    - paragraphs.paragraphs_type.2_column_section
+  module:
+    - options
+id: paragraph.2_column_section.field_column_sizing_2col
+field_name: field_column_sizing_2col
+entity_type: paragraph
+bundle: 2_column_section
+label: 'Column Sizing'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 5050
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

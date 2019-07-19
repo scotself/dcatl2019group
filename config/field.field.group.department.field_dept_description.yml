@@ -1,0 +1,27 @@
+uuid: dc9b086d-58be-4389-a54f-b29bf53e2d35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_dept_description
+    - group.type.department
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    limited_html: limited_html
+    plain_text: '0'
+    headings: '0'
+id: group.department.field_dept_description
+field_name: field_dept_description
+entity_type: group
+bundle: department
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

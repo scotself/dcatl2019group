@@ -1,0 +1,17 @@
+uuid: 837f7179-ab85-44ab-a0a3-ca59047f7a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.content_manager
+id: department-1eb7047a7
+label: 'Content Manager'
+weight: -7
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

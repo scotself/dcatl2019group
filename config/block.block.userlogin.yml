@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_visibility_groups
     - user
   theme:
     - vseven
@@ -18,9 +17,4 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: e4d972f4-9499-477f-811d-16e926e12501
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+    - media.type.image
+  module:
+    - gmedia
+    - media
+id: department-group_media-image
+label: 'Department: Group media (Image)'
+description: 'Adds <em class="placeholder">Image</em> content to groups both publicly and privately.'
+group_type: department
+content_plugin: 'group_media:image'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

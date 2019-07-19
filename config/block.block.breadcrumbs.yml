@@ -1,9 +1,8 @@
 uuid: 55961be8-8fd8-427a-9497-b174619083ba
 langcode: en
-status: false
+status: true
 dependencies:
   module:
-    - block_visibility_groups
     - system
   theme:
     - vseven
@@ -18,9 +17,4 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
-    context_mapping: {  }
+visibility: {  }

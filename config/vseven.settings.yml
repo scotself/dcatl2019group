@@ -5,8 +5,8 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: themes/custom/dgc/dgc-logo.png
+  path: 'public://govcon_4.png'
 favicon:
   use_default: false
-  path: themes/custom/dgc/favicon.ico
-  mimetype: image/vnd.microsoft.icon
+  path: 'public://govcon_5.png'
+  mimetype: image/png

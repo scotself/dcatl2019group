@@ -1,6 +1,0 @@
-views.filter.media_group_combined_filter:
-  type: views.filter.boolean
-  label: 'Media filtered by Current page Group and Global Assets field.'
-views.filter.media_current_path_filter:
-  type: views.filter.boolean
-  label: 'Media filtered by Current page Group.'

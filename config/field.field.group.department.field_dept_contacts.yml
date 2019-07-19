@@ -1,0 +1,85 @@
+uuid: b4cd683a-dd3d-4a58-a699-432ec7de1b7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_dept_contacts
+    - group.type.department
+    - paragraphs.paragraphs_type.contacts
+  module:
+    - entity_reference_revisions
+id: group.department.field_dept_contacts
+field_name: field_dept_contacts
+entity_type: group
+bundle: department
+label: Contacts
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contacts: contacts
+    target_bundles_drag_drop:
+      contacts:
+        enabled: true
+        weight: 20
+      1_column_section:
+        weight: 21
+        enabled: false
+      2_column_section:
+        weight: 22
+        enabled: false
+      3_column_section:
+        weight: 23
+        enabled: false
+      4_column_section:
+        weight: 24
+        enabled: false
+      banner_item:
+        weight: 25
+        enabled: false
+      bulleted_list:
+        weight: 26
+        enabled: false
+      cta:
+        weight: 27
+        enabled: false
+      getting_started:
+        weight: 28
+        enabled: false
+      heading:
+        weight: 29
+        enabled: false
+      image:
+        weight: 30
+        enabled: false
+      list:
+        weight: 31
+        enabled: false
+      list_item_with_icon:
+        weight: 32
+        enabled: false
+      list_with_icons:
+        weight: 33
+        enabled: false
+      list_with_single_icon:
+        weight: 34
+        enabled: false
+      sections:
+        weight: 35
+        enabled: false
+      testimonials:
+        weight: 36
+        enabled: false
+      video:
+        weight: 37
+        enabled: false
+      wysiwyg_text:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

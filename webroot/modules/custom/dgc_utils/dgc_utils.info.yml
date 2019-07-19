@@ -1,8 +1,0 @@
-name: 'dgc Utils'
-type: module
-description: 'dgc Utils'
-core: 8.x
-package: 'dgc'
-dependencies:
-  - key:key
-  - salesforce:salesforce

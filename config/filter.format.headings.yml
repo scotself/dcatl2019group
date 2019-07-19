@@ -1,0 +1,17 @@
+uuid: c758e9c0-6771-40ed-8aa7-df90b13031dd
+langcode: en
+status: true
+dependencies: {  }
+name: Headings
+format: headings
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p class=""> <u>'
+      filter_html_help: true
+      filter_html_nofollow: false

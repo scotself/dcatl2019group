@@ -1,9 +1,0 @@
-uuid: a2d18053-2df7-4503-834a-baf8d6cfbe0f
-langcode: en
-status: true
-dependencies: {  }
-id: accordion_tabs_item
-label: 'Accordion/Tabs Item'
-icon_uuid: null
-description: 'A single accordion/tab item to combine into a responsive accordion/tab set.'
-behavior_plugins: {  }

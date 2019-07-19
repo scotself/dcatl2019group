@@ -1,0 +1,43 @@
+uuid: eee4baf1-ad3b-4180-a59e-3264deab9764
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.1_column_section.field_column_1
+    - field.field.paragraph.1_column_section.field_section_layout
+    - paragraphs.paragraphs_type.1_column_section
+  module:
+    - paragraphs
+id: paragraph.1_column_section.default
+targetEntityType: paragraph
+bundle: 1_column_section
+mode: default
+content:
+  field_column_1:
+    weight: 1
+    settings:
+      title: Block
+      title_plural: Blocks
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+        duplicate: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_section_layout:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

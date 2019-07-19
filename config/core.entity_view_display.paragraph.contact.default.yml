@@ -1,0 +1,50 @@
+uuid: 19f81798-d021-4b9a-af0a-e5b8a3dd484a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_email
+    - field.field.paragraph.contact.field_name
+    - field.field.paragraph.contact.field_phone
+    - field.field.paragraph.contact.field_title
+    - paragraphs.paragraphs_type.contact
+  module:
+    - header_formatter
+    - telephone
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_email:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_name:
+    weight: 0
+    label: hidden
+    settings:
+      level: '3'
+    third_party_settings: {  }
+    type: text_header
+    region: content
+  field_phone:
+    weight: 3
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

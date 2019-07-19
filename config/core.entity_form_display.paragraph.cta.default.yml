@@ -1,0 +1,51 @@
+uuid: 45333927-1623-43d1-8121-eb64422a0cab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_cta
+    - field.field.paragraph.cta.field_cta_button_color
+    - field.field.paragraph.cta.field_cta_button_text_color
+    - field.field.paragraph.cta.field_position
+    - paragraphs.paragraphs_type.cta
+  module:
+    - color_field
+    - link
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_cta:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_cta_button_color:
+    weight: 1
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_cta_button_text_color:
+    weight: 2
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+    type: color_field_widget_default
+    region: content
+  field_position:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

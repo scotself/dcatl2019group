@@ -1,8 +1,0 @@
-uuid: 4bf3b862-3247-460a-9a47-f09a33bb975a
-langcode: en
-status: true
-dependencies: {  }
-id: list_of_links
-label: 'List of links'
-revision: 1
-description: 'A simple list of links with the option to present as an ordered or unordered list.'

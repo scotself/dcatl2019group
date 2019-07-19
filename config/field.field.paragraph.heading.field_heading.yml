@@ -1,0 +1,27 @@
+uuid: 3d74db24-9117-442a-8356-41731713c189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.heading
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    headings: headings
+    limited_html: '0'
+    plain_text: '0'
+id: paragraph.heading.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: heading
+label: Heading
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,9 +1,0 @@
-uuid: 7081ed1c-d836-4bbb-87de-819a66a4d96a
-langcode: en
-status: true
-dependencies: {  }
-id: about_overview
-label: 'About - Overview'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

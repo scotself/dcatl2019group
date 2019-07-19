@@ -1,7 +1,0 @@
-name: dgc - Theme Group
-type: module
-description: 'Preprocess and helper functions to theme pages depending on group info settings.'
-core: 8.x
-package: 'dgc'
-dependencies:
-  - group

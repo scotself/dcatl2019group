@@ -1,7 +1,0 @@
-name: 'DGC - Layout'
-type: module
-description: 'DGC layout customizations'
-core: 8.x
-package: 'DGC'
-dependencies:
-  - drupal:layout_builder

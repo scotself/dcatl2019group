@@ -1,7 +1,0 @@
-name: 'Default content for testing'
-type: module
-description: 'Default content for testing'
-core: 8.x
-package: 'Content'
-dependencies:
-  - default_content

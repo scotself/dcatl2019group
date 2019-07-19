@@ -3,9 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.remote_video.field_global_asset
     - field.field.media.remote_video.field_media_oembed_video
-    - field.field.media.remote_video.field_pm_wide_asset
     - media.type.remote_video
   module:
     - media
@@ -14,13 +12,6 @@ targetEntityType: media
 bundle: remote_video
 mode: default
 content:
-  field_global_asset:
-    weight: 2
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_media_oembed_video:
     type: oembed_textfield
     weight: 1
@@ -28,13 +19,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
-  field_pm_wide_asset:
-    weight: 3
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   moderation_state:
     weight: 101
@@ -67,6 +51,5 @@ content:
 hidden:
   created: true
   group_content: true
-  langcode: true
   path: true
   uid: true

@@ -1,0 +1,23 @@
+uuid: f5c178a1-c8bc-454b-92b1-173bb2d6eb59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_sizing_3col
+    - paragraphs.paragraphs_type.3_column_section
+  module:
+    - options
+id: paragraph.3_column_section.field_column_sizing_3col
+field_name: field_column_sizing_3col
+entity_type: paragraph
+bundle: 3_column_section
+label: 'Column Sizing'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 333333
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

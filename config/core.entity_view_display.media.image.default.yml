@@ -3,9 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_global_asset
     - field.field.media.image.field_media_image
-    - field.field.media.image.field_pm_wide_asset
     - image.style.medium
     - media.type.image
   module:
@@ -26,10 +24,7 @@ content:
     region: content
 hidden:
   created: true
-  field_global_asset: true
-  field_pm_wide_asset: true
   group_content: true
-  langcode: true
   name: true
   thumbnail: true
   uid: true

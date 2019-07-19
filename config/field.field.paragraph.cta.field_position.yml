@@ -1,0 +1,23 @@
+uuid: 26d0cc19-7178-461c-b579-b3503ac4525b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.cta
+  module:
+    - options
+id: paragraph.cta.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: cta
+label: Position
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

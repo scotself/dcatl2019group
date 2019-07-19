@@ -1,7 +1,0 @@
-name: 'dgc Users'
-type: module
-description: 'dgc Users Customizations'
-core: 8.x
-package: 'dgc'
-dependencies:
-  - drupal:content_translation

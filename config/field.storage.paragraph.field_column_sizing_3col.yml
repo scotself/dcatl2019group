@@ -1,0 +1,33 @@
+uuid: 88bf0ea9-a764-4fbe-9df8-8933f3cc95ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column_sizing_3col
+field_name: field_column_sizing_3col
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 333333
+      label: 33/33/33
+    -
+      value: 255025
+      label: 25/50/25
+    -
+      value: 252550
+      label: 25/25/50
+    -
+      value: 502525
+      label: 50/25/25
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

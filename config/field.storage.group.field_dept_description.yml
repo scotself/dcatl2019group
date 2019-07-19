@@ -1,0 +1,19 @@
+uuid: 71d64fb7-679d-44b9-a749-498b812ae0c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - text
+id: group.field_dept_description
+field_name: field_dept_description
+entity_type: group
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

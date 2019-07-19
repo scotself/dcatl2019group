@@ -1,6 +1,0 @@
-services:
-  dgc_utils.commands:
-    class: \Drupal\dgc_utils\Commands\DgcCommands
-    arguments: ['@key.repository', '@entity_type.manager', '@salesforce.http_client_wrapper', '@salesforce.auth_token_storage']
-    tags:
-      - { name: drush.command }

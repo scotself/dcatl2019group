@@ -1,0 +1,25 @@
+uuid: 77a8d70b-96ef-4a8f-b311-498c340087b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_image
+    - image.style.large
+    - paragraphs.paragraphs_type.image
+  module:
+    - media
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,98 @@
+uuid: 51167643-f6c3-4e94-ae1b-95c3701ec9d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_1
+    - paragraphs.paragraphs_type.1_column_section
+    - paragraphs.paragraphs_type.banner_item
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.wysiwyg_text
+  module:
+    - entity_reference_revisions
+id: paragraph.1_column_section.field_column_1
+field_name: field_column_1
+entity_type: paragraph
+bundle: 1_column_section
+label: 'Column 1'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner_item: banner_item
+      heading: heading
+      wysiwyg_text: wysiwyg_text
+      cta: cta
+      image: image
+      video: video
+    target_bundles_drag_drop:
+      1_column_section:
+        weight: -41
+        enabled: false
+      2_column_section:
+        weight: -40
+        enabled: false
+      3_column_section:
+        weight: -39
+        enabled: false
+      4_column_section:
+        weight: -38
+        enabled: false
+      accordion_tabs_item:
+        weight: -37
+        enabled: false
+      banner_item:
+        enabled: true
+        weight: -36
+      heading:
+        enabled: true
+        weight: -35
+      wysiwyg_text:
+        enabled: true
+        weight: -34
+      cta:
+        enabled: true
+        weight: -33
+      image:
+        enabled: true
+        weight: -32
+      video:
+        enabled: true
+        weight: -31
+      testimonial:
+        enabled: true
+        weight: -30
+      getting_started:
+        enabled: true
+        weight: -29
+      get_started_item:
+        weight: -28
+        enabled: false
+      bulleted_list:
+        weight: -27
+        enabled: false
+      list_item_with_icon:
+        weight: -26
+        enabled: false
+      list_with_icons:
+        weight: -25
+        enabled: false
+      list_with_single_icon:
+        weight: -24
+        enabled: false
+      sections:
+        weight: -23
+        enabled: false
+      testimonials:
+        weight: -22
+        enabled: false
+field_type: entity_reference_revisions
