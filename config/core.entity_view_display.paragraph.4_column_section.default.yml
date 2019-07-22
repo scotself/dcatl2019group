@@ -55,9 +55,9 @@ content:
     region: content
   field_column_sizing_4col:
     weight: 4
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: list_key
     region: content
 hidden: {  }

@@ -1,6 +1,6 @@
 uuid: b89a54f6-1b4f-4c0a-b61b-e89dbe294b8a
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - ctools
@@ -10,7 +10,7 @@ dependencies:
 id: groupmenus
 theme: dgc
 region: header
-weight: -3
+weight: 1
 provider: null
 plugin: groupmenus
 settings:
@@ -24,7 +24,7 @@ visibility:
   'entity_bundle:group':
     id: 'entity_bundle:group'
     bundles:
-      org: org
+      department: department
     negate: false
     context_mapping:
       group: '@group.group_route_context:group'

@@ -35,9 +35,9 @@ content:
     region: content
   field_column_sizing_2col:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: list_key
     region: content
 hidden: {  }

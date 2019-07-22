@@ -13,15 +13,22 @@ bundle: list
 mode: default
 content:
   field_list:
-    type: entity_reference_paragraphs
+    type: paragraphs
     weight: 0
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
+      title: List
+      title_plural: Lists
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: modal
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+        duplicate: '0'
     third_party_settings: {  }
     region: content
 hidden:

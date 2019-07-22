@@ -20,6 +20,12 @@ settings:
     -
       value: 7525
       label: 75/25
+    -
+      value: 3367
+      label: 33/67
+    -
+      value: 6733
+      label: 67/33
   allowed_values_function: ''
 module: options
 locked: false

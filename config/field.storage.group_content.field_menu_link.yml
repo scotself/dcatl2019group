@@ -1,0 +1,20 @@
+uuid: b6030d57-ae62-4cf5-bbcb-421e66c549a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - menu_link
+id: group_content.field_menu_link
+field_name: field_menu_link
+entity_type: group_content
+type: menu_link
+settings:
+  menu_link_per_translation: false
+module: menu_link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

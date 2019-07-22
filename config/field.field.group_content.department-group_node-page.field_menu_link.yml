@@ -1,0 +1,30 @@
+uuid: d352e87a-107f-4a20-b6df-fab78b6babdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.field_menu_link
+    - group.content_type.department-group_node-page
+  module:
+    - menu_link
+id: group_content.department-group_node-page.field_menu_link
+field_name: field_menu_link
+entity_type: group_content
+bundle: department-group_node-page
+label: 'Menu Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_menus:
+    accounting-menu: accounting-menu
+    group-2-menu: group-2-menu
+    admin: '0'
+    footer: '0'
+    main: '0'
+    tools: '0'
+    account: '0'
+  default_menu_parent: 'main:'
+field_type: menu_link

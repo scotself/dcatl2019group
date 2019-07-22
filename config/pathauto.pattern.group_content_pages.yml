@@ -10,15 +10,14 @@ label: 'Group content pages'
 type: 'canonical_entities:group_content'
 pattern: '[group_content:group:alias]/[group_content:node:title]'
 selection_criteria:
-  693fc38c-0108-4fe2-8646-2b6890d9b291:
+  fd41af7c-b43a-4278-9edf-a983d1200e66:
     id: 'entity_bundle:group_content'
     bundles:
-      org-group_node-about_page: org-group_node-about_page
-      org-group_node-faq: org-group_node-faq
+      department-group_node-page: department-group_node-page
     negate: false
     context_mapping:
       group_content: group_content
-    uuid: 693fc38c-0108-4fe2-8646-2b6890d9b291
+    uuid: fd41af7c-b43a-4278-9edf-a983d1200e66
 selection_logic: and
 weight: -5
 relationships: {  }

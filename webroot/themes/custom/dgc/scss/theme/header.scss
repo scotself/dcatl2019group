@@ -1,4 +1,3 @@
-
 .header-sticky {
   background-color: #fff;
   @include breakpoint(medium) {
@@ -9,131 +8,22 @@
   }
 }
 
-#header-mobile,
-#header-right,
-#header-left {
-  padding-top: 1em;
-  background: #fff;
-}
-
-#header-left {
-  display: flex;
-  flex-direction: column-reverse;
-  img {
-    max-height: 70px;
-    padding-bottom: 1.2em;
-  }
-}
-
-#header-mobile-wrap {
-  width: 100%;
-}
-
-#header-right-top {
-  > div {
-    margin-bottom: 1em;
-    i {
-      color: var(--dgc-group-color-2);
-    }
-  }
-  #login-lang-switch-separator {
-    margin-bottom: 0;
-  }
-  @include breakpoint(medium) {
-    margin-bottom: 1em;
-    > div {
-      margin-left: 1em;
-      margin-bottom: 0;
-      #login-lang-switch-separator {
-        border-right: 1px solid var(--dgc-group-color-5);
-        margin-left: .5em;
-      }
-      #header-lang-switcher {
-        margin-left: .5em;
-      }
-    }
-  }
-}
-
-#header-lang-switcher ul {
-  list-style: none;
-  margin: 0;
-}
-
-#header-login-link,
-#header-lang-switcher {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#header-right-bottom {
-  margin-bottom: 1em;
-  @include breakpoint(medium) {
-    margin-bottom: 0;
-    > div {
-      margin-left: 1em;
-      &#login-lang-switch-separator {
-        border-right: 1px solid var(--dgc-group-color-5);
-        margin-left: .5em;
-      }
-      &#header-lang-switcher {
-        margin-left: .5em;
-      }
-    }
-  }
-}
-
-// Copied from foundation _menu-icon.scss to alter ours.
-.menu-icon::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--dgc-group-color-1);
-  box-shadow: 0 7px 0 var(--dgc-group-color-1), 0 14px 0 var(--dgc-group-color-1);
-  content: '';
-}
-
-.menu-icon:hover::after {
-  background: var(--dgc-group-color-2);
-  box-shadow: 0 7px 0 var(--dgc-group-color-2), 0 14px 0 var(--dgc-group-color-2);
-}
-
-#header-mobile {
-  img {
-    max-height: 50px;
-    padding-bottom: 1em;
-  }
-  .menu-icon {
-    position: absolute;
-    right: 1.2em;
-    top: 1.7em;
-    width: 24px;
-  }
-}
-
-.org-page header nav {
+.block-groupmenu-block .menu {
   margin-bottom: $global-margin;
-}
-
-.org-page,
-.terms-privacy-page {
-  header .menu li a {
+  li a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
     background-color: $white;
-    color: var(--dgc-group-color-2);
+    color: $primary-color;
     border-bottom: 4px solid transparent;
     display: inline-block;
     margin-bottom: .5em;
     &.is-active {
-      color: var(--dgc-group-color-1);
-      border-bottom: 4px solid var(--dgc-group-color-1);
+      color: $primary-color;
+      border-bottom: 4px solid $primary-color;
       &:hover {
-        color: var(--dgc-group-color-2);
+        color: $secondary-color;
       }
     }
     @include breakpoint(medium) {
@@ -142,25 +32,10 @@
   }
 }
 
-.org-page,
-.terms-privacy_page {
-  header .menu .is-active:hover a,
-  header .menu a.is-active:hover,
-  header .menu li a:hover {
-    @include breakpoint(medium) {
-      border-bottom: 4px solid var(--dgc-group-color-2);
-    }
-  }
-}
-
-#group-main-menu .menu {
-  flex-direction: column;
-}
-@include breakpoint(medium) {
-  #group-main-menu .menu {
-    flex-direction: row;
-    li {
-      margin-right: 2em;
-    }
+.block-groupmenu-block .menu .is-active:hover a,
+.block-groupmenu-block .menu a.is-active:hover,
+.block-groupmenu-block .menu li a:hover {
+  @include breakpoint(medium) {
+    border-bottom: 4px solid $secondary-color;
   }
 }

@@ -1,0 +1,8 @@
+uuid: 72cb03d1-c22b-477b-8866-6ebda6396d5e
+langcode: en
+status: true
+dependencies: {  }
+id: group-2-menu
+label: 'Human Resources menu'
+description: 'Menu for Human Resources'
+locked: false

@@ -6,9 +6,11 @@ dependencies:
     - field.storage.paragraph.field_column_1
     - paragraphs.paragraphs_type.1_column_section
     - paragraphs.paragraphs_type.banner_item
+    - paragraphs.paragraphs_type.contacts
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.heading
     - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.list
     - paragraphs.paragraphs_type.video
     - paragraphs.paragraphs_type.wysiwyg_text
   module:
@@ -31,68 +33,64 @@ settings:
       banner_item: banner_item
       heading: heading
       wysiwyg_text: wysiwyg_text
-      cta: cta
+      list: list
       image: image
       video: video
+      contacts: contacts
+      cta: cta
     target_bundles_drag_drop:
       1_column_section:
-        weight: -41
+        weight: -37
         enabled: false
       2_column_section:
-        weight: -40
+        weight: -36
         enabled: false
       3_column_section:
-        weight: -39
+        weight: -35
         enabled: false
       4_column_section:
-        weight: -38
-        enabled: false
-      accordion_tabs_item:
-        weight: -37
+        weight: -34
         enabled: false
       banner_item:
         enabled: true
-        weight: -36
+        weight: -33
       heading:
         enabled: true
-        weight: -35
+        weight: -32
       wysiwyg_text:
         enabled: true
-        weight: -34
-      cta:
-        enabled: true
-        weight: -33
-      image:
-        enabled: true
-        weight: -32
-      video:
-        enabled: true
         weight: -31
-      testimonial:
+      list:
         enabled: true
         weight: -30
-      getting_started:
+      image:
         enabled: true
         weight: -29
-      get_started_item:
+      video:
+        enabled: true
         weight: -28
-        enabled: false
-      bulleted_list:
+      contacts:
+        enabled: true
         weight: -27
-        enabled: false
-      list_item_with_icon:
+      cta:
+        enabled: true
         weight: -26
-        enabled: false
-      list_with_icons:
+      bulleted_list:
         weight: -25
         enabled: false
-      list_with_single_icon:
+      list_item_with_icon:
         weight: -24
         enabled: false
-      sections:
+      list_with_icons:
         weight: -23
         enabled: false
-      testimonials:
+      list_with_single_icon:
         weight: -22
+        enabled: false
+      sections:
+        weight: -21
+        enabled: false
+      contact:
+        weight: -20
         enabled: false
 field_type: entity_reference_revisions

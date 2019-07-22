@@ -39,6 +39,14 @@ function dgc_preprocess_paragraph__2_column_section(array &$vars) {
       $vars['col1class'] = 'small-12 medium-3';
       $vars['col2class'] = 'small-12 medium-9';
       break;
+    case 3367:
+      $vars['col1class'] = 'small-12 medium-4';
+      $vars['col2class'] = 'small-12 medium-8';
+      break;
+    case 6733:
+      $vars['col1class'] = 'small-12 medium-8';
+      $vars['col2class'] = 'small-12 medium-4';
+      break;
   }
 
 }

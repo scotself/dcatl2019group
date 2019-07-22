@@ -11,4 +11,13 @@ internal: true
 audience: member
 group_type: department
 permissions_ui: true
-permissions: {  }
+permissions:
+  - 'view group'
+  - 'view group_media:image content'
+  - 'view group_media:image entity'
+  - 'view group_media:remote_video content'
+  - 'view group_media:remote_video entity'
+  - 'view group_menu:menu content'
+  - 'view group_menu:menu entity'
+  - 'view group_node:page content'
+  - 'view group_node:page entity'

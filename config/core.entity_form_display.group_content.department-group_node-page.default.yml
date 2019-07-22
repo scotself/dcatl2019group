@@ -1,0 +1,38 @@
+uuid: 4f893dc7-9be9-4b2d-ae9c-9c9228a5796a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.department-group_node-page.field_menu_link
+    - group.content_type.department-group_node-page
+  module:
+    - menu_link
+    - path
+id: group_content.department-group_node-page.default
+targetEntityType: group_content
+bundle: department-group_node-page
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  field_menu_link:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: menu_link_default
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

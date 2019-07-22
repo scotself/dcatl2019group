@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.1_column_section.field_column_1
-    - field.field.paragraph.1_column_section.field_section_layout
     - paragraphs.paragraphs_type.1_column_section
   module:
     - entity_reference_revisions
-    - options
 id: paragraph.1_column_section.default
 targetEntityType: paragraph
 bundle: 1_column_section
@@ -22,12 +20,5 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: content
-  field_section_layout:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
 hidden: {  }

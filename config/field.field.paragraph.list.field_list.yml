@@ -14,7 +14,7 @@ id: paragraph.list.field_list
 field_name: field_list
 entity_type: paragraph
 bundle: list
-label: LIst
+label: List
 description: ''
 required: true
 translatable: false
@@ -53,12 +53,6 @@ settings:
       cta:
         weight: -34
         enabled: false
-      get_started_item:
-        weight: -33
-        enabled: false
-      getting_started:
-        weight: -32
-        enabled: false
       heading:
         weight: -31
         enabled: false
@@ -77,16 +71,16 @@ settings:
       sections:
         weight: -26
         enabled: false
-      testimonial:
-        weight: -25
-        enabled: false
-      testimonials:
-        weight: -24
-        enabled: false
       video:
         weight: -23
         enabled: false
       wysiwyg_text:
         weight: -22
+        enabled: false
+      contact:
+        weight: 25
+        enabled: false
+      contacts:
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions

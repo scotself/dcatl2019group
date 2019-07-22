@@ -25,7 +25,7 @@ content:
       title_plural: Contacts
       edit_mode: closed
       closed_mode: summary
-      autocollapse: none
+      autocollapse: all
       closed_mode_threshold: 0
       add_mode: button
       form_display_mode: default
@@ -52,7 +52,7 @@ content:
       title_plural: Sections
       edit_mode: closed
       closed_mode: summary
-      autocollapse: none
+      autocollapse: all
       closed_mode_threshold: 0
       add_mode: modal
       form_display_mode: default

@@ -21,7 +21,7 @@ content:
       title_plural: Blocks
       edit_mode: closed
       closed_mode: summary
-      autocollapse: none
+      autocollapse: all
       closed_mode_threshold: 0
       add_mode: modal
       form_display_mode: default
@@ -40,7 +40,7 @@ content:
       title_plural: Blocks
       edit_mode: closed
       closed_mode: summary
-      autocollapse: none
+      autocollapse: all
       closed_mode_threshold: 0
       add_mode: modal
       form_display_mode: default

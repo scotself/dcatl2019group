@@ -5,11 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.bulleted_list.field_bulleted_list_items
     - paragraphs.paragraphs_type.bulleted_list
-  module:
-    - layout_builder
-third_party_settings:
-  layout_builder:
-    sections: {  }
 id: paragraph.bulleted_list.default
 targetEntityType: paragraph
 bundle: bulleted_list

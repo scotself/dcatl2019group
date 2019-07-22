@@ -1,25 +1,26 @@
-uuid: eee4baf1-ad3b-4180-a59e-3264deab9764
+uuid: c6b152da-e7c6-45fc-9422-5215c582de58
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_form_mode.paragraph.settings
     - field.field.paragraph.1_column_section.field_column_1
     - paragraphs.paragraphs_type.1_column_section
   module:
     - paragraphs
-id: paragraph.1_column_section.default
+id: paragraph.1_column_section.settings
 targetEntityType: paragraph
 bundle: 1_column_section
-mode: default
+mode: settings
 content:
   field_column_1:
     weight: 1
     settings:
       title: Block
       title_plural: Blocks
-      edit_mode: closed
+      edit_mode: closed_expand_nested
       closed_mode: summary
-      autocollapse: all
+      autocollapse: none
       closed_mode_threshold: 0
       add_mode: modal
       form_display_mode: default

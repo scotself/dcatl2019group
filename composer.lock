@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcbe9e32fd10bb53f3053dc2ad536257",
+    "content-hash": "ab37522a17750c171cca98ad44f05ddd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4012,6 +4012,103 @@
                 "source": "https://git.drupalcode.org/project/paragraphs"
             },
             "time": "2019-07-01T09:20:00+00:00"
+        },
+        {
+            "name": "drupal/paragraphs_edit",
+            "version": "2.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_edit.git",
+                "reference": "8.x-2.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_edit-8.x-2.0-alpha6.zip",
+                "reference": "8.x-2.0-alpha6",
+                "shasum": "30ffe95b9160eedfa5aafc1e7a65e252d67d8b4e"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha6",
+                    "datestamp": "1509009544",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "casey",
+                    "homepage": "https://www.drupal.org/user/32403"
+                }
+            ],
+            "description": "Allows users to edit/clone and delete paragraphs.",
+            "homepage": "https://www.drupal.org/project/paragraphs_edit",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_edit"
+            }
+        },
+        {
+            "name": "drupal/paragraphs_frontend_ui",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_frontend_ui.git",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_frontend_ui-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "c671c6c65826d785ce83f6e87df8bfce03a74d7e"
+            },
+            "require": {
+                "drupal/core": "~8.5",
+                "drupal/paragraphs": "~1.0",
+                "drupal/paragraphs_edit": "~2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1542988080",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "svdhout",
+                    "homepage": "https://www.drupal.org/user/717826"
+                }
+            ],
+            "description": "Allows users to edit paragraphs from the frontend.",
+            "homepage": "https://drupal.org/project/paragraphs_frontend_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_frontend_ui"
+            }
         },
         {
             "name": "drupal/pathauto",
@@ -10190,7 +10287,8 @@
         "drupal/rules": 15,
         "drupal/xy_grid_layouts": 20,
         "drupal/field_permissions": 5,
-        "drupal/maxlength": 10
+        "drupal/maxlength": 10,
+        "drupal/paragraphs_frontend_ui": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

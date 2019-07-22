@@ -1,0 +1,8 @@
+uuid: 3e825d1a-cb46-43bd-acd2-09c5da848e6d
+langcode: en
+status: true
+dependencies: {  }
+id: accounting-menu
+label: 'Accounting Menu'
+description: ''
+locked: false
