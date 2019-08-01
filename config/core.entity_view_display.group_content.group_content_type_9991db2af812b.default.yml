@@ -1,0 +1,22 @@
+uuid: 6a40fe6e-1422-435f-a6b2-8b916ceb01b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.group_content_type_9991db2af812b.layout_builder__layout
+    - group.content_type.group_content_type_9991db2af812b
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: group_content.group_content_type_9991db2af812b.default
+targetEntityType: group_content
+bundle: group_content_type_9991db2af812b
+mode: default
+content: {  }
+hidden:
+  entity_id: true
+  layout_builder__layout: true
+  uid: true

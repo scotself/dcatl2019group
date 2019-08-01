@@ -194,7 +194,8 @@
                 "LogicException Form errors cannot be set after form validation has finished": "https://www.drupal.org/files/issues/2019-05-03/3013171-13.patch"
             },
             "drupal/menu_link": {
-                "Respect Group Permissions": "https://www.drupal.org/files/issues/2018-12-10/menu_link-respect_group_permissions-3019500-2.patch"
+                "Respect Group Permissions": "https://www.drupal.org/files/issues/2018-12-10/menu_link-respect_group_permissions-3019500-2.patch",
+                "Menu item without attributes causes a notice": "https://www.drupal.org/files/issues/2018-12-10/menu_link-attributes-error-3019509-3.patch"
             }
         }
     },

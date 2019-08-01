@@ -65,6 +65,12 @@
 // 1. Global
 // ---------
 
+$color1: #262262;
+$color2: #216fb4;
+$color3: #ecf7ff;
+$color4: #4a4a4a;
+$color5: #a9a9a9;
+$color6: #f6f6f6;
 $global-font-size: 100%;
 $global-width: 70.375rem;
 $global-lineheight: 20px;
@@ -153,7 +159,7 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   large: (
-    'h1': ('font-size': 55),
+    'h1': ('font-size': 45),
     'h2': ('font-size': 36),
     'h3': ('font-size': 20),
     'h4': ('font-size': 16),

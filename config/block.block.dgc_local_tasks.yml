@@ -9,7 +9,7 @@ _core:
 id: dgc_local_tasks
 theme: dgc
 region: header
-weight: 0
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

@@ -11,7 +11,7 @@ _core:
 id: dgc_messages
 theme: dgc
 region: header
-weight: -2
+weight: -1
 provider: null
 plugin: system_messages_block
 settings:

@@ -12,11 +12,11 @@
 }
 .banner-solid-bg {
   min-height: 300px;
-  background-color: var(--dgc-group-color-3);
+  background-color: $color3;
 }
 .banner-inner {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   .banner-box-grid {
     height: 100%;
   }

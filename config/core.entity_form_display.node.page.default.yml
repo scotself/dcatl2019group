@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.field_sections
     - node.type.page
   module:
+    - gcontent_field
     - paragraphs
 id: node.page.default
 targetEntityType: node
@@ -31,11 +32,20 @@ content:
         duplicate: '0'
     third_party_settings: {  }
     region: content
+  group_content:
+    type: group_selector_widget
+    weight: 2
+    region: content
+    settings:
+      widget: autocomplete
+      multiple: true
+      required: false
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 2
+    weight: 3
     region: content
     third_party_settings: {  }
   title:
@@ -48,7 +58,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  group_content: true
   path: true
   promote: true
   sticky: true

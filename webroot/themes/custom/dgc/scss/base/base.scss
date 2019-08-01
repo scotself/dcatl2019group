@@ -1,13 +1,24 @@
 body {
   font-size: 15px;
-  color: var(--dgc-group-color-4);
+  color: #4d4d4f;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-  color: var(--dgc-group-color-1);
+  color: $primary-color;
 }
 h1, h2, h3 {
   font-weight: 800;
+}
+#block-pagetitle {
+  margin-top: 20px;
+}
+.paragraph--type--1_column_section,
+.paragraph--type--2_column_section,
+.paragraph--type--3_column_section,
+.paragraph--type--4_column_section {
+  h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+  }
 }
 h4 {
   font-weight: 700;
@@ -19,7 +30,7 @@ h5 {
 a,
 a:hover,
 a:focus {
-  color: var(--dgc-group-color-2);
+  color: $secondary-color;
 }
 
 a:focus {
@@ -28,7 +39,7 @@ a:focus {
 
 hr {
   width: 100%;
-  border-color: var(--dgc-group-color-5);
+  border-color: $primary-color;
 }
 
 /* Classy theme in core has this class and it's a float.
@@ -55,7 +66,7 @@ ul.with-icons li, ul.with-discs li {
     display: flex;
   }
   i {
-    color: var(--dgc-group-color-2);
+    color: $secondary-color;
   }
   span {
     padding-left: 1em;
@@ -71,7 +82,7 @@ ul.with-discs {
     -ms-column-break-inside: avoid;
     column-break-inside:avoid;
     i {
-      color: var(--dgc-group-color-2);
+      color: $secondary-color;
       font-weight: 900;
       font-size: 1.5em;
       margin-top: -2px;

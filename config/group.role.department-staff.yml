@@ -1,0 +1,14 @@
+uuid: 04c1c0a7-0d1b-4cc1-8dc4-bbbd93e80483
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+id: department-staff
+label: Staff
+weight: 101
+internal: false
+audience: member
+group_type: department
+permissions_ui: true
+permissions: {  }

@@ -1,0 +1,82 @@
+uuid: 18d7a9aa-81f1-4586-ad45-66c81515445e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list
+    - field.storage.block_content.field_list
+    - paragraphs.paragraphs_type.list
+  module:
+    - entity_reference_revisions
+id: block_content.list.field_list
+field_name: field_list
+entity_type: block_content
+bundle: list
+label: List
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      list: list
+    target_bundles_drag_drop:
+      1_column_section:
+        weight: 19
+        enabled: false
+      2_column_section:
+        weight: 20
+        enabled: false
+      3_column_section:
+        weight: 21
+        enabled: false
+      4_column_section:
+        weight: 22
+        enabled: false
+      banner_item:
+        weight: 23
+        enabled: false
+      bulleted_list:
+        weight: 24
+        enabled: false
+      contact:
+        weight: 25
+        enabled: false
+      contacts:
+        weight: 26
+        enabled: false
+      cta:
+        weight: 27
+        enabled: false
+      heading:
+        weight: 28
+        enabled: false
+      image:
+        weight: 29
+        enabled: false
+      list:
+        enabled: true
+        weight: 30
+      list_item_with_icon:
+        weight: 31
+        enabled: false
+      list_with_icons:
+        weight: 32
+        enabled: false
+      list_with_single_icon:
+        weight: 33
+        enabled: false
+      sections:
+        weight: 34
+        enabled: false
+      video:
+        weight: 35
+        enabled: false
+      wysiwyg_text:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

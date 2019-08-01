@@ -10,7 +10,7 @@ dependencies:
 id: groupmenus
 theme: dgc
 region: header
-weight: 1
+weight: 0
 provider: null
 plugin: groupmenus
 settings:
