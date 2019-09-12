@@ -5,8 +5,8 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: 'public://govcon_4.png'
+  path: 'public://DCATL.jpg'
 favicon:
   use_default: false
-  path: 'public://govcon_5.png'
-  mimetype: image/png
+  path: 'public://DCATL_0.jpg'
+  mimetype: image/jpeg

@@ -16,5 +16,4 @@ hidden:
   field_fname: true
   field_lname: true
   group_content: true
-  langcode: true
   member_for: true

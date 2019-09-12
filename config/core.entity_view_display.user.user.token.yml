@@ -35,5 +35,4 @@ hidden:
   field_password_expiration: true
   field_study_licenses: true
   group_content: true
-  langcode: true
   member_for: true

@@ -32,7 +32,6 @@ hidden:
   field_global_asset: true
   field_pm_wide_asset: true
   group_content: true
-  langcode: true
   name: true
   thumbnail: true
   uid: true

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab37522a17750c171cca98ad44f05ddd",
+    "content-hash": "5cbe4c8419085a31882277967b3f8f15",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3511,7 +3511,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Combined support config entities and revisions": "https://www.drupal.org/files/issues/2019-06-28/group-combined-2797793-and-2829966-3030127-6.patch",
+                    "Combined support config entities and revisions": "https://www.drupal.org/files/issues/2019-07-31/group-combined-2797793-and-2829966-3030127-9.patch",
                     "Group and Node tokens from group content": "https://www.drupal.org/files/issues/group-content-entity-tokens-2916907-7.patch",
                     "Add a field to view and edit content's groups": "https://www.drupal.org/files/issues/2019-05-29/group-field_to_view_and_edit_content_groups-2813405-142.patch",
                     "Allow group admins to create users": "https://www.drupal.org/files/issues/2018-12-19/group-manage-users-2949408-15.patch",
@@ -3842,7 +3842,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Respect Group Permissions": "https://www.drupal.org/files/issues/2018-12-10/menu_link-respect_group_permissions-3019500-2.patch"
+                    "Respect Group Permissions": "https://www.drupal.org/files/issues/2018-12-10/menu_link-respect_group_permissions-3019500-2.patch",
+                    "Menu item without attributes causes a notice": "https://www.drupal.org/files/issues/2018-12-10/menu_link-attributes-error-3019509-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
